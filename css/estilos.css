@@ -77,6 +77,8 @@ body{
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
+    
+    
 }
 
 .nav__items{
@@ -87,7 +89,28 @@ body{
 .nav__links{
     color: #fff;
     text-decoration: none;
+    position: relative;
+
 }
+
+.nav__links::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.nav__links:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
 
 
 .nav__menu{
@@ -507,6 +530,7 @@ body{
     
     font-weight: 300;
     color: #fff;
+    text-decoration: none;
 }
 
 .footer__icons{
