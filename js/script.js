@@ -69,17 +69,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateLightbox() {
         const proyecto = proyectos[currentProjectIndex];
-        lightboxImage.src = proyecto.imagenes[currentImageIndex];
         
-        lightboxIndicators.innerHTML = proyecto.imagenes
-            .map((_, i) => `<span class="${i === currentImageIndex ? 'active' : ''}"></span>`)
-            .join('');
-        
-        document.querySelectorAll('.lightbox-indicators span').forEach((span, index) => {
-            span.addEventListener('click', () => {
-                currentImageIndex = index;
-                updateLightbox();
-            });
+        lightboxSlider.innerHTML = '';
+        lightboxIndicators.innerHTML = '';
+    
+        proyecto.imagenes.forEach((imagen, index) => {
+            const img = document.createElement('img');
+            img.src = imagen;
+            img.alt = `Imagen ${index + 1} de ${proyecto.titulo}`;
+            img.classList.add(index === currentImageIndex ? 'active' : '');
+            lightboxSlider.appendChild(img);
+        });
+    }
+
+    function updateSliderPosition() {
+        const images = lightboxSlider.querySelectorAll('img');
+        images.forEach((img, index) => {
+            img.classList.remove('active', 'prev', 'next');
+            if(index === currentImageIndex) {
+                img.classList.add('active');
+            } else if(index < currentImageIndex) {
+                img.classList.add('prev');
+            } else {
+                img.classList.add('next');
+            }
         });
     }
 
