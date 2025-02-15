@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/CP5.jpg",
                 "images/proyectos/CP6.jpg",
                 "images/proyectos/CP7.jpg",
-                "images/proyectos/CP8.jpg",
+                "images/proyectos/CP8.jpg"
             ],
             descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
             tags: ["Photoshop", "ilustrator", "Branding"]
