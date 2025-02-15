@@ -413,8 +413,29 @@ body {
     }
 
     .lightbox-slider img {
-        max-height: 60vh;
+        max-width: 100vw; /* Limita al ancho del viewport */
+        width: auto;
+        height: auto;
         object-fit: contain;
-        margin: 0 auto;
+        padding: 0 10px; /* Espacio lateral mínimo */
+    }
+}
+
+@media (max-width: 768px) {
+    .lightbox-slider img {
+        max-height: 60vh !important;
+        object-position: center top; /* Prioriza centrado vertical */
+    }
+
+    .lightbox-content {
+        width: 100%;
+        padding: 0 15px; /* Previene cortes laterales */
+    }
+}
+
+@media (max-width: 480px) {
+    .lightbox-slider img {
+        max-height: 50vh !important;
+        padding: 0 5px;
     }
 }
