@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             titulo: "Culperma",
             imagenes: [
-                "images/proyectos/CP1.jpg",
+                "images/proyectos/CP1.webp",
                 "images/proyectos/CP2.jpg",
                 "images/proyectos/CP3.jpg",
                 "images/proyectos/CP4.jpg",
