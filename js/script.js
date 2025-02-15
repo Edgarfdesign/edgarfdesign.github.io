@@ -31,6 +31,29 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
             tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "MyMy",
+            imagenes: [
+                "images/proyectos/MY01.webp",
+                "images/proyectos/MY02.webp",
+                "images/proyectos/MY03.webp",
+                "images/proyectos/MY04.webp",
+                "images/proyectos/MY05.webp",
+                "images/proyectos/MY06.webp",
+                "images/proyectos/MY07.webp",
+                "images/proyectos/MY08.webp",
+                "images/proyectos/MY09.webp",
+                "images/proyectos/MY10.webp",
+                "images/proyectos/MY11.webp",
+                "images/proyectos/MY12.webp",
+                "images/proyectos/MY13.webp",
+                "images/proyectos/MY14.webp",
+                "images/proyectos/MY15.webp",
+                "images/proyectos/MY16.webp",
+            ],
+            descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
         }
     ];
 
