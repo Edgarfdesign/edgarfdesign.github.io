@@ -302,6 +302,16 @@ body {
     transform: scale(1.3);
 }
 
+.lightbox-slider {
+    overflow: visible !important; /* Permite que las imágenes sobresalgan */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Mejor scroll en iOS */
+}
+
+.lightbox-slider img {
+    scroll-snap-align: center; /* Centra la imagen al hacer scroll */
+}
+
 /* ===== Footer ===== */
 .main-footer {
     background: var(--color-primario);
