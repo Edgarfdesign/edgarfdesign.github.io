@@ -227,6 +227,7 @@ body {
     max-width: 90%;
     max-height: 90vh;
     position: relative;
+    z-index: 1; /* Asegura que el contenedor esté detrás de los botones */
 }
 
 .lightbox-image {
@@ -235,6 +236,7 @@ body {
     border-radius: var(--radius);
     animation: fadeIn 0.3s ease;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.95); }
@@ -255,6 +257,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000; /* Valor alto para estar siempre encima */
 }
 
 .lightbox button:hover {
@@ -393,5 +396,25 @@ body {
 
     .lightbox-image {
         max-height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .lightbox-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lightbox-slider {
+        width: 100%;
+    }
+
+    .lightbox-slider img {
+        max-height: 60vh;
+        object-fit: contain;
+        margin: 0 auto;
     }
 }
