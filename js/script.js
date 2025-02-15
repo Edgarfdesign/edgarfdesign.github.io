@@ -2,23 +2,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // Datos de proyectos
     const proyectos = [
         {
-            titulo: "Branding Café Artesanal",
+            titulo: "Tecnoventas",
             imagenes: [
-                "assets/images/proyectos/cafe-1.jpg",
-                "assets/images/proyectos/cafe-2.jpg",
-                "assets/images/proyectos/cafe-3.jpg"
+                "images/proyectos/TV1.jpg",
+                "images/proyectos/TV2.1.jpg",
+                "images/proyectos/TV2.jpg",
+                "images/proyectos/TV3.jpg",
+                "images/proyectos/TV4.jpg",
+                "images/proyectos/TV5.jpg",
+                "images/proyectos/TV6.jpg",
+                "images/proyectos/TV7.jpg",
+                "images/proyectos/TV8.jpg"
             ],
-            descripcion: "Diseño de identidad visual para cafetería premium",
-            tags: ["Logo", "Packaging", "Branding"]
+            descripcion: "Tecnoventas es una empresa de tecnología especializada en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales altamente capacitados y tecnologías de última generación, garantizando soluciones rápidas y eficientes.",
+            tags: ["Logo", "Photoshop", "Ilustrator"]
         },
         {
-            titulo: "Ilustración Digital",
+            titulo: "Culperma",
             imagenes: [
-                "assets/images/proyectos/arte-1.jpg",
-                "assets/images/proyectos/arte-2.jpg"
+                "images/proyectos/CP1.jpg",
+                "images/proyectos/CP2.jpg",
+                "images/proyectos/CP3.jpg",
+                "images/proyectos/CP4.jpg",
+                "images/proyectos/CP5.jpg",
+                "images/proyectos/CP6.jpg",
+                "images/proyectos/CP7.jpg",
+                "images/proyectos/CP8.jpg",
             ],
-            descripcion: "Serie de ilustraciones para campaña publicitaria",
-            tags: ["Photoshop", "Procreate", "Animación"]
+            descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
         }
     ];
 
