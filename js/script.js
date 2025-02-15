@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             titulo: "Tecnoventas",
             imagenes: [
-                "images/proyectos/TV1.jpg",
-                "images/proyectos/TV2.1.jpg",
-                "images/proyectos/TV2.jpg",
-                "images/proyectos/TV3.jpg",
-                "images/proyectos/TV4.jpg",
-                "images/proyectos/TV5.jpg",
-                "images/proyectos/TV6.jpg",
-                "images/proyectos/TV7.jpg",
-                "images/proyectos/TV8.jpg"
+                "images/proyectos/TV1.webp",
+                "images/proyectos/TV2.1.webp",
+                "images/proyectos/TV2.webp",
+                "images/proyectos/TV3.webp",
+                "images/proyectos/TV4.webp",
+                "images/proyectos/TV5.webp",
+                "images/proyectos/TV6.webp",
+                "images/proyectos/TV7.webp",
+                "images/proyectos/TV8.webp"
             ],
             descripcion: "Tecnoventas es una empresa de tecnología especializada en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales altamente capacitados y tecnologías de última generación, garantizando soluciones rápidas y eficientes.",
             tags: ["Logo", "Photoshop", "Ilustrator"]
@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
             titulo: "Culperma",
             imagenes: [
                 "images/proyectos/CP1.webp",
-                "images/proyectos/CP2.jpg",
-                "images/proyectos/CP3.jpg",
-                "images/proyectos/CP4.jpg",
-                "images/proyectos/CP5.jpg",
-                "images/proyectos/CP6.jpg",
-                "images/proyectos/CP7.jpg",
-                "images/proyectos/CP8.jpg"
+                "images/proyectos/CP2.webp",
+                "images/proyectos/CP3.webp",
+                "images/proyectos/CP4.webp",
+                "images/proyectos/CP5.webp",
+                "images/proyectos/CP6.webp",
+                "images/proyectos/CP7.webp",
+                "images/proyectos/CP8.webp"
             ],
             descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
             tags: ["Photoshop", "ilustrator", "Branding"]
