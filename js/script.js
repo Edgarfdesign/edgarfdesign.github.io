@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/TV7.webp",
                 "images/proyectos/TV8.webp"
             ],
-            descripcion: "Tecnoventas es una empresa de tecnología especializada en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales altamente capacitados y tecnologías de última generación, garantizando soluciones rápidas y eficientes.",
+            descripcion: "Tecnoventas es una empresa tecnológica que se especializa en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales capacitados y tecnologías de última generación, asegurando soluciones rápidas y eficientes.",
             tags: ["Logo", "Photoshop", "Ilustrator"]
         },
         {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/CP7.webp",
                 "images/proyectos/CP8.webp"
             ],
-            descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
+            descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Se destaca por sus prácticas ambientales responsables, protegiendo la biodiversidad y promoviendo el uso responsable de los recursos naturales.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         },
         {
@@ -52,7 +52,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/MY15.webp",
                 "images/proyectos/MY16.webp",
             ],
-            descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
+            descripcion: "MyMy es una marca de ropa que se especializa en ofrecer prendas de alta calidad y diseño innovador. Sus colecciones se destacan por su estilo único y atención a los detalles, brindando a sus clientes moda contemporánea y cómoda.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "Maxima Bisuteria",
+            imagenes: [
+                "images/proyectos/MB01.webp",
+                "images/proyectos/MB02.webp",
+                "images/proyectos/MB03.webp",
+                "images/proyectos/MB04.webp",
+                "images/proyectos/MB05.webp",
+                "images/proyectos/MB06.webp",
+                
+            ],
+            descripcion: "Máxima Bisutería es una marca especializada en la creación de piezas de bisutería de alta calidad. Se destaca por sus diseños elegantes y detallados, ofreciendo accesorios únicos que complementan cualquier estilo y ocasión.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         }
     ];
