@@ -242,6 +242,7 @@ body {
 .lightbox-slider {
     display: flex;
     overflow-x: auto;
+    position: relative;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
@@ -433,6 +434,7 @@ body {
     
     .lightbox-slider {
         padding: 0 10px;
+        position: relative;
     }
     
     .lightbox-slider img {
