@@ -431,15 +431,7 @@ body {
     }
     
     
-    .lightbox-slider {
-        padding: 0 10px;
-    }
-    
-    .lightbox-slider img {
-        max-height: 60vh;
-        max-width: 90vw;
-        object-position: center center;
-    }
+   
     
     .lightbox button {
         width: 40px;
