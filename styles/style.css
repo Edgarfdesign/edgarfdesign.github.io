@@ -420,3 +420,49 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    
+    .lightbox-content {
+         width: 100%;
+         height: 100%;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .lightbox-slider {
+        padding: 0 10px;
+    }
+    
+    .lightbox-slider img {
+        max-height: 60vh;
+        max-width: 90vw;
+        object-position: center center;
+    }
+    
+    .lightbox button {
+        width: 40px;
+        height: 40px;
+        padding: 0.8rem;
+    }
+    
+    .lightbox-prev {
+        left: 5px;
+    }
+    
+    .lightbox-next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lightbox-slider img {
+        max-height: 50vh;
+        max-width: 85vw;
+    }
+    
+    .lightbox-indicators {
+        bottom: 20px;
+    }
+}
