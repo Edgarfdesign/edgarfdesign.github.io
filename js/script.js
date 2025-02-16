@@ -62,9 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/MB02.webp",
                 "images/proyectos/MB03.webp",
                 "images/proyectos/MB04.webp",
-                "images/proyectos/MB05.webp",
-                "images/proyectos/MB06.webp",
-                
+                "images/proyectos/MB05.webp",     
             ],
             descripcion: "Máxima Bisutería es una marca especializada en la creación de piezas de bisutería de alta calidad. Se destaca por sus diseños elegantes y detallados, ofreciendo accesorios únicos que complementan cualquier estilo y ocasión.",
             tags: ["Photoshop", "ilustrator", "Branding"]
@@ -81,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/CY07.webp",
                 "images/proyectos/CY08.webp",
                 "images/proyectos/CY09.webp",
-                "images/proyectos/CY09.webp",
+                "images/proyectos/CY10.webp",
                 
             ],
             descripcion: "Calza Yoing es una marca de zapatos que se especializa en ofrecer calzado de alta calidad y diseño contemporáneo. Sus colecciones combinan comodidad y estilo, proporcionando opciones ideales para diversas ocasiones y estilos de vida.",
