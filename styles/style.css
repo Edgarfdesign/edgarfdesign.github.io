@@ -232,6 +232,13 @@ body {
     padding: 0 15px;
 }
 
+.lightbox-image {
+    max-height: 80vh;
+    width: auto;
+    border-radius: var(--radius);
+    animation: fadeIn 0.3s ease;
+}
+
 .lightbox-slider {
     display: flex;
     overflow-x: auto;
