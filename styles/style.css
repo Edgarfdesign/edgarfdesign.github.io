@@ -224,17 +224,31 @@ body {
 }
 
 .lightbox-content {
-    max-width: 90%;
-    max-height: 90vh;
+    width: 100%;
+    height: 100%;
     position: relative;
-    z-index: 1; /* Asegura que el contenedor esté detrás de los botones */
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
 }
 
-.lightbox-image {
+.lightbox-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    gap: 20px;
+}
+
+.lightbox-slider img {
+    scroll-snap-align: center;
     max-height: 80vh;
     width: auto;
+    max-width: 100%;
+    object-fit: contain;
     border-radius: var(--radius);
-    animation: fadeIn 0.3s ease;
+    flex-shrink: 0;
 }
 
 
@@ -400,24 +414,38 @@ body {
 }
 
 @media (max-width: 768px) {
-    .lightbox-content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .lightbox-slider {
-        width: 100%;
+        padding: 0 10px;
     }
-
+    
     .lightbox-slider img {
-        max-width: 100vw; /* Limita al ancho del viewport */
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        padding: 0 10px; /* Espacio lateral mínimo */
+        max-height: 60vh;
+        max-width: 90vw;
+        object-position: center center;
+    }
+    
+    .lightbox button {
+        width: 40px;
+        height: 40px;
+        padding: 0.8rem;
+    }
+    
+    .lightbox-prev {
+        left: 5px;
+    }
+    
+    .lightbox-next {
+        right: 5px;
     }
 }
 
+@media (max-width: 480px) {
+    .lightbox-slider img {
+        max-height: 50vh;
+        max-width: 85vw;
+    }
+    
+    .lightbox-indicators {
+        bottom: 20px;
+    }
+}
