@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/TV7.webp",
                 "images/proyectos/TV8.webp"
             ],
-            descripcion: "Tecnoventas es una empresa tecnológica que se especializa en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales capacitados y tecnologías de última generación, asegurando soluciones rápidas y eficientes.",
+            descripcion: "Tecnoventas es una empresa de tecnología especializada en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales altamente capacitados y tecnologías de última generación, garantizando soluciones rápidas y eficientes.",
             tags: ["Logo", "Photoshop", "Ilustrator"]
         },
         {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/CP7.webp",
                 "images/proyectos/CP8.webp"
             ],
-            descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Se destaca por sus prácticas ambientales responsables, protegiendo la biodiversidad y promoviendo el uso responsable de los recursos naturales.",
+            descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         },
         {
@@ -62,7 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/MB02.webp",
                 "images/proyectos/MB03.webp",
                 "images/proyectos/MB04.webp",
-                "images/proyectos/MB05.webp",     
+                "images/proyectos/MB05.webp",
+                "images/proyectos/MB06.webp",
+                
             ],
             descripcion: "Máxima Bisutería es una marca especializada en la creación de piezas de bisutería de alta calidad. Se destaca por sus diseños elegantes y detallados, ofreciendo accesorios únicos que complementan cualquier estilo y ocasión.",
             tags: ["Photoshop", "ilustrator", "Branding"]
@@ -108,32 +110,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Lightbox Logic
     const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.querySelector('.lightbox-image');
-    const lightboxIndicators = document.querySelector('.lightbox-indicators');
+    const slider = document.querySelector('.lightbox-slider');
+    const indicators = document.querySelector('.lightbox-indicators');
     let currentProjectIndex = 0;
     let currentImageIndex = 0;
+    let isDragging = false;
+    let startPosX = 0;
 
     function openLightbox(projectIndex) {
         currentProjectIndex = projectIndex;
         currentImageIndex = 0;
-        updateLightbox();
+        loadImages();
         lightbox.classList.add('active');
     }
 
-    function updateLightbox() {
+    function loadImages() {
         const proyecto = proyectos[currentProjectIndex];
-        lightboxImage.src = proyecto.imagenes[currentImageIndex];
-        
-        lightboxIndicators.innerHTML = proyecto.imagenes
+        slider.innerHTML = proyecto.imagenes.map(img => `
+            <img src="${img}" alt="${proyecto.titulo}">
+        `).join('');
+        updateIndicators();
+        updateSliderPosition();
+    }
+
+    function updateSliderPosition() {
+        slider.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+    }
+
+    function updateIndicators() {
+        indicators.innerHTML = proyectos[currentProjectIndex].imagenes
             .map((_, i) => `<span class="${i === currentImageIndex ? 'active' : ''}"></span>`)
             .join('');
-        
-        document.querySelectorAll('.lightbox-indicators span').forEach((span, index) => {
-            span.addEventListener('click', () => {
-                currentImageIndex = index;
-                updateLightbox();
-            });
-        });
+    }
+
+    function navigate(direction) {
+        const total = proyectos[currentProjectIndex].imagenes.length;
+        currentImageIndex = (currentImageIndex + direction + total) % total;
+        updateSliderPosition();
+        updateIndicators();
     }
 
     // Event Listeners
@@ -141,39 +155,53 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.classList.remove('active');
     });
 
-    document.querySelector('.lightbox-prev').addEventListener('click', () => {
-        currentImageIndex = currentImageIndex > 0 
-            ? currentImageIndex - 1 
-            : proyectos[currentProjectIndex].imagenes.length - 1;
-        updateLightbox();
-    });
+    document.querySelector('.lightbox-prev').addEventListener('click', () => navigate(-1));
+    document.querySelector('.lightbox-next').addEventListener('click', () => navigate(1));
 
-    document.querySelector('.lightbox-next').addEventListener('click', () => {
-        currentImageIndex = (currentImageIndex + 1) % proyectos[currentProjectIndex].imagenes.length;
-        updateLightbox();
-    });
+    // Drag & Touch Events
+    slider.addEventListener('mousedown', dragStart);
+    slider.addEventListener('touchstart', dragStart);
+    slider.addEventListener('mouseup', dragEnd);
+    slider.addEventListener('touchend', dragEnd);
+    slider.addEventListener('mousemove', drag);
+    slider.addEventListener('touchmove', drag);
 
-    lightbox.addEventListener('click', (e) => {
-        if(e.target === lightbox) lightbox.classList.remove('active');
-    });
+    function dragStart(e) {
+        isDragging = true;
+        startPosX = e.clientX || e.touches[0].clientX;
+        slider.style.transition = 'none';
+    }
 
-    document.addEventListener('keydown', (e) => {
-        if(lightbox.classList.contains('active')) {
-            switch(e.key) {
-                case 'ArrowLeft':
-                    currentImageIndex = currentImageIndex > 0 
-                        ? currentImageIndex - 1 
-                        : proyectos[currentProjectIndex].imagenes.length - 1;
-                    updateLightbox();
-                    break;
-                case 'ArrowRight':
-                    currentImageIndex = (currentImageIndex + 1) % proyectos[currentProjectIndex].imagenes.length;
-                    updateLightbox();
-                    break;
-                case 'Escape':
-                    lightbox.classList.remove('active');
-                    break;
-            }
+    function drag(e) {
+        if (!isDragging) return;
+        const currentX = e.clientX || e.touches[0].clientX;
+        const deltaX = currentX - startPosX;
+        slider.style.transform = `translateX(calc(-${currentImageIndex * 100}% + ${deltaX}px))`;
+    }
+
+    function dragEnd(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        
+        const deltaX = (e.clientX || e.changedTouches[0].clientX) - startPosX;
+        const threshold = slider.offsetWidth * 0.1;
+        
+        if (Math.abs(deltaX) > threshold) {
+            navigate(deltaX > 0 ? -1 : 1);
+        } else {
+            updateSliderPosition();
         }
-    });
+        slider.style.transition = 'transform 0.5s ease';
+    }
+
+    // Keyboard Navigation
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.classList.contains('active')) {
+            if (e.key === 'ArrowLeft') navigate(-1);
+            if (e.key === 'ArrowRight') navigate(1);
+            if (e.key === 'Escape') lightbox.classList.remove('active');
+        }
+    });    
+
+    
 });
