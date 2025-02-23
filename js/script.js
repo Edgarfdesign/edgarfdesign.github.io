@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             titulo: "Italplumbing",
             imagenes: [
+                "images/proyectos/IP0.webp",
                 "images/proyectos/IP1.webp",
                 "images/proyectos/IP2.webp",
                 "images/proyectos/IP3.webp",
@@ -123,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/IP15.webp",
                 "images/proyectos/IP16.webp"       
             ],
-            descripcion: "Italplumbitng es una empresa especializada en ofrecer servicios de plomería industrial, enfocados en resolver problemas complejos de filtraciones, detección de fugas, mantenimiento de ductos y sistemas de inspección en grandes instalaciones como centros comerciales, condominios y empresas de gran escala. Su enfoque se centra en brindar soluciones eficaces y rápidas, utilizando maquinaria avanzada para asegurar la calidad de su trabajo y la satisfacción de sus clientes.",
+            descripcion: "Italplumbitng es una empresa especializada en ofrecer servicios de plomería industrial, enfocados en resolver problemas complejos de filtraciones, detección de fugas, mantenimiento de ductos y sistemas de inspección en grandes instalaciones como centros comerciales, condominios y empresas de gran escala.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         }
     ];
