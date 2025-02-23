@@ -98,19 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/Y06.webp",
                 "images/proyectos/Y07.webp",
                 "images/proyectos/Y08.webp",
-                "images/proyectos/Y09.webp",
-                "images/proyectos/Y10.webp",
-                "images/proyectos/Y11.webp",
-                "images/proyectos/Y12.webp",
-                "images/proyectos/Y13.webp",
-                "images/proyectos/Y14.webp",
-                "images/proyectos/Y15.webp",
-                "images/proyectos/Y16.webp",
-                "images/proyectos/Y17.webp",
-                "images/proyectos/Y18.webp",
-                "images/proyectos/Y19.webp",
-        
-                
+                "images/proyectos/Y09.webp"       
             ],
             descripcion: "Yannilucio busca transmitir una imagen de vanguardia, calidad y dedicación al mundo del motorsport y simracing, atrayendo a entusiastas y profesionales apasionados por la velocidad y la competencia virtual.",
             tags: ["Photoshop", "ilustrator", "Branding"]
