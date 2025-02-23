@@ -102,6 +102,29 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             descripcion: "Yannilucio busca transmitir una imagen de vanguardia, calidad y dedicación al mundo del motorsport y simracing, atrayendo a entusiastas y profesionales apasionados por la velocidad y la competencia virtual.",
             tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "Italplumbing",
+            imagenes: [
+                "images/proyectos/IP1.webp",
+                "images/proyectos/IP2.webp",
+                "images/proyectos/IP3.webp",
+                "images/proyectos/IP4.webp",
+                "images/proyectos/IP5.webp",
+                "images/proyectos/IP6.webp",
+                "images/proyectos/IP7.webp",
+                "images/proyectos/IP8.webp",
+                "images/proyectos/IP9.webp",
+                "images/proyectos/IP10.webp",
+                "images/proyectos/IP11.webp",
+                "images/proyectos/IP12.webp",
+                "images/proyectos/IP13.webp",
+                "images/proyectos/IP14.webp",
+                "images/proyectos/IP15.webp",
+                "images/proyectos/IP16.webp"       
+            ],
+            descripcion: "Italplumbitng es una empresa especializada en ofrecer servicios de plomería industrial, enfocados en resolver problemas complejos de filtraciones, detección de fugas, mantenimiento de ductos y sistemas de inspección en grandes instalaciones como centros comerciales, condominios y empresas de gran escala. Su enfoque se centra en brindar soluciones eficaces y rápidas, utilizando maquinaria avanzada para asegurar la calidad de su trabajo y la satisfacción de sus clientes.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
         }
     ];
 
