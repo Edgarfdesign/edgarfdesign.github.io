@@ -86,6 +86,34 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             descripcion: "Calza Yoing es una marca de zapatos que se especializa en ofrecer calzado de alta calidad y diseño contemporáneo. Sus colecciones combinan comodidad y estilo, proporcionando opciones ideales para diversas ocasiones y estilos de vida.",
             tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "Yannilucio",
+            imagenes: [
+                "images/proyectos/Y01.webp",
+                "images/proyectos/Y02.webp",
+                "images/proyectos/Y03.webp",
+                "images/proyectos/Y04.webp",
+                "images/proyectos/Y05.webp",
+                "images/proyectos/Y06.webp",
+                "images/proyectos/Y07.webp",
+                "images/proyectos/Y08.webp",
+                "images/proyectos/Y09.webp",
+                "images/proyectos/Y10.webp",
+                "images/proyectos/Y11.webp",
+                "images/proyectos/Y12.webp",
+                "images/proyectos/Y13.webp",
+                "images/proyectos/Y14.webp",
+                "images/proyectos/Y15.webp",
+                "images/proyectos/Y16.webp",
+                "images/proyectos/Y17.webp",
+                "images/proyectos/Y18.webp",
+                "images/proyectos/Y19.webp",
+        
+                
+            ],
+            descripcion: "Yannilucio busca transmitir una imagen de vanguardia, calidad y dedicación al mundo del motorsport y simracing, atrayendo a entusiastas y profesionales apasionados por la velocidad y la competencia virtual.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
         }
     ];
 
