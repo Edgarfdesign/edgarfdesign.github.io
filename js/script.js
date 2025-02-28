@@ -145,8 +145,93 @@ document.addEventListener('DOMContentLoaded', () => {
             descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         },
+
+        
      
     ];
+
+    // Agregar después del array de proyectos
+const habilidades = {
+    software: [
+        { nombre: "Adobe Photoshop", nivel: 95, icono: "fa-solid fa-wand-magic-sparkles" },
+        { nombre: "Adobe Illustrator", nivel: 85, icono: "fa-solid fa-pen-ruler" },
+        { nombre: "Adobe After Effects", nivel: 60, icono: "fa-solid fa-film" }
+    ],
+    profesionales: [
+        "Branding Corporativo",
+        "Ilustración Digital",
+        "Diseño de Packaging",
+        "UI/UX Básico",
+        "Retoque Fotográfico",
+        "Animación 2D",
+        "Tipografía Creativa",
+        "Preparación para Impresión"
+    ]
+};
+
+// Generar habilidades (antes del lightbox logic)
+const gridHabilidades = document.querySelector('.habilidades-grid');
+
+// Software con barras de progreso
+const softwareSection = document.createElement('div');
+softwareSection.className = 'habilidad-categoria';
+softwareSection.innerHTML = '<h3>Software Especializado</h3>';
+const softwareList = document.createElement('div');
+softwareList.className = 'software-list';
+
+habilidades.software.forEach(habilidad => {
+    const skill = document.createElement('div');
+    skill.className = 'skill-item';
+    skill.innerHTML = `
+        <div class="skill-header">
+            <i class="${habilidad.icono}"></i>
+            <span>${habilidad.nombre}</span>
+            <span class="skill-percent">${habilidad.nivel}%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-progress" style="width: ${habilidad.nivel}%"></div>
+        </div>
+    `;
+    softwareList.appendChild(skill);
+});
+softwareSection.appendChild(softwareList);
+gridHabilidades.appendChild(softwareSection);
+
+// Habilidades profesionales con tags
+const profSection = document.createElement('div');
+profSection.className = 'habilidad-categoria';
+profSection.innerHTML = '<h3>Especialidades Creativas</h3><div class="skill-tags"></div>';
+
+habilidades.profesionales.forEach(habilidad => {
+    const tag = document.createElement('span');
+    tag.className = 'skill-tag';
+    tag.textContent = habilidad;
+    profSection.querySelector('.skill-tags').appendChild(tag);
+});
+
+
+// Animación de barras al hacer scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const progressBars = entry.target.querySelectorAll('.skill-progress');
+            progressBars.forEach(bar => {
+                const finalWidth = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = finalWidth;
+                }, 100);
+            });
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.habilidad-categoria').forEach(section => {
+    observer.observe(section);
+});
+
+
+gridHabilidades.appendChild(profSection);
 
     // Generar proyectos
     const gridProyectos = document.querySelector('.proyectos-grid');
@@ -166,6 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => openLightbox(index));
         gridProyectos.appendChild(card);
     });
+
 
     // Lightbox Logic
     const lightbox = document.getElementById('lightbox');

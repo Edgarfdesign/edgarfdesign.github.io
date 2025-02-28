@@ -204,6 +204,110 @@ body {
     font-size: 0.75rem;
 }
 
+/* ===== Habilidades ===== */
+.habilidades {
+    padding: 4rem 2rem;
+    background: rgb(245, 245, 245);
+}
+
+.habilidad-categoria {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.habilidad-categoria h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primario);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Barras de Progreso */
+.software-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primario);
+}
+
+.skill-header i {
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+    width: 30px;
+}
+
+.skill-bar {
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--color-secundario);
+    border-radius: 4px;
+    transition: width 1s ease;
+    position: relative;
+}
+
+.skill-progress::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: rgba(255,255,255,0.3);
+}
+
+.skill-percent {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--color-secundario);
+}
+
+/* Tags de Habilidades */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    background: var(--color-secundario);
+    color: rgba(255, 255, 255, 0.893);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.skill-tag:hover {
+    background: transparent;
+    color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    transform: translateY(-2px);
+}
+
+/* Animación al aparecer */
+@keyframes progressAnimation {
+    from { width: 0; }
+    to { width: var(--target-width); }
+}
+
 /* ===== Lightbox ===== */
 .lightbox {
     position: fixed;
