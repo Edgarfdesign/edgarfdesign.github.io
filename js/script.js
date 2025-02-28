@@ -128,6 +128,15 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["Photoshop", "ilustrator", "Branding"]
         },
         {
+            titulo: "Miniabasto Liz",
+            imagenes: [
+                "images/proyectos/MAL1.webp",
+                "images/proyectos/MAL2.webp"  
+            ],
+            descripcion: "Liz es un miniabasto que combina practicidad y calidez, ofreciendo productos esenciales en un espacio pequeño pero completo, ideal para compras rápidas y cercanas.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
             titulo: "Asuntos Legales",
             imagenes: [
                 "images/proyectos/AL1.webp",
@@ -136,15 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         },
-        {
-            titulo: "Miniabasto Liz",
-            imagenes: [
-                "images/proyectos/MAL1.webp",
-                "images/proyectos/MAL2.webp"  
-            ],
-            descripcion: "Liz es un miniabasto que combina practicidad y calidez, ofreciendo productos esenciales en un espacio pequeño pero completo, ideal para compras rápidas y cercanas.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
-        }
+     
     ];
 
     // Generar proyectos
