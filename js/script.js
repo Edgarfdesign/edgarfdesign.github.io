@@ -126,6 +126,24 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             descripcion: "Italplumbitng es una empresa especializada en ofrecer servicios de plomería industrial, enfocados en resolver problemas complejos de filtraciones, detección de fugas, mantenimiento de ductos y sistemas de inspección en grandes instalaciones como centros comerciales, condominios y empresas de gran escala.",
             tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "Asuntos Legales",
+            imagenes: [
+                "images/proyectos/AL1.webp",
+                "images/proyectos/AL2.webp"  
+            ],
+            descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "Miniabasto Liz",
+            imagenes: [
+                "images/proyectos/MAL1.webp",
+                "images/proyectos/MAL2.webp"  
+            ],
+            descripcion: "Liz es un miniabasto que combina practicidad y calidez, ofreciendo productos esenciales en un espacio pequeño pero completo, ideal para compras rápidas y cercanas.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
         }
     ];
 
