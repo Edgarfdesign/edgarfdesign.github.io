@@ -240,11 +240,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* 1. Eliminar líneas azules no deseadas */
-.hero *::before,
-.hero *::after {
-    content: none !important; /* Elimina todos los pseudoelementos en el hero */
-}
+
 
 .social-links {
     position: absolute;
