@@ -240,6 +240,14 @@ body {
     transform: translateY(-3px);
 }
 
+/* === Corrección definitiva === */
+
+/* 1. Eliminar SOLO las líneas específicas (no todos los pseudoelementos) */
+.hero-title::after,
+.hero-subtitle::before {
+    display: none; /* Solo elimina estos elementos específicos */
+}
+
 
 
 .social-links {
@@ -705,8 +713,14 @@ body {
     }
     
     .social-links {
-        left: -60px;
+        left: 1.5rem; /* Acercar ligeramente al contenido */
+        gap: 2rem; /* Espacio vertical entre iconos */
         animation: social-entrance 0.8s ease-out forwards;
+    }
+
+    .social-link {
+        margin: 10px 0; /* Margen interno superior/inferior */
+        padding: 12px; /* Espacio interno alrededor del icono */
     }
     
     @keyframes social-entrance {
@@ -756,21 +770,25 @@ body {
         flex-direction: row;
         justify-content: center;
         margin-top: 3rem;
+        gap: 1.5rem; /* Espacio horizontal entre iconos */
+        margin: 2rem 0; /* Margen superior/inferior */
+        padding: 0 15px; /* Padding lateral para no pegarse a bordes */
     }
 }
-
-/* 4. Ajustes para móvil */
-@media (max-width: 1024px) {
-    .social-links {
-        position: static;
-        flex-direction: row;
-        justify-content: center;
-        transform: none !important;
-        margin-top: 2rem;
+    .social-link i {
+        color: white !important; /* Forzar color blanco */
+        font-size: 1.2rem; /* Tamaño óptimo para móvil */
     }
-}
+    
+    .social-link {
+        background: var(--color-secundario) !important;
+        box-shadow: 0 4px 12px rgba(84,89,240,0.3); /* Mejor contraste */
+        margin: 0 5px; /* Pequeño margen entre iconos */
+        padding: 10px; /* Espacio interno consistente */
+    }
 
-/* 5. Estilo mejorado de iconos */
+
+    /* 5. Estilo mejorado de iconos */
 .social-link {
     width: 45px;
     height: 45px;
@@ -778,10 +796,21 @@ body {
     backdrop-filter: blur(4px);
     border: 1px solid rgba(84,89,240,0.1);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-link:hover {
     transform: scale(1.15) translateX(10px);
     background: var(--color-secundario);
     box-shadow: 0 8px 20px rgba(84,89,240,0.3);
+}
+
+/* Versión escritorio */
+@media (min-width: 1025px) {
+    .social-link i {
+        color: var(--color-primario); /* Color oscuro para contraste */
+    }
 }
