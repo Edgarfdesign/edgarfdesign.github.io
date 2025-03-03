@@ -151,91 +151,88 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // Agregar después del array de proyectos
-const habilidades = {
-    software: [
-        { nombre: "Adobe Photoshop", nivel: 95, icono: "fa-solid fa-wand-magic-sparkles" },
-        { nombre: "Adobe Illustrator", nivel: 85, icono: "fa-solid fa-pen-ruler" },
-        { nombre: "Adobe After Effects", nivel: 60, icono: "fa-solid fa-film" }
-    ],
-    profesionales: [
-        "Branding Corporativo",
-        "Ilustración Digital",
-        "Diseño de Packaging",
-        "UI/UX Básico",
-        "Retoque Fotográfico",
-        "Animación 2D",
-        "Tipografía Creativa",
-        "Preparación para Impresión"
-    ]
-};
+    const habilidades = {
+        software: [
+            { nombre: "Adobe Photoshop", nivel: 95, icono: "images/icons/photoshop.svg" },
+            { nombre: "Adobe Illustrator", nivel: 85, icono: "images/icons/illustrator.svg" },
+            { nombre: "Adobe After Effects", nivel: 60, icono: "images/icons/after-effects.svg" }
+        ],
+        profesionales: [
+            "Branding Corporativo",
+            "Ilustración Digital",
+            "Diseño de Packaging",
+            "UI/UX Básico",
+            "Retoque Fotográfico",
+            "Animación 2D",
+            "Tipografía Creativa",
+            "Preparación para Impresión"
+        ]
+    };
 
-// Generar habilidades (antes del lightbox logic)
-const gridHabilidades = document.querySelector('.habilidades-grid');
+    // Generar habilidades (antes del lightbox logic)
+    const gridHabilidades = document.querySelector('.habilidades-grid');
 
-// Software con barras de progreso
-const softwareSection = document.createElement('div');
-softwareSection.className = 'habilidad-categoria';
-softwareSection.innerHTML = '<h3>Software Especializado</h3>';
-const softwareList = document.createElement('div');
-softwareList.className = 'software-list';
+    // Software con barras de progreso
+    const softwareSection = document.createElement('div');
+    softwareSection.className = 'habilidad-categoria';
+    softwareSection.innerHTML = '<h3>Software Especializado</h3>';
+    const softwareList = document.createElement('div');
+    softwareList.className = 'software-list';
 
-habilidades.software.forEach(habilidad => {
-    const skill = document.createElement('div');
-    skill.className = 'skill-item';
-    skill.innerHTML = `
+    habilidades.software.forEach(habilidad => {
+        const skill = document.createElement('div');
+        skill.className = 'skill-item';
+        skill.innerHTML = `
         <div class="skill-header">
-            <i class="${habilidad.icono}"></i>
+            <img src="${habilidad.icono}" alt="${habilidad.nombre}" class="skill-icon">
             <span>${habilidad.nombre}</span>
             <span class="skill-percent">${habilidad.nivel}%</span>
         </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: ${habilidad.nivel}%"></div>
+        <div class="skill-bar" data-percent="${habilidad.nivel}%">
+            <div class="skill-progress"></div>
         </div>
     `;
     softwareList.appendChild(skill);
 });
-softwareSection.appendChild(softwareList);
-gridHabilidades.appendChild(softwareSection);
+    softwareSection.appendChild(softwareList);
+    gridHabilidades.appendChild(softwareSection);
 
-// Habilidades profesionales con tags
-const profSection = document.createElement('div');
-profSection.className = 'habilidad-categoria';
-profSection.innerHTML = '<h3>Especialidades Creativas</h3><div class="skill-tags"></div>';
+    // Habilidades profesionales con tags
+    const profSection = document.createElement('div');
+    profSection.className = 'habilidad-categoria';
+    profSection.innerHTML = '<h3>Especialidades Creativas</h3><div class="skill-tags"></div>';
 
-habilidades.profesionales.forEach(habilidad => {
-    const tag = document.createElement('span');
-    tag.className = 'skill-tag';
-    tag.textContent = habilidad;
-    profSection.querySelector('.skill-tags').appendChild(tag);
-});
+    habilidades.profesionales.forEach(habilidad => {
+        const tag = document.createElement('span');
+        tag.className = 'skill-tag';
+        tag.textContent = habilidad;
+        profSection.querySelector('.skill-tags').appendChild(tag);
+    });
+    gridHabilidades.appendChild(profSection);
 
-
-// Animación de barras al hacer scroll
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const progressBars = entry.target.querySelectorAll('.skill-progress');
-            progressBars.forEach(bar => {
-                const finalWidth = bar.style.width;
-                bar.style.width = '0';
-                setTimeout(() => {
-                    bar.style.width = finalWidth;
-                }, 100);
+    // Animación de barras al hacer scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressBars = entry.target.querySelectorAll('.skill-progress');
+                progressBars.forEach(bar => {
+                    const finalWidth = bar.parentElement.getAttribute('data-percent'); // Nuevo atributo
+                bar.style.width = finalWidth;
             });
         }
     });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.habilidad-categoria').forEach(section => {
-    observer.observe(section);
+}, { 
+    threshold: 0.5,
+    rootMargin: '0px 0px -100px 0px'
 });
 
-
-gridHabilidades.appendChild(profSection);
+    document.querySelectorAll('.habilidad-categoria').forEach(section => {
+        observer.observe(section);
+    });
 
     // Generar proyectos
     const gridProyectos = document.querySelector('.proyectos-grid');
-    
+
     proyectos.forEach((proyecto, index) => {
         const card = document.createElement('div');
         card.className = 'proyecto-card';
@@ -247,11 +244,10 @@ gridHabilidades.appendChild(profSection);
                 <div class="tags">${proyecto.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
             </div>
         `;
-        
+
         card.addEventListener('click', () => openLightbox(index));
         gridProyectos.appendChild(card);
     });
-
 
     // Lightbox Logic
     const lightbox = document.getElementById('lightbox');
@@ -327,10 +323,10 @@ gridHabilidades.appendChild(profSection);
     function dragEnd(e) {
         if (!isDragging) return;
         isDragging = false;
-        
+
         const deltaX = (e.clientX || e.changedTouches[0].clientX) - startPosX;
         const threshold = slider.offsetWidth * 0.1;
-        
+
         if (Math.abs(deltaX) > threshold) {
             navigate(deltaX > 0 ? -1 : 1);
         } else {
@@ -346,7 +342,5 @@ gridHabilidades.appendChild(profSection);
             if (e.key === 'ArrowRight') navigate(1);
             if (e.key === 'Escape') lightbox.classList.remove('active');
         }
-    });    
-
-    
+    });
 });

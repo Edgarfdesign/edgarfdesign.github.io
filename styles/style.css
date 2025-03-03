@@ -239,12 +239,26 @@ body {
     gap: 1rem;
     margin-bottom: 0.5rem;
     color: var(--color-primario);
+    align-items: center;
+    padding: 0.5rem 0;
 }
 
-.skill-header i {
-    font-size: 1.2rem;
-    color: var(--color-secundario);
-    width: 30px;
+/* Añade esto en la sección de Habilidades */
+.skill-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin-right: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Por esto: */
+.skill-header .skill-icon {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .skill-bar {
@@ -252,14 +266,18 @@ body {
     background: #f0f0f0;
     border-radius: 4px;
     overflow: hidden;
+    position: relative; /* Añade esto */
 }
 
 .skill-progress {
     height: 100%;
     background: var(--color-secundario);
     border-radius: 4px;
-    transition: width 1s ease;
-    position: relative;
+    position: absolute; /* Cambia de relative a absolute */
+    left: 0;
+    top: 0;
+    width: 0; /* Establece inicialmente en 0 */
+    transition: width 1.5s cubic-bezier(0.34, -0.55, 0.27, 1.20) 0.1s; /* Animación más dramática */
 }
 
 .skill-progress::after {
