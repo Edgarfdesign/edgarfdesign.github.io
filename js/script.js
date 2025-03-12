@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
         preloader.addEventListener('transitionend', () => {
             preloader.remove();
         });
-    }, 1000);
+    }, 4000);
 });
 
 document.addEventListener('DOMContentLoaded', () => {

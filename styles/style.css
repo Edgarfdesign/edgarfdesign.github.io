@@ -873,13 +873,13 @@ body {
 /* Añade estos media queries */
 @media (max-width: 768px) {
     .preloader-spinner {
-        width: 80px;
-        height: 80px;
+        width: 160px;
+        height: 160px;
     }
     
     .preloader-logo {
-        width: 40px;
-        height: 40px;
+        width: 90px;
+        height: 90px;
     }
     
     .spinner {
