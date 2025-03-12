@@ -832,14 +832,14 @@ body {
 
 .preloader-spinner {
     position: relative;
-    width: 550px;
-    height: 550px;
+    width: 300px;
+    height: 300px;
 }
 
 .preloader-logo {
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 90px;
+    height: 90px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
