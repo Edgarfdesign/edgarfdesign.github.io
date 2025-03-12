@@ -870,3 +870,25 @@ body {
     pointer-events: none;
 }
 
+/* Añade estos media queries */
+@media (max-width: 768px) {
+    .preloader-spinner {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .preloader-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .spinner {
+        border-width: 3px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .preloader-spinner {
+        transform: scale(0.7);
+    }
+}
