@@ -1,3 +1,19 @@
+// Preloader
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+    const preloader = document.querySelector('.preloader');
+    
+    // Agrega la clase hidden después de 1 segundo
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+        
+        // Elimina el preloader del DOM después de la animación
+        preloader.addEventListener('transitionend', () => {
+            preloader.remove();
+        });
+    }, 1000);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Datos de proyectos
     const proyectos = [
