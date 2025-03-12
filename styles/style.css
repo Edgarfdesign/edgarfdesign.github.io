@@ -313,16 +313,34 @@ body {
 }
 
 .proyecto-card {
-    background: white;
-    border-radius: var(--radius);
+    position: relative;
     overflow: hidden;
-    box-shadow: var(--sombra);
-    transition: transform 0.3s ease;
-    cursor: pointer;
 }
 
-.proyecto-card:hover {
-    transform: translateY(-5px);
+.proyecto-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, 
+        transparent,
+        rgba(84,89,240,0.1),
+        transparent);
+    transition: 0.6s;
+}
+
+.proyecto-card:hover::before {
+    left: 100%;
+}
+
+.proyecto-card .card-content {
+    transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover .card-content {
+    transform: translateY(-10px);
 }
 
 .proyecto-card img {
