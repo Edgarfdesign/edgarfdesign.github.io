@@ -11,7 +11,41 @@ window.addEventListener('load', () => {
         preloader.addEventListener('transitionend', () => {
             preloader.remove();
         });
-    }, 3000);
+    }, 1500);
+});
+
+// JavaScript para clonar automáticamente
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.slider-track');
+    const logos = document.querySelectorAll('.logo-item');
+    
+    // Clonar logos
+    logos.forEach(logo => {
+        const clone = logo.cloneNode(true);
+        track.appendChild(clone);
+    });
+    
+    // Reiniciar animación al finalizar
+    track.addEventListener('animationiteration', () => {
+        track.style.animation = 'none';
+        void track.offsetWidth;
+        track.style.animation = 'slide 20s linear infinite';
+    });
+});
+
+// Añade este JS para manejar toques precisos
+document.querySelectorAll('.logo-item').forEach(logo => {
+    let isTouching = false;
+    
+    logo.addEventListener('touchstart', () => {
+        isTouching = true;
+        logo.classList.add('active');
+    });
+    
+    logo.addEventListener('touchend', () => {
+        isTouching = false;
+        setTimeout(() => logo.classList.remove('active'), 200);
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
