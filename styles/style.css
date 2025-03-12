@@ -988,7 +988,7 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    height: 50%;
+    height: 100%;
     width: 100px;
     z-index: 2;
     pointer-events: none;
