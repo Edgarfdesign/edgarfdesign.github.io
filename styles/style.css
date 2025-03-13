@@ -945,7 +945,7 @@ body {
 
 .slider-track {
     display: flex;
-    animation: slide 50s linear infinite;
+    animation: slide 100s linear infinite;
     width: max-content;
     will-change: transform;
 }
