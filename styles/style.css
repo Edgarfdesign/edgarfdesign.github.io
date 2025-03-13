@@ -979,7 +979,7 @@ body {
 }
 @keyframes slide {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-500%); }
+    100% { transform: translateX(-20%); }
 }
 
 /* Efecto de borde difuminado */
