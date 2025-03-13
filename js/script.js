@@ -358,102 +358,102 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Enamorarse te lleva a otro mundo",
             imagenes: [
                 "images/proyectos/collage13.webp",
                 "images/proyectos/image13.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-falling-in-love-takes-you-to-another-world",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "La chica de los planetas dueña de las aves",
             imagenes: [
                 "images/proyectos/collage14.webp",
                 "images/proyectos/image14.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-the-girl-of-the-planets-owner-of-the-birds",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Una noche con dragones",
             imagenes: [
                 "images/proyectos/collage15.webp",
                 "images/proyectos/image15.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-122-a-night-with-dragons",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "La reina de la primavera",
             imagenes: [
                 "images/proyectos/collage16.webp",
                 "images/proyectos/image16.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-124-the-queen-of-spring",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "La caída de Terra Luna",
             imagenes: [
                 "images/proyectos/collage17.webp",
                 "images/proyectos/image17.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-125-the-fall-of-terra-luna",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Express colorido",
             imagenes: [
                 "images/proyectos/collage18.webp",
                 "images/proyectos/image18.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Viajar en moto con un amigo",
             imagenes: [
                 "images/proyectos/collage19.webp",
                 "images/proyectos/image19.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-129-traveling-by-motorcycle-with-a-friend",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Aventura mágica con la tortuga",
             imagenes: [
                 "images/proyectos/collage20.webp",
                 "images/proyectos/image20.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-130-magic-adventure-with-the-turtle",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Un Hobbit en vamos a hacer un Collage",
             imagenes: [
                 "images/proyectos/collage21.webp",
                 "images/proyectos/image21.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-132-a-hobbit-in-let-s-make-a-collage",
             tags: ["collage", "hive", "LMAC"]
         },
         {
