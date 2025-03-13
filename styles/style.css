@@ -945,7 +945,7 @@ body {
 
 .slider-track {
     display: flex;
-    animation: slide 100s linear infinite;
+    animation: slide 1000s linear infinite;
     width: max-content;
     will-change: transform;
 }
@@ -962,7 +962,7 @@ body {
 .logo-item img {
     height: 100px;
     width: auto;
-    transition: all 0.40s ease;
+    transition: all 0.20s ease;
     filter: 
         grayscale(2) 
         sepia(1) 
