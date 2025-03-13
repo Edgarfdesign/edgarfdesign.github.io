@@ -701,7 +701,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             titulo: "",
             imagenes: [
-                "images/proyectos/collag44.webp",
+                "images/proyectos/collage44.webp",
                 "images/proyectos/image44.webp"
                 
                   
