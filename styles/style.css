@@ -945,7 +945,7 @@ body {
 
 .slider-track {
     display: flex;
-    animation: slide 160s linear infinite;
+    animation: slide 150s linear infinite;
     width: max-content;
     will-change: transform;
 }
@@ -978,8 +978,8 @@ body {
     filter: none; /* Quita todos los filtros */
 }
 @keyframes slide {
-    0% { transform: translateX(10); }
-    100% { transform: translateX(-30%); }
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-30%); }
 }
 
 /* Efecto de borde difuminado */
