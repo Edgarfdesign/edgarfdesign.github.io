@@ -580,17 +580,6 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             titulo: "",
             imagenes: [
-                "images/proyectos/collage1.webp",
-                "images/proyectos/image1.webp"
-                
-                  
-            ],
-            descripcion: "",
-            tags: ["collage", "hive", "LMAC"]
-        },
-        {
-            titulo: "",
-            imagenes: [
                 "images/proyectos/collage33.webp",
                 "images/proyectos/image33.webp"
                 
