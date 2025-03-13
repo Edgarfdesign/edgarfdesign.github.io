@@ -207,12 +207,14 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["Photoshop", "ilustrator", "Branding", "Marca Ficticia"]
         },
         {
-            titulo: "Asuntos Legales",
+            titulo: "Albert Super Hamburguesas",
             imagenes: [
-                "images/proyectos/AL1.webp",
-                "images/proyectos/AL2.webp"  
+                "images/proyectos/ASH2.webp",
+                "images/proyectos/ASH3.webp",
+                "images/proyectos/ASH1.webp",
+                "images/proyectos/ASH4.webp",  
             ],
-            descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
+            descripcion: "Donde la ciencia culinaria se fusiona con el arte de la hamburguesa. Nuestras creaciones, inspiradas en el genio innovador de Albert, mezclan cortes premium, ingredientes inesperados y panes artesanales horneados al instante. Cada bocado es una explosión de sabores audaces y texturas perfectas, diseñadas para despertar curiosidad y satisfacción. ¿Hamburguesas? No. Experimentos deliciosos.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         }
 
