@@ -721,10 +721,21 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "Pasaje a la Cuarta dimención",
+            titulo: "Regiones del mundo Pokémon",
             imagenes: [
                 "images/proyectos/collage46.webp",
                 "images/proyectos/image46.webp"
+                
+                  
+            ],
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-7b1b9958289ba",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "Pasaje a la Cuarta dimención",
+            imagenes: [
+                "images/proyectos/collage47.webp",
+                "images/proyectos/image47.webp"
                 
                   
             ],
@@ -732,47 +743,36 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
-            imagenes: [
-                "images/proyectos/collage47.webp",
-                "images/proyectos/image47.webp"
-                
-                  
-            ],
-            descripcion: "",
-            tags: ["collage", "hive", "LMAC"]
-        },
-        {
-            titulo: "",
+            titulo: "¡Cuidado con el gato, guacamayo!",
             imagenes: [
                 "images/proyectos/collage48.webp",
                 "images/proyectos/image48.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-164-watch",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Expecto Patronum",
             imagenes: [
                 "images/proyectos/collage49.webp",
                 "images/proyectos/image49.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-174-expecto",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Duck Gansters",
             imagenes: [
                 "images/proyectos/collage50.webp",
                 "images/proyectos/image50.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/round-178-duck-gansters",
             tags: ["collage", "hive", "LMAC"]
         }
         
