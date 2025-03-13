@@ -195,6 +195,26 @@ document.addEventListener('DOMContentLoaded', () => {
             descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         },
+        {
+            titulo: "E-cat Technology",
+            imagenes: [
+                "images/proyectos/EC1.webp",
+                "images/proyectos/EC2.webp",
+                "images/proyectos/EC2.webp",
+                "images/proyectos/EC2.webp"  
+            ],
+            descripcion: "Programación con instinto felino: herramientas intuitivas, soluciones ágiles y algoritmos que aprenden en la sombra. Para mentes curiosas que buscan código elegante y sistemas que resuelvan con la precisión de una garra. Innovación que acecha en silencio",
+            tags: ["Photoshop", "ilustrator", "Branding", "Marca Ficticia"]
+        },
+        {
+            titulo: "Asuntos Legales",
+            imagenes: [
+                "images/proyectos/AL1.webp",
+                "images/proyectos/AL2.webp"  
+            ],
+            descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
+        }
 
         
      
