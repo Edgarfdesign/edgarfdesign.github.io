@@ -962,7 +962,7 @@ body {
 .logo-item img {
     height: 90px;
     width: auto;
-    transition: all 0.6s ease;
+    transition: all 0.20s ease;
     filter: 
         grayscale(2) 
         sepia(1) 
