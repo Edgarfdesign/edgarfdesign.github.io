@@ -225,8 +225,567 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             descripcion: "Tu taller mecánico de confianza, donde la tecnología y la precisión se alían para dar vida a tu vehículo. Diagnóstico avanzado, mantenimiento experto y reparaciones complejas con atención personalizada y soluciones rápidas.",
             tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage1.webp",
+                "images/proyectos/image1.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage2.webp",
+                "images/proyectos/image2.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage3.webp",
+                "images/proyectos/image3.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage4.webp",
+                "images/proyectos/image4.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage5.webp",
+                "images/proyectos/image5.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage6.webp",
+                "images/proyectos/image6.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage7.webp",
+                "images/proyectos/image7.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage8.webp",
+                "images/proyectos/image8.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage9.webp",
+                "images/proyectos/image9.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage10.webp",
+                "images/proyectos/image10.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage11.webp",
+                "images/proyectos/image11.webp"
+                
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage12.webp",
+                "images/proyectos/image12.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage13.webp",
+                "images/proyectos/image13.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage14.webp",
+                "images/proyectos/image14.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage15.webp",
+                "images/proyectos/image15.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage16.webp",
+                "images/proyectos/image16.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage17.webp",
+                "images/proyectos/image17.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage18.webp",
+                "images/proyectos/image18.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage19.webp",
+                "images/proyectos/image19.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage20.webp",
+                "images/proyectos/image20.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage21.webp",
+                "images/proyectos/image21.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage22.webp",
+                "images/proyectos/image22.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage23.webp",
+                "images/proyectos/image23.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage24.webp",
+                "images/proyectos/image24.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage25.webp",
+                "images/proyectos/image25.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage26.webp",
+                "images/proyectos/image26.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage27.webp",
+                "images/proyectos/image27.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage28.webp",
+                "images/proyectos/image28.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage29.webp",
+                "images/proyectos/image29.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage30.webp",
+                "images/proyectos/image30.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage31.webp",
+                "images/proyectos/image31.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage32.webp",
+                "images/proyectos/image32.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage1.webp",
+                "images/proyectos/image1.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage33.webp",
+                "images/proyectos/image33.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage34.webp",
+                "images/proyectos/image34.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage35.webp",
+                "images/proyectos/image35.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage36.webp",
+                "images/proyectos/image36.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage37.webp",
+                "images/proyectos/image37.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage38.webp",
+                "images/proyectos/image38.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage39.webp",
+                "images/proyectos/image39.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage40.webp",
+                "images/proyectos/image40.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage41.webp",
+                "images/proyectos/image41.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage42.webp",
+                "images/proyectos/image42.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage43.webp",
+                "images/proyectos/image43.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collag44.webp",
+                "images/proyectos/image44.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage45.webp",
+                "images/proyectos/image45.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage46.webp",
+                "images/proyectos/image46.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage47.webp",
+                "images/proyectos/image47.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage48.webp",
+                "images/proyectos/image48.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage49.webp",
+                "images/proyectos/image49.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
+        },
+        {
+            titulo: "",
+            imagenes: [
+                "images/proyectos/collage50.webp",
+                "images/proyectos/image50.webp"
+                
+                  
+            ],
+            descripcion: "",
+            tags: ["collage", "hive", "LMAC"]
         }
-
         
      
     ];
