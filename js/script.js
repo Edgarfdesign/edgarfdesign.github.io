@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/ASH1.webp",
                 "images/proyectos/ASH4.webp",  
             ],
-            descripcion: "Donde la ciencia culinaria se fusiona con el arte de la hamburguesa. Nuestras creaciones, inspiradas en el genio innovador de Albert, mezclan cortes premium, ingredientes inesperados y panes artesanales horneados al instante. Cada bocado es una explosión de sabores audaces y texturas perfectas, diseñadas para despertar curiosidad y satisfacción. ¿Hamburguesas? No. Experimentos deliciosos.",
+            descripcion: "Donde la ciencia culinaria se fusiona con el arte de la hamburguesa. Nuestras creaciones, inspiradas en el genio innovador de Albert, mezclan cortes premium, ingredientes inesperados y panes artesanales horneados al instante. Cada bocado es una explosión de sabores audaces y texturas perfectas.",
             tags: ["Photoshop", "ilustrator", "Branding"]
         }
 
