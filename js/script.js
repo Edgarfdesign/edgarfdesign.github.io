@@ -457,135 +457,135 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Fuerzas del mundo Natural",
             imagenes: [
                 "images/proyectos/collage22.webp",
                 "images/proyectos/image22.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-133-forces-of-the-natural-world",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Metamorfosis de una Leona",
             imagenes: [
                 "images/proyectos/collage23.webp",
                 "images/proyectos/image23.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-135-metamorphosis-of-a-lioness",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Los Campos Elíseos",
             imagenes: [
                 "images/proyectos/collage24.webp",
                 "images/proyectos/image24.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-136-the-elysian-fields",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "La Fuente de la Juventud",
             imagenes: [
                 "images/proyectos/collage25.webp",
                 "images/proyectos/image25.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-139-the-fountain-of-youth",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "El Cóndor pasa!",
             imagenes: [
                 "images/proyectos/collage26.webp",
                 "images/proyectos/image26.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/free-collage-the-condor-passes",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Campamento bajo las Estrellas",
             imagenes: [
                 "images/proyectos/collage27.webp",
                 "images/proyectos/image27.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fe4963802cdd2",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Nacimiento de una estrella",
             imagenes: [
                 "images/proyectos/collage28.webp",
                 "images/proyectos/image28.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fdc153b6c2b82",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Inspiración de Dios de la guerra ragnarok",
             imagenes: [
                 "images/proyectos/collage29.webp",
                 "images/proyectos/image29.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-011f55baff6f8",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Viajando en un Zapato",
             imagenes: [
                 "images/proyectos/collage30.webp",
                 "images/proyectos/image30.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-free-collage-traveling-in",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Cráneos del más allá",
             imagenes: [
                 "images/proyectos/collage31.webp",
                 "images/proyectos/image31.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-472cef9fe8369",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Cuando el viento te Sopla",
             imagenes: [
                 "images/proyectos/collage32.webp",
                 "images/proyectos/image32.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-ed4fe90f1f0f3",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "¡Colmena a la Luna!",
             imagenes: [
                 "images/proyectos/collage33.webp",
                 "images/proyectos/image33.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-hive-to-the",
             tags: ["collage", "hive", "LMAC"]
         },
         {
