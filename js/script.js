@@ -216,6 +216,15 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             descripcion: "Donde la ciencia culinaria se fusiona con el arte de la hamburguesa. Nuestras creaciones, inspiradas en el genio innovador de Albert, mezclan cortes premium, ingredientes inesperados y panes artesanales horneados al instante. Cada bocado es una explosión de sabores audaces y texturas perfectas.",
             tags: ["Photoshop", "ilustrator", "Branding"]
+        },
+        {
+            titulo: "Auto Servicio Zamper",
+            imagenes: [
+                "images/proyectos/ASZ1.webp",
+                  
+            ],
+            descripcion: "Tu taller mecánico de confianza, donde la tecnología y la precisión se alían para dar vida a tu vehículo. Diagnóstico avanzado, mantenimiento experto y reparaciones complejas con atención personalizada y soluciones rápidas.",
+            tags: ["Photoshop", "ilustrator", "Branding"]
         }
 
         
