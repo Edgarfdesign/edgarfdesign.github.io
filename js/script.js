@@ -227,36 +227,36 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["Photoshop", "ilustrator", "Branding"]
         },
         {
-            titulo: "",
+            titulo: "Conejo entre los Arboles",
             imagenes: [
                 "images/proyectos/collage1.webp",
                 "images/proyectos/image1.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lets-make-a-collage-a-contest-for-all-creatives-on-hive-round-103-space-travel-rabbit-among-the-trees",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Patina sobre Hielo",
             imagenes: [
                 "images/proyectos/collage2.webp",
                 "images/proyectos/image2.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/tztfoxyw",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "La Puerta al Cielo",
             imagenes: [
                 "images/proyectos/collage3.webp",
                 "images/proyectos/image3.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/zbdtpuru",
             tags: ["collage", "hive", "LMAC"]
         },
         {
