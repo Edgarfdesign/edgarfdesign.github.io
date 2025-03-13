@@ -200,8 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
             imagenes: [
                 "images/proyectos/EC1.webp",
                 "images/proyectos/EC2.webp",
-                "images/proyectos/EC2.webp",
-                "images/proyectos/EC2.webp"  
+                "images/proyectos/EC3.webp",
+                "images/proyectos/EC4.webp"  
             ],
             descripcion: "Programación con instinto felino: herramientas intuitivas, soluciones ágiles y algoritmos que aprenden en la sombra. Para mentes curiosas que buscan código elegante y sistemas que resuelvan con la precisión de una garra. Innovación que acecha en silencio",
             tags: ["Photoshop", "ilustrator", "Branding", "Marca Ficticia"]
