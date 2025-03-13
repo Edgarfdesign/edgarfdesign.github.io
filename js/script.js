@@ -589,146 +589,146 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Protegiendo el tesoro",
             imagenes: [
                 "images/proyectos/collage34.webp",
                 "images/proyectos/image34.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-2573ce14b556a",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Siempre hay algo que nos Cuida",
             imagenes: [
                 "images/proyectos/collage35.webp",
                 "images/proyectos/image35.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-95de4cd70cb1a",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Mi primer año en LMAC",
             imagenes: [
                 "images/proyectos/collage36.webp",
                 "images/proyectos/image36.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-55ca0644a2c4c",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Aquí viene el sol",
             imagenes: [
                 "images/proyectos/collage37.webp",
                 "images/proyectos/image37.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-154-here",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Pez extraterrestre devora gatos",
             imagenes: [
                 "images/proyectos/collage38.webp",
                 "images/proyectos/image38.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-c7baab553cb77",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Ciudadela de los Dragones",
             imagenes: [
                 "images/proyectos/collage39.webp",
                 "images/proyectos/image39.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-157-citadel",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Pueblo Encantado",
             imagenes: [
                 "images/proyectos/collage40.webp",
                 "images/proyectos/image40.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-a2f2e3ddd6181",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Matrimonio entre las nubes",
             imagenes: [
                 "images/proyectos/collage41.webp",
                 "images/proyectos/image41.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-d1a357024ab8a",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "El Ciervo y el Gato",
             imagenes: [
                 "images/proyectos/collage42.webp",
                 "images/proyectos/image42.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-1401782308f09",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Supernova",
             imagenes: [
                 "images/proyectos/collage43.webp",
                 "images/proyectos/image43.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-2e97131f422b1",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Portal para ir a otro Mundo",
             imagenes: [
                 "images/proyectos/collage44.webp",
                 "images/proyectos/image44.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-a0e6785e5d8ac",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Garzas Mágicas",
             imagenes: [
                 "images/proyectos/collage45.webp",
                 "images/proyectos/image45.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-161-magic",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Pasaje a la Cuarta dimención",
             imagenes: [
                 "images/proyectos/collage46.webp",
                 "images/proyectos/image46.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-017f5f8714159",
             tags: ["collage", "hive", "LMAC"]
         },
         {
