@@ -260,101 +260,101 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Templo de Buda moderno",
             imagenes: [
                 "images/proyectos/collage4.webp",
                 "images/proyectos/image4.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-108-modern-buddha-temple",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Llegando por la noche",
             imagenes: [
                 "images/proyectos/collage5.webp",
                 "images/proyectos/image5.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-110-arriving-at-night",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Materia oscura",
             imagenes: [
                 "images/proyectos/collage6.webp",
                 "images/proyectos/image6.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/hzdrzkqr",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Hermosa Primavera",
             imagenes: [
                 "images/proyectos/collage7.webp",
                 "images/proyectos/image7.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-113-beautiful-spring",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "El amanecer de la paz",
             imagenes: [
                 "images/proyectos/collage8.webp",
                 "images/proyectos/image8.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-115-the-dawn-of-peace",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Oso en busca de madriguera",
             imagenes: [
                 "images/proyectos/collage9.webp",
                 "images/proyectos/image9.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-116-bear-looking-for-burrow",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Leopard Volkswagen",
             imagenes: [
                 "images/proyectos/collage10.webp",
                 "images/proyectos/image10.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/round-117-leopard-volkswagen-late-but-sure",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Búho de ojos de trueno",
             imagenes: [
                 "images/proyectos/collage11.webp",
                 "images/proyectos/image11.webp"
                 
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-118-thunder-eyed-owl",
             tags: ["collage", "hive", "LMAC"]
         },
         {
-            titulo: "",
+            titulo: "Choque dimensional",
             imagenes: [
                 "images/proyectos/collage12.webp",
                 "images/proyectos/image12.webp"
                 
                   
             ],
-            descripcion: "",
+            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
             tags: ["collage", "hive", "LMAC"]
         },
         {
