@@ -819,6 +819,13 @@ function generarFiltros() {
 // Función para filtrar proyectos
 function filtrarProyectos(e) {
     const tag = e.target.dataset.tag;
+    const grid = document.querySelector('.proyectos-grid');
+    const cards = document.querySelectorAll('.proyecto-card');
+
+    // Animación de salida
+    cards.forEach(card => {
+        card.classList.add('fade-out');
+    });
     
     // Actualizar botones activos
     document.querySelectorAll('.filtro-btn').forEach(boton => {
@@ -836,7 +843,6 @@ function filtrarProyectos(e) {
         );
 
     // Limpiar grid
-    const grid = document.querySelector('.proyectos-grid');
     grid.innerHTML = '';
 
     // Generar nuevos proyectos
