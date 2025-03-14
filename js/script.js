@@ -779,81 +779,7 @@ document.addEventListener('DOMContentLoaded', () => {
      
     ];
 
-    generarFiltros(); // Añade esta línea después de inicializar todo
-    filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // Mostrar todos al inicio
-
-    // Después de tu array de proyectos, añade:
-
-// Función para generar los botones de filtro
-function generarFiltros() {
-    const contenedorFiltros = document.querySelector('.filtros-proyectos');
-    const tagsUnicos = ['todos']; // Empezamos con el botón "Mostrar Todos"
     
-    // Obtener tags únicos de todos los proyectos
-    proyectos.forEach(proyecto => {
-        proyecto.tags.forEach(tag => {
-            if (!tagsUnicos.includes(tag.toLowerCase())) {
-                tagsUnicos.push(tag.toLowerCase());
-            }
-        });
-    });
-
-    // Generar botones
-    tagsUnicos.forEach(tag => {
-        const boton = document.createElement('button');
-        boton.className = `filtro-btn ${tag === 'todos' ? 'active' : ''}`;
-        boton.dataset.tag = tag;
-        boton.textContent = tag.charAt(0).toUpperCase() + tag.slice(1); // Capitalizar
-        contenedorFiltros.appendChild(boton);
-    });
-
-    // Event listeners para los botones
-    document.querySelectorAll('.filtro-btn').forEach(boton => {
-        boton.addEventListener('click', filtrarProyectos);
-    });
-}
-
-// Función para filtrar proyectos
-function filtrarProyectos(e) {
-    const tag = e.target.dataset.tag;
-    
-    // Actualizar botones activos
-    document.querySelectorAll('.filtro-btn').forEach(boton => {
-        boton.classList.remove('active');
-    });
-    e.target.classList.add('active');
-
-    // Filtrar proyectos
-    const proyectosFiltrados = tag === 'todos' 
-        ? proyectos 
-        : proyectos.filter(proyecto => 
-            proyecto.tags.some(proyectoTag => 
-                proyectoTag.toLowerCase() === tag
-            )
-        );
-
-    // Limpiar grid
-    const grid = document.querySelector('.proyectos-grid');
-    grid.innerHTML = '';
-
-    // Generar nuevos proyectos
-    proyectosFiltrados.forEach((proyecto, index) => {
-        const card = document.createElement('div');
-        card.className = 'proyecto-card';
-        card.innerHTML = `
-            <img src="${proyecto.imagenes[0]}" alt="${proyecto.titulo}">
-            <div class="card-content">
-                <h3>${proyecto.titulo}</h3>
-                <p>${proyecto.descripcion}</p>
-                <div class="tags">${proyecto.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
-            </div>
-        `;
-        
-        card.addEventListener('click', () => openLightbox(index, proyectosFiltrados));
-        grid.appendChild(card);
-    });
-}
-
     // Agregar después del array de proyectos
     const habilidades = {
         software: [
@@ -962,20 +888,11 @@ function filtrarProyectos(e) {
     let isDragging = false;
     let startPosX = 0;
 
-    // Modifica la función openLightbox para recibir la lista filtrada
-    function openLightbox(index, proyectosFiltrados = proyectos) {
-        currentProjectIndex = index;
-        currentProjects = proyectosFiltrados; // Nueva variable global
+    function openLightbox(projectIndex) {
+        currentProjectIndex = projectIndex;
+        currentImageIndex = 0;
         loadImages();
         lightbox.classList.add('active');
-    }
-
-// Actualiza la navegación del lightbox para usar currentProjects
-    function navigate(direction) {
-        const total = currentProjects[currentProjectIndex].imagenes.length;
-        currentImageIndex = (currentImageIndex + direction + total) % total;
-        updateSliderPosition();
-        updateIndicators();
     }
 
     function loadImages() {
