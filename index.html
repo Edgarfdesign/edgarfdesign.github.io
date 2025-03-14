@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Edgarfdesign</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { opacity: 0; overflow: hidden; }
+        body.loaded { opacity: 1; overflow: auto; transition: opacity 0.5s ease; }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-spinner">
+            <img src="images/Isotipo1.svg" alt="Cargando..." class="preloader-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/Isotipo1.svg" alt="Logo" class="logo-img">
+                <span class="logo-text">Edgar A. Fernández P.</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        
+            <div class="social-links">
+                <a href="https://www.behance.net/edgarafernandezp" class="social-link"><i class="fab fa-behance"></i></a>
+                <a href="https://hive.blog/@edgarafernandezp" class="social-link"><i class="fa-brands fa-hive"></i></a>
+                <a href="https://www.instagram.com/edgarfdesign/" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        <div class="hero-content">   
+            
+            <h1 class="hero-title">Transformando Ideas en Experiencias Visuales</h1>
+            <p class="hero-subtitle">Diseñador Gráfico & Especialista en Branding</p>
+            
+            <div class="hero-cta">
+                <a href="#proyectos" class="cta-button cta-primary">
+                    <i class="fas fa-briefcase"></i>
+                    Ver Portafolio
+                </a>
+                <a href="#contacto" class="cta-button cta-secondary">
+                    <i class="fas fa-paper-plane"></i>
+                    Contacto
+                </a>
+            </div>
+        </div>
+        
+        <img src="images/Face05.webp" alt="Diseñador gráfico" class="hero-avatar">
+    </section>
+
+    <!-- Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="habilidades-grid"></div>
+    </section>
+
+    <section class="logos-slider">
+        <h2 class="section-title">Logofolio</h2>
+        <div class="slider-container">
+            <div class="slider-track">
+                <!-- Inserta tus logos 2 veces -->
+                <div class="logo-item"><img src="images/logo1.svg" alt="Logo 1"></div>
+                <div class="logo-item"><img src="images/logo2.svg" alt="Logo 2"></div>
+                <div class="logo-item"><img src="images/logo3.svg" alt="Logo 3"></div>
+                <div class="logo-item"><img src="images/logo4.svg" alt="Logo 4"></div>
+                <div class="logo-item"><img src="images/logo5.svg" alt="Logo 5"></div>
+                <div class="logo-item"><img src="images/logo6.svg" alt="Logo 6"></div>
+                <div class="logo-item"><img src="images/logo7.svg" alt="Logo 7"></div>
+                <div class="logo-item"><img src="images/logo8.svg" alt="Logo 8"></div>
+                <div class="logo-item"><img src="images/logo9.svg" alt="Logo 9"></div>
+                <div class="logo-item"><img src="images/logo12.svg" alt="Logo 12"></div>
+                <!-- Duplicados -->
+                <div class="logo-item"><img src="images/logo1.svg" alt="Logo 1"></div>
+                <div class="logo-item"><img src="images/logo2.svg" alt="Logo 2"></div>
+                <div class="logo-item"><img src="images/logo3.svg" alt="Logo 3"></div>
+                <div class="logo-item"><img src="images/logo4.svg" alt="Logo 4"></div>
+                <div class="logo-item"><img src="images/logo5.svg" alt="Logo 5"></div>
+                <div class="logo-item"><img src="images/logo6.svg" alt="Logo 6"></div>
+                <div class="logo-item"><img src="images/logo7.svg" alt="Logo 7"></div>
+                <div class="logo-item"><img src="images/logo8.svg" alt="Logo 8"></div>
+                <div class="logo-item"><img src="images/logo12.svg" alt="Logo 12"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="section-title">Portafolio</h2>
+
+        <!-- Filtros -->
+    <div class="filtros-proyectos">
+        <button class="filtro-btn active" data-tag="todos"></button>
+        <!-- Los demás botones se generarán dinámicamente -->
+    </div>
+
+        <div class="proyectos-grid"></div>
+    </section>
+
+ 
+
+        <!-- Modifica el lightbox así -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <div class="lightbox-slider">
+                <!-- Las imágenes se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+        <div class="lightbox-indicators"></div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="main-footer" id="contacto">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Explorar</h3>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-col">
+                <h3>Redes</h3>
+                <div class="social-icons">
+                    <a href="https://www.behance.net/edgarafernandezp"><i class="fab fa-behance"></i></a>
+                    <a href="https://hive.blog/@edgarafernandezp"><i class="fa-brands fa-hive"></i></i></a>
+                    <a href="https://www.instagram.com/edgarfdesign/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <a href="mailto:edgarafperez@email.com">edgarafperez@email.com</a>
+                <a href="tel:+58 424 764 3602">+58 424 764 3602</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025 Edgarfdesign. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
