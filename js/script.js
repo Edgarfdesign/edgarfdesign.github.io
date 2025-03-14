@@ -827,40 +827,48 @@ function filtrarProyectos(e) {
         card.classList.add('fade-out');
     });
     
-    // Actualizar botones activos
+    // Actualizar botones activos con transición
     document.querySelectorAll('.filtro-btn').forEach(boton => {
         boton.classList.remove('active');
     });
     e.target.classList.add('active');
 
-    // Filtrar proyectos
-    const proyectosFiltrados = tag === 'todos' 
-        ? proyectos 
-        : proyectos.filter(proyecto => 
-            proyecto.tags.some(proyectoTag => 
-                proyectoTag.toLowerCase() === tag.toLowerCase()
-            )
-        );
+    // Esperar a que termine la animación de salida
+    setTimeout(() => {
+        // Filtrar proyectos
+        const proyectosFiltrados = tag === 'todos' 
+            ? proyectos 
+            : proyectos.filter(proyecto => 
+                proyecto.tags.some(proyectoTag => 
+                    proyectoTag.toLowerCase() === tag
+                )
+            );
 
-    // Limpiar grid
-    grid.innerHTML = '';
+        // Limpiar grid
+        grid.innerHTML = '';
 
-    // Generar nuevos proyectos
-    proyectosFiltrados.forEach((proyecto, index) => {
-        const card = document.createElement('div');
-        card.className = 'proyecto-card';
-        card.innerHTML = `
-            <img src="${proyecto.imagenes[0]}" alt="${proyecto.titulo}">
-            <div class="card-content">
-                <h3>${proyecto.titulo}</h3>
-                <p>${proyecto.descripcion}</p>
-                <div class="tags">${proyecto.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
-            </div>
-        `;
-        
-        card.addEventListener('click', () => openLightbox(index, proyectosFiltrados));
-        grid.appendChild(card);
-    });
+        // Generar nuevos proyectos con animación de entrada
+        proyectosFiltrados.forEach((proyecto, index) => {
+            const card = document.createElement('div');
+            card.className = 'proyecto-card';
+            card.innerHTML = `
+                <img src="${proyecto.imagenes[0]}" alt="${proyecto.titulo}">
+                <div class="card-content">
+                    <h3>${proyecto.titulo}</h3>
+                    <p>${proyecto.descripcion}</p>
+                    <div class="tags">${proyecto.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
+                </div>
+            `;
+            
+            card.addEventListener('click', () => openLightbox(index, proyectosFiltrados));
+            
+            // Agregar animación de entrada
+            card.style.animation = `cardEntrance 0.5s ease ${index * 0.05}s forwards`;
+            card.style.opacity = '0';
+            
+            grid.appendChild(card);
+        });
+    }, 100); // Tiempo igual a la duración de la animación de salida
 }
  
 
