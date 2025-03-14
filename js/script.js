@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tags: ["Collage"]
         },
         {
-            titulo: "Patina sobre Hielo",
+            titulo: "Patinaje sobre hielo",
             imagenes: [
                 "images/proyectos/collage2.webp",
                 "images/proyectos/image2.webp"
@@ -782,6 +782,9 @@ document.addEventListener('DOMContentLoaded', () => {
      
     ];
 
+    generarFiltros(); // Añade esta línea después de inicializar todo
+    filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // Mostrar todos al inicio
+
     // Función para generar los botones de filtro
 function generarFiltros() {
     const contenedorFiltros = document.querySelector('.filtros-proyectos');
@@ -801,7 +804,7 @@ function generarFiltros() {
         const boton = document.createElement('button');
         boton.className = `filtro-btn ${tag === 'todos' ? 'active' : ''}`;
         boton.dataset.tag = tag;
-        boton.textContent = tag.charAt(0).toUpperCase() + tag.slice(1); // Capitalizar
+        boton.textContent = tag === 'todos' ? 'Mostrar Todos' : tag.charAt(0).toUpperCase() + tag.slice
         contenedorFiltros.appendChild(boton);
     });
 
@@ -826,7 +829,7 @@ function filtrarProyectos(e) {
         ? proyectos 
         : proyectos.filter(proyecto => 
             proyecto.tags.some(proyectoTag => 
-                proyectoTag.toLowerCase() === tag
+                proyectoTag.toLowerCase() === tag.toLowerCase()
             )
         );
 
@@ -852,8 +855,7 @@ function filtrarProyectos(e) {
     });
 }
  
-generarFiltros(); // Añade esta línea después de inicializar todo
-filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // Mostrar todos al inicio
+
 
     // Agregar después del array de proyectos
     const habilidades = {
@@ -967,6 +969,7 @@ filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // M
     function openLightbox(index, proyectosFiltrados = proyectos) {
     currentProjectIndex = index;
     currentProjects = proyectosFiltrados; // Nueva variable global
+    currentImageIndex = 0; // <- Añade esta línea
     loadImages();
     lightbox.classList.add('active');
     }
@@ -976,6 +979,10 @@ filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // M
         slider.innerHTML = proyecto.imagenes.map(img => `
             <img src="${img}" alt="${proyecto.titulo}">
         `).join('');
+
+        // Añade estas líneas:
+        currentImageIndex = 0; // Doble seguro
+        slider.style.transform = 'translateX(0)'
         updateIndicators();
         updateSliderPosition();
     }
@@ -985,14 +992,14 @@ filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // M
     }
 
     function updateIndicators() {
-        indicators.innerHTML = currentProjects[currentProjectIndex].imagenes // ← Usar 'currentProjects'
+        indicators.innerHTML = currentProjects[currentProjectIndex].imagenes // ← currentProjects
             .map((_, i) => `<span class="${i === currentImageIndex ? 'active' : ''}"></span>`)
             .join('');
     }
 
     // Actualiza la navegación del lightbox para usar currentProjects
     function navigate(direction) {
-        const total = currentProjects[currentProjectIndex].imagenes.length; // ← Corregir aquí
+        const total = currentProjects[currentProjectIndex].imagenes.length; // ← currentProjects
         currentImageIndex = (currentImageIndex + direction + total) % total;
         updateSliderPosition();
         updateIndicators();
@@ -1050,4 +1057,5 @@ filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // M
             if (e.key === 'Escape') lightbox.classList.remove('active');
         }
     });
+
 });
