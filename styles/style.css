@@ -931,7 +931,7 @@ body {
 
 /* CSS */
 .logos-slider {
-    padding: 2rem 0;
+    padding: 4rem 0;
     overflow: hidden;
     position: relative;
 }
@@ -977,9 +977,10 @@ body {
 .logo-item:active img {
     filter: none; /* Quita todos los filtros */
 }
+
 @keyframes slide {
     0% { transform: translateX(0); }
-    0% { transform: translateX(-150%); }
+    0% { transform: translateX(-50%); }
 }
 
 /* Efecto de borde difuminado */

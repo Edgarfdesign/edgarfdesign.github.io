@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     track.addEventListener('animationiteration', () => {
         track.style.animation = 'none';
         void track.offsetWidth;
-        track.style.animation = 'slide 20s linear infinite';
+        track.style.animation = 'slide 200s linear infinite';
     });
 });
 
