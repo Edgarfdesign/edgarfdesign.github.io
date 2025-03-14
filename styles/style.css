@@ -1015,3 +1015,33 @@ body {
         opacity: 0.7;
     }
 }
+
+/* Filtros */
+.filtros-proyectos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.filtro-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--color-secundario);
+    border-radius: 30px;
+    background: transparent;
+    color: var(--color-secundario);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.filtro-btn:hover,
+.filtro-btn.active {
+    background: var(--color-secundario);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(84,89,240,0.3);
+}

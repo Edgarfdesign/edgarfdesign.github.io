@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/TV8.webp"
             ],
             descripcion: "Tecnoventas es una empresa de tecnología especializada en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales altamente capacitados y tecnologías de última generación, garantizando soluciones rápidas y eficientes.",
-            tags: ["Logo", "Photoshop", "Ilustrator"]
+            tags: ["Branding"]
         },
         {
             titulo: "Culperma",
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/CP8.webp"
             ],
             descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "MyMy",
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/MY16.webp",
             ],
             descripcion: "MyMy es una marca de ropa que se especializa en ofrecer prendas de alta calidad y diseño innovador. Sus colecciones se destacan por su estilo único y atención a los detalles, brindando a sus clientes moda contemporánea y cómoda.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Maxima Bisuteria",
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             ],
             descripcion: "Máxima Bisutería es una marca especializada en la creación de piezas de bisutería de alta calidad. Se destaca por sus diseños elegantes y detallados, ofreciendo accesorios únicos que complementan cualquier estilo y ocasión.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Calza Yoing",
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             ],
             descripcion: "Calza Yoing es una marca de zapatos que se especializa en ofrecer calzado de alta calidad y diseño contemporáneo. Sus colecciones combinan comodidad y estilo, proporcionando opciones ideales para diversas ocasiones y estilos de vida.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Yannilucio",
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/Y9.webp"       
             ],
             descripcion: "Yannilucio busca transmitir una imagen de vanguardia, calidad y dedicación al mundo del motorsport y simracing, atrayendo a entusiastas y profesionales apasionados por la velocidad y la competencia virtual.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Italplumbing",
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/IP16.webp"       
             ],
             descripcion: "Italplumbitng es una empresa especializada en ofrecer servicios de plomería industrial, enfocados en resolver problemas complejos de filtraciones, detección de fugas, mantenimiento de ductos y sistemas de inspección en grandes instalaciones como centros comerciales, condominios y empresas de gran escala.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Miniabasto Liz",
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/MAL2.webp"  
             ],
             descripcion: "Liz es un miniabasto que combina practicidad y calidez, ofreciendo productos esenciales en un espacio pequeño pero completo, ideal para compras rápidas y cercanas.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Asuntos Legales",
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/AL2.webp"  
             ],
             descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "E-cat Technology",
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/EC4.webp"  
             ],
             descripcion: "Programación con instinto felino: herramientas intuitivas, soluciones ágiles y algoritmos que aprenden en la sombra. Para mentes curiosas que buscan código elegante y sistemas que resuelvan con la precisión de una garra. Innovación que acecha en silencio",
-            tags: ["Photoshop", "ilustrator", "Branding", "Marca Ficticia"]
+            tags: ["Branding"]
         },
         {
             titulo: "Albert Super Hamburguesas",
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/ASH4.webp",  
             ],
             descripcion: "Donde la ciencia culinaria se fusiona con el arte de la hamburguesa. Nuestras creaciones, inspiradas en el genio innovador de Albert, mezclan cortes premium, ingredientes inesperados y panes artesanales horneados al instante. Cada bocado es una explosión de sabores audaces y texturas perfectas.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Auto Servicio Zamper",
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "Tu taller mecánico de confianza, donde la tecnología y la precisión se alían para dar vida a tu vehículo. Diagnóstico avanzado, mantenimiento experto y reparaciones complejas con atención personalizada y soluciones rápidas.",
-            tags: ["Photoshop", "ilustrator", "Branding"]
+            tags: ["Branding"]
         },
         {
             titulo: "Conejo entre los Arboles",
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lets-make-a-collage-a-contest-for-all-creatives-on-hive-round-103-space-travel-rabbit-among-the-trees",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Patina sobre Hielo",
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/tztfoxyw",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "La Puerta al Cielo",
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/zbdtpuru",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Templo de Buda moderno",
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-108-modern-buddha-temple",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Llegando por la noche",
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-110-arriving-at-night",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Materia oscura",
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/hzdrzkqr",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Hermosa Primavera",
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-113-beautiful-spring",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "El amanecer de la paz",
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-115-the-dawn-of-peace",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Oso en busca de madriguera",
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-116-bear-looking-for-burrow",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Leopard Volkswagen",
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/round-117-leopard-volkswagen-late-but-sure",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Búho de ojos de trueno",
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-118-thunder-eyed-owl",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Choque dimensional",
@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Enamorarse te lleva a otro mundo",
@@ -366,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-falling-in-love-takes-you-to-another-world",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "La chica de los planetas dueña de las aves",
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-the-girl-of-the-planets-owner-of-the-birds",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Una noche con dragones",
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-122-a-night-with-dragons",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "La reina de la primavera",
@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-124-the-queen-of-spring",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "La caída de Terra Luna",
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-125-the-fall-of-terra-luna",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Express colorido",
@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Viajar en moto con un amigo",
@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-129-traveling-by-motorcycle-with-a-friend",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Aventura mágica con la tortuga",
@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-130-magic-adventure-with-the-turtle",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Un Hobbit en vamos a hacer un Collage",
@@ -454,7 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-132-a-hobbit-in-let-s-make-a-collage",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Fuerzas del mundo Natural",
@@ -465,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-133-forces-of-the-natural-world",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Metamorfosis de una Leona",
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-135-metamorphosis-of-a-lioness",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Los Campos Elíseos",
@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-136-the-elysian-fields",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "La Fuente de la Juventud",
@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-139-the-fountain-of-youth",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "El Cóndor pasa!",
@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/free-collage-the-condor-passes",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Campamento bajo las Estrellas",
@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fe4963802cdd2",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Nacimiento de una estrella",
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fdc153b6c2b82",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Inspiración de Dios de la guerra ragnarok",
@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-011f55baff6f8",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Viajando en un Zapato",
@@ -553,7 +553,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-free-collage-traveling-in",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Cráneos del más allá",
@@ -564,7 +564,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-472cef9fe8369",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Cuando el viento te Sopla",
@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-ed4fe90f1f0f3",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "¡Colmena a la Luna!",
@@ -586,7 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-hive-to-the",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Protegiendo el tesoro",
@@ -597,7 +597,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-2573ce14b556a",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Siempre hay algo que nos Cuida",
@@ -608,7 +608,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-95de4cd70cb1a",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Mi primer año en LMAC",
@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-55ca0644a2c4c",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Aquí viene el sol",
@@ -630,7 +630,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-154-here",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Pez extraterrestre devora gatos",
@@ -641,7 +641,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-c7baab553cb77",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Ciudadela de los Dragones",
@@ -652,7 +652,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-157-citadel",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Pueblo Encantado",
@@ -663,7 +663,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-a2f2e3ddd6181",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Matrimonio entre las nubes",
@@ -674,7 +674,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-d1a357024ab8a",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "El Ciervo y el Gato",
@@ -685,7 +685,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-1401782308f09",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Supernova",
@@ -696,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-2e97131f422b1",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Portal para ir a otro Mundo",
@@ -707,7 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-a0e6785e5d8ac",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Garzas Mágicas",
@@ -718,7 +718,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-161-magic",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Regiones del mundo Pokémon",
@@ -729,7 +729,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-7b1b9958289ba",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Pasaje a la Cuarta dimención",
@@ -740,7 +740,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-017f5f8714159",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "¡Cuidado con el gato, guacamayo!",
@@ -751,7 +751,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-164-watch",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Expecto Patronum",
@@ -762,7 +762,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-174-expecto",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         },
         {
             titulo: "Duck Gansters",
@@ -773,11 +773,86 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/round-178-duck-gansters",
-            tags: ["collage", "hive", "LMAC"]
+            tags: ["Collage"]
         }
         
      
     ];
+
+    generarFiltros(); // Añade esta línea después de inicializar todo
+    filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // Mostrar todos al inicio
+
+    // Después de tu array de proyectos, añade:
+
+// Función para generar los botones de filtro
+function generarFiltros() {
+    const contenedorFiltros = document.querySelector('.filtros-proyectos');
+    const tagsUnicos = ['todos']; // Empezamos con el botón "Mostrar Todos"
+    
+    // Obtener tags únicos de todos los proyectos
+    proyectos.forEach(proyecto => {
+        proyecto.tags.forEach(tag => {
+            if (!tagsUnicos.includes(tag.toLowerCase())) {
+                tagsUnicos.push(tag.toLowerCase());
+            }
+        });
+    });
+
+    // Generar botones
+    tagsUnicos.forEach(tag => {
+        const boton = document.createElement('button');
+        boton.className = `filtro-btn ${tag === 'todos' ? 'active' : ''}`;
+        boton.dataset.tag = tag;
+        boton.textContent = tag.charAt(0).toUpperCase() + tag.slice(1); // Capitalizar
+        contenedorFiltros.appendChild(boton);
+    });
+
+    // Event listeners para los botones
+    document.querySelectorAll('.filtro-btn').forEach(boton => {
+        boton.addEventListener('click', filtrarProyectos);
+    });
+}
+
+// Función para filtrar proyectos
+function filtrarProyectos(e) {
+    const tag = e.target.dataset.tag;
+    
+    // Actualizar botones activos
+    document.querySelectorAll('.filtro-btn').forEach(boton => {
+        boton.classList.remove('active');
+    });
+    e.target.classList.add('active');
+
+    // Filtrar proyectos
+    const proyectosFiltrados = tag === 'todos' 
+        ? proyectos 
+        : proyectos.filter(proyecto => 
+            proyecto.tags.some(proyectoTag => 
+                proyectoTag.toLowerCase() === tag
+            )
+        );
+
+    // Limpiar grid
+    const grid = document.querySelector('.proyectos-grid');
+    grid.innerHTML = '';
+
+    // Generar nuevos proyectos
+    proyectosFiltrados.forEach((proyecto, index) => {
+        const card = document.createElement('div');
+        card.className = 'proyecto-card';
+        card.innerHTML = `
+            <img src="${proyecto.imagenes[0]}" alt="${proyecto.titulo}">
+            <div class="card-content">
+                <h3>${proyecto.titulo}</h3>
+                <p>${proyecto.descripcion}</p>
+                <div class="tags">${proyecto.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
+            </div>
+        `;
+        
+        card.addEventListener('click', () => openLightbox(index, proyectosFiltrados));
+        grid.appendChild(card);
+    });
+}
 
     // Agregar después del array de proyectos
     const habilidades = {
@@ -887,11 +962,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let isDragging = false;
     let startPosX = 0;
 
-    function openLightbox(projectIndex) {
-        currentProjectIndex = projectIndex;
-        currentImageIndex = 0;
+    // Modifica la función openLightbox para recibir la lista filtrada
+    function openLightbox(index, proyectosFiltrados = proyectos) {
+        currentProjectIndex = index;
+        currentProjects = proyectosFiltrados; // Nueva variable global
         loadImages();
         lightbox.classList.add('active');
+    }
+
+// Actualiza la navegación del lightbox para usar currentProjects
+    function navigate(direction) {
+        const total = currentProjects[currentProjectIndex].imagenes.length;
+        currentImageIndex = (currentImageIndex + direction + total) % total;
+        updateSliderPosition();
+        updateIndicators();
     }
 
     function loadImages() {
