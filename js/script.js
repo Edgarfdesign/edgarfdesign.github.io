@@ -1,5 +1,4 @@
 let currentProjects = []; // Añade esto al inicio de tu JS
-
 // Preloader
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
@@ -964,13 +963,6 @@ filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // M
     let isDragging = false;
     let startPosX = 0;
 
-    function openLightbox(projectIndex) {
-        currentProjectIndex = projectIndex;
-        currentImageIndex = 0;
-        loadImages();
-        lightbox.classList.add('active');
-    }
-
     // Modifica la función openLightbox para recibir la lista filtrada
     function openLightbox(index, proyectosFiltrados = proyectos) {
     currentProjectIndex = index;
@@ -980,7 +972,7 @@ filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // M
     }
 
     function loadImages() {
-        const proyecto = currentProjects[currentProjectIndex];
+        const proyecto = currentProjects[currentProjectIndex]; // ← Usar currentProjects
         slider.innerHTML = proyecto.imagenes.map(img => `
             <img src="${img}" alt="${proyecto.titulo}">
         `).join('');
