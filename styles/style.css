@@ -308,13 +308,36 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
+    position: relative;
+    transition: all 0.5s ease-in-out;
 }
 
 .proyecto-card {
     position: relative;
     overflow: hidden;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Clases para animación */
+.proyecto-card.fade-out {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.3s ease-in;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .proyecto-card::before {
@@ -1036,6 +1059,7 @@ body {
     transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    
 }
 
 .filtro-btn:hover,
