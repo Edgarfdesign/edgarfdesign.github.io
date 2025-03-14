@@ -804,7 +804,9 @@ function generarFiltros() {
         const boton = document.createElement('button');
         boton.className = `filtro-btn ${tag === 'todos' ? 'active' : ''}`;
         boton.dataset.tag = tag;
-        boton.textContent = tag === 'todos' ? 'Mostrar Todos' : tag.charAt(0).toUpperCase() + tag.slice
+        boton.textContent = tag === 'todos'
+            ? 'Mostrar Todos'
+            : tag.charAt(0).toUpperCase() + tag.slice(1);
         contenedorFiltros.appendChild(boton);
     });
 
