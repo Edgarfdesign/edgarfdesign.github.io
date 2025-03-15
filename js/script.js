@@ -990,7 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Me identifico muchos con paisajes de este tipo, soy una persona a la que le gusta mucho ir a caminar a la montaña, hacer trekking es de mis hobbits favoritos, pienso en la aventura que voy a tener cuando veo un sendero así...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1009,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Por estas fechas realice mi primera composición de collage en la comunidad, fue desde la ronda 103 que empece y desde entonces no he parado de compartir la creatividad y toda la imaginación...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1028,7 +1028,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "En esta oportunidad me inspiré en una de las canciónes mas hermosas que han compuesto (a mi parecer) en toda la historia del Rock and roll, al ver esos débiles rayos del astro rey, recordé a nuestro querido amigo George Harrison...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1047,7 +1047,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Este es un collage diferente, mientras lo realizaba me iba imaginando una corta historia un poco loca, veras, mientras integraba ha ese enorme gato de ojos amarillos, estaba dudoso de que más agregar, pero descubri entre esas tonalidades azules de la plantilla original el recuerdo de un frio oceano...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1066,7 +1066,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Hola lmacians, hoy les traigo un nuevo collage de estilo libre, saben lo mucho que me gusta la fantasía, la plantilla de esta semana me hizo pensar en princesas, dragones y castillos, así que me sumergí en lil para encontrar...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1085,7 +1085,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Esta vez me sumergí en lil y encontré algunas casas de @quantumg, recordé esos viejos y pintorescos pueblos que existen lejos de las ciudades y que viven solo del campo, busque entre algunas cosas de @quantumg y prácticamente tenia todo allí para realizar esa viejo pueblo encantador...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1104,7 +1104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...esta vez les traigo una escena que nos hace llegar a hasta las nubes, cualquiera que este planeando casarse con la persona que quiere compartir el resto de su vida seguramente sentirá esto, estar e el cielo con tan solo mirar a los ojos a la persona que ama en ese mágico momento...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1123,7 +1123,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Bueno, como de costumbre me puse a mirar cosas en lil, una verdadera maravilla ver tantas cosas nuevas, entre ellas vi un hermoso ciervo algo imponente a mi parecer, y enseguida me traslade a esas escenas de bambi de walt disney donde la luz en los bosques es un trabajo increible...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1142,7 +1142,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...¡bienvenidos a esta nueva tormenta estelar! esta vez quise realizar lo contrario a lo que hice en un post anterior, si aquel collage trataba del nacimiento de una estrella, ¡este es el fin de una! una supernova significa que la estrella esta acercándose en sus ultimo periodo de vida, expulsando todo su poder...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1161,7 +1161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Al principio estaba pensando en crear algo surrealista, pero al ingresar en lil empecé a buscar imagines de 'paisajes' y me encontré con las fotografías de @seckorama ahí empecé a inventarme una pequeña historia 'sobre un gran pastoreo en las montañas altas del Peru'...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1180,7 +1180,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...estaba creativo para realizar un collage, pero no tengo una amplia historia que contar, igualmente, es una plantilla que disfrute trabajar para @lmac, ¡Buena suerte esta semana amigos!...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1199,7 +1199,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Esta vez estuve pensando en muchas cosas para realizar este collage, desde una recreación del pais del nunca jamas de Peter Pan hasta una finca de pokemon, descarte el primero, desde ayer lo estuve haciendo y no me estaba gustando la idea, y del segundo solo puedo decir que desearia haber puesto pokemones jaja...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1218,7 +1218,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...recordé lo bonito que fue estudiar las figuras geométricas y las dimensiones que existen, recordé el hipercubo y su forma peculiar de movimiento, y aun no lo comprendo del todo ¡Quizás porque...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1237,7 +1237,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Las ideas surgen a medida que vas realizando la composición, en este collage de estilo libre puedes ver claramente la impresión de un gato al ver los colores hermosos de una guacamaya, la pregunta es: ¿Qué es lo que esta viedo realmente este gato?...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1256,7 +1256,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Recuerdo hace algunos años recién había salido la tercera película de Harry Potter. Ver los trailers a cada rato en los comerciales de la TV, me emocionaba mucho, era bastante fanático de Harry Potter, siempre recuerdo la ultima escena que colocaban al final del comercial, cuando Harry se ayuda así mismo...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
@@ -1275,7 +1275,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Hoy les traigo la portada de una película que seguramente podría tener mucho acción, pero a la vez algo de comedia jejeje, la plantilla de esta semana me recordó mucho a los pingüinos de Madagascar, algo asi como...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
