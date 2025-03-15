@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lets-make-a-collage-a-contest-for-all-creatives-on-hive-round-103-space-travel-rabbit-among-the-trees",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/tztfoxyw",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/zbdtpuru",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-108-modern-buddha-temple",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -428,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-110-arriving-at-night",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/hzdrzkqr",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-113-beautiful-spring",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -485,7 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-115-the-dawn-of-peace",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -504,7 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-116-bear-looking-for-burrow",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -523,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/round-117-leopard-volkswagen-late-but-sure",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -540,9 +540,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
-                nombre: "Photoshop", icono: "images/icons/photoshop.svg",
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-118-thunder-eyed-owl",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -561,7 +560,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
-                text: "Lee el Post completo en Hive.blog"
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -573,14 +572,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "En esta oportunidad mi tema trata sobre el amor, ¿Qué es el amor para ti? ¿Qué es ese deseo que emana de nuestro ser para que nos guste alguien y lo diéramos todo por esa persona?...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-falling-in-love-takes-you-to-another-world",
-                text: "Lee más sobre este collage..."
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -592,14 +591,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Realmente fue bastante rudo trabajar esta imagen, me costó mucho por el hecho de que existen varios elementos como por ejemplo los árboles, a los cuales tuve que realizar selecciones más complejas...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-the-girl-of-the-planets-owner-of-the-birds",
-                text: "Lee más sobre este collage..."
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -611,14 +610,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "¡Hoy es una noche fantástica!, pues me dio un ataque artístico, resulta que la madre de dragones y sus hijos estuvieron merodeando por mi mente tratando de quemarme...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-122-a-night-with-dragons",
-                text: "Lee más sobre este collage..."
+                text: "Lee el post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
