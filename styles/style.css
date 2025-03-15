@@ -1069,3 +1069,49 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(84,89,240,0.3);
 }
+
+/* Estilos para los nuevos elementos */
+.proyecto-link {
+    display: inline-block;
+    color: var(--color-secundario);
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.proyecto-link:hover {
+    text-decoration: underline;
+    transform: translateX(5px);
+}
+
+.software-icons {
+    display: flex;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.software-icons img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.software-icons img:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.proyecto-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.proyecto-year {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}

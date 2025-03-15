@@ -69,6 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             descripcion: "Tecnoventas es una empresa de tecnología especializada en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales altamente capacitados y tecnologías de última generación, garantizando soluciones rápidas y eficientes.",
             tags: ["Branding"]
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "https://www.instagram.com/tecnoventas12/",
+                text: "Instagram de Tecnoventas"
+            },
+            year: 2020 // Nuevo campo
         },
         {
             titulo: "Culperma",
@@ -852,10 +861,25 @@ function filtrarProyectos(e) {
             const card = document.createElement('div');
             card.className = 'proyecto-card';
             card.innerHTML = `
-                <img src="${proyecto.imagenes[0]}" alt="${proyecto.titulo}">
+                <img src="${proyecto.imagenes[0]}" alt="${proyecto.titulo}" loading="lazy">
                 <div class="card-content">
                     <h3>${proyecto.titulo}</h3>
                     <p>${proyecto.descripcion}</p>
+                    ${proyecto.link ? // Agregar link si existe
+                        `<a href="${proyecto.link.url}" target="_blank" class="proyecto-link">
+                            ${proyecto.link.text}
+                        </a>` : ''}
+                    
+                    <div class="proyecto-meta">
+                        ${proyecto.softwareIcons ? // Agregar iconos de software
+                            `<div class="software-icons">
+                                ${proyecto.softwareIcons.map(icon => `
+                                    <img src="${icon.icono}" alt="${icon.nombre}" title="${icon.nombre}">
+                                `).join('')}
+                            </div>` : ''}
+                        
+                        <span class="proyecto-year">${proyecto.year}</span>
+                    </div>
                     <div class="tags">${proyecto.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
                 </div>
             `;
