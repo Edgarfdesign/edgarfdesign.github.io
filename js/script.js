@@ -345,14 +345,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "Hola amigos, ¡que estéis bien! Con este collage participo en el concurso de @shaka. ¡Que les guste! Me alegra participar...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lets-make-a-collage-a-contest-for-all-creatives-on-hive-round-103-space-travel-rabbit-among-the-trees",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -364,14 +364,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "En esta ocasión quise realizar una animación, me resulto difícil crear algo con esta imagen pero finalmente di con lo que quería...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/tztfoxyw",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -383,14 +383,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...durante el proceso no consegui la forma de crear el GIF con el tamaño original de la imagen, por lo que pueden detallar que se ve algo ancho, pero creo que no seria problema y por ultimo, como podrán apreciar decidí darle un toque de animación a las nubes...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/zbdtpuru",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -402,14 +402,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...mi objetivo en los collage primeramente es ubicar la luz, después de eso resulta más sencillo trabajar todos los elementos y sus sombras...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-108-modern-buddha-temple",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -421,14 +421,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "En esta ocasión me inspire en realizar una transición del cielo diurno al nocturno, y la realmente a medida que voy explorando la biblioteca...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-110-arriving-at-night",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -440,14 +440,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...siempre me han gustado mucho estos temas del universo y el sin fin de misterios que oculta, siempre (y creo que a la mayoría) nos ha llenado de curiosidad apreciar el cielo y ver ese infinito mar de estrellas...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/hzdrzkqr",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -459,14 +459,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...la imagen de esta semana me hizo pensar en el mes mayo, es el mes de las flores y de mi cumpleaños jeje, quise despertar dentro de mi collage los colores de la primavera...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-113-beautiful-spring",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -478,14 +478,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...quise realizar este collage en base a la situación que nos tiene preocupados a todo el mundo y es que, es inevitable que no nos manifestemos al respecto, es una situación que a largo plazo afecta a todas las naciones...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
             ],
             link: { // Nuevo campo
                 url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-115-the-dawn-of-peace",
-                text: "Lee más sobre este collage..."
+                text: "Post completo en Hive.blog"
             },
             year: 2021 // Nuevo campo
         },
@@ -497,7 +497,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "",
+            descripcion: "...cuando vi la imagen, instantáneamente me llego a la mente esas viejas películas animadas de Disney, donde hay gran variedad de bosques con sus animales...",
             tags: ["Collage"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
