@@ -364,8 +364,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/tztfoxyw",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/tztfoxyw",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "La Puerta al Cielo",
@@ -375,8 +383,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/zbdtpuru",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/zbdtpuru",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Templo de Buda moderno",
@@ -386,8 +402,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-108-modern-buddha-temple",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-108-modern-buddha-temple",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Llegando por la noche",
@@ -397,8 +421,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-110-arriving-at-night",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-110-arriving-at-night",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Materia oscura",
@@ -408,8 +440,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/hzdrzkqr",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/hzdrzkqr",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Hermosa Primavera",
@@ -419,8 +459,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-113-beautiful-spring",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-113-beautiful-spring",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "El amanecer de la paz",
@@ -430,8 +478,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-115-the-dawn-of-peace",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-115-the-dawn-of-peace",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Oso en busca de madriguera",
@@ -441,8 +497,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-116-bear-looking-for-burrow",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-116-bear-looking-for-burrow",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Leopard Volkswagen",
@@ -452,8 +516,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/round-117-leopard-volkswagen-late-but-sure",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/round-117-leopard-volkswagen-late-but-sure",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Búho de ojos de trueno",
@@ -462,8 +534,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/image11.webp"
                 
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-118-thunder-eyed-owl",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-118-thunder-eyed-owl",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Choque dimensional",
@@ -473,8 +553,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Enamorarse te lleva a otro mundo",
@@ -484,8 +572,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-falling-in-love-takes-you-to-another-world",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-falling-in-love-takes-you-to-another-world",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "La chica de los planetas dueña de las aves",
@@ -495,8 +591,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-the-girl-of-the-planets-owner-of-the-birds",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-120-the-girl-of-the-planets-owner-of-the-birds",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Una noche con dragones",
@@ -506,8 +610,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-122-a-night-with-dragons",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-122-a-night-with-dragons",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "La reina de la primavera",
@@ -517,8 +629,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-124-the-queen-of-spring",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-124-the-queen-of-spring",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "La caída de Terra Luna",
@@ -528,8 +648,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-125-the-fall-of-terra-luna",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-125-the-fall-of-terra-luna",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Express colorido",
@@ -539,8 +667,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Viajar en moto con un amigo",
@@ -550,8 +686,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-129-traveling-by-motorcycle-with-a-friend",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-129-traveling-by-motorcycle-with-a-friend",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Aventura mágica con la tortuga",
@@ -561,8 +705,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-130-magic-adventure-with-the-turtle",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-130-magic-adventure-with-the-turtle",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Un Hobbit en vamos a hacer un Collage",
@@ -572,8 +724,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-132-a-hobbit-in-let-s-make-a-collage",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-132-a-hobbit-in-let-s-make-a-collage",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Fuerzas del mundo Natural",
@@ -583,8 +743,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-133-forces-of-the-natural-world",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-133-forces-of-the-natural-world",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Metamorfosis de una Leona",
@@ -594,8 +762,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-135-metamorphosis-of-a-lioness",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-135-metamorphosis-of-a-lioness",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Los Campos Elíseos",
@@ -605,8 +781,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-136-the-elysian-fields",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-136-the-elysian-fields",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "La Fuente de la Juventud",
@@ -616,8 +800,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-139-the-fountain-of-youth",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-139-the-fountain-of-youth",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "El Cóndor pasa!",
@@ -627,8 +819,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/free-collage-the-condor-passes",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/free-collage-the-condor-passes",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Campamento bajo las Estrellas",
@@ -638,8 +838,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fe4963802cdd2",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fe4963802cdd2",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Nacimiento de una estrella",
@@ -649,8 +857,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fdc153b6c2b82",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-fdc153b6c2b82",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Inspiración de Dios de la guerra ragnarok",
@@ -660,8 +876,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-011f55baff6f8",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-011f55baff6f8",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Viajando en un Zapato",
@@ -671,8 +895,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-free-collage-traveling-in",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-free-collage-traveling-in",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Cráneos del más allá",
@@ -682,8 +914,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-472cef9fe8369",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-472cef9fe8369",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Cuando el viento te Sopla",
@@ -694,7 +934,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-ed4fe90f1f0f3",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "¡Colmena a la Luna!",
@@ -705,7 +953,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-hive-to-the",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Protegiendo el tesoro",
@@ -716,7 +972,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "http://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-2573ce14b556a",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Siempre hay algo que nos Cuida",
@@ -727,7 +991,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-95de4cd70cb1a",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Mi primer año en LMAC",
@@ -738,7 +1010,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-55ca0644a2c4c",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Aquí viene el sol",
@@ -749,7 +1029,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-154-here",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Pez extraterrestre devora gatos",
@@ -760,7 +1048,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-c7baab553cb77",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Ciudadela de los Dragones",
@@ -771,7 +1067,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-157-citadel",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Pueblo Encantado",
@@ -782,7 +1086,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-a2f2e3ddd6181",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Matrimonio entre las nubes",
@@ -793,7 +1105,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-d1a357024ab8a",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "El Ciervo y el Gato",
@@ -804,7 +1124,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-1401782308f09",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Supernova",
@@ -815,7 +1143,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-2e97131f422b1",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Portal para ir a otro Mundo",
@@ -826,7 +1162,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-a0e6785e5d8ac",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Garzas Mágicas",
@@ -837,7 +1181,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-161-magic",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Regiones del mundo Pokémon",
@@ -848,7 +1200,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-7b1b9958289ba",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Pasaje a la Cuarta dimención",
@@ -859,7 +1219,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-017f5f8714159",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "¡Cuidado con el gato, guacamayo!",
@@ -870,7 +1238,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-164-watch",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Expecto Patronum",
@@ -881,7 +1257,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/freestyle-collage-round-174-expecto",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Duck Gansters",
@@ -892,7 +1276,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/round-178-duck-gansters",
-            tags: ["Collage"]
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lmac-a-contest-for-all-hive-creatives-round-119-dimensional-shock",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         }
         
      
