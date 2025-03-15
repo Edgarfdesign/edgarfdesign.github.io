@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             link: { // Nuevo campo
                 url: "https://www.instagram.com/tecnoventas12/",
-                text: "Instagram de Tecnoventas"
+                text: "¡Visita su Instagram!"
             },
             year: 2020 // Nuevo campo
         },

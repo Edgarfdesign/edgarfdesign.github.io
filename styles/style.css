@@ -1076,7 +1076,7 @@ body {
     color: var(--color-secundario);
     text-decoration: none;
     margin: 0.5rem 0;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
@@ -1112,7 +1112,8 @@ body {
 
 .proyecto-year {
     font-size: 0.9rem;
-    color: #2b2b2b;
+    color: #161225;
     font-style: italic;
     font-family: 'Roboto';
+    font-weight: 600;
 }
