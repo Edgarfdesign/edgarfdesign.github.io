@@ -92,7 +92,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/CP8.webp"
             ],
             descripcion: "Culperma es una empresa agroecológica que ofrece productos sustentables y orgánicos. Sus prácticas respetuosas con el medio ambiente aseguran productos de alta calidad, protegiendo la biodiversidad y promoviendo un uso responsable de los recursos naturales.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "https://www.instagram.com/culperma/",
+                text: "¡Visita su Instagram!"
+            },
+            year: 2019 // Nuevo campo
         },
         {
             titulo: "MyMy",
@@ -115,7 +124,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/MY16.webp",
             ],
             descripcion: "MyMy es una marca de ropa que se especializa en ofrecer prendas de alta calidad y diseño innovador. Sus colecciones se destacan por su estilo único y atención a los detalles, brindando a sus clientes moda contemporánea y cómoda.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "",
+                text: ""
+            },
+            year: 2022 // Nuevo campo
         },
         {
             titulo: "Maxima Bisuteria",
@@ -129,7 +147,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             ],
             descripcion: "Máxima Bisutería es una marca especializada en la creación de piezas de bisutería de alta calidad. Se destaca por sus diseños elegantes y detallados, ofreciendo accesorios únicos que complementan cualquier estilo y ocasión.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "",
+                text: ""
+            },
+            year: 2022 // Nuevo campo
         },
         {
             titulo: "Calza Yoing",
@@ -147,7 +174,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             ],
             descripcion: "Calza Yoing es una marca de zapatos que se especializa en ofrecer calzado de alta calidad y diseño contemporáneo. Sus colecciones combinan comodidad y estilo, proporcionando opciones ideales para diversas ocasiones y estilos de vida.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "https://www.instagram.com/calzayoingca/",
+                text: "¡Visita su Instagram!"
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Yannilucio",
@@ -163,7 +199,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/Y9.webp"       
             ],
             descripcion: "Yannilucio busca transmitir una imagen de vanguardia, calidad y dedicación al mundo del motorsport y simracing, atrayendo a entusiastas y profesionales apasionados por la velocidad y la competencia virtual.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "https://www.youtube.com/@yannilucio/featured",
+                text: "¡Visita su canal de Youtube!"
+            },
+            year: 2024 // Nuevo campo
         },
         {
             titulo: "Italplumbing",
@@ -187,7 +232,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/IP16.webp"       
             ],
             descripcion: "Italplumbitng es una empresa especializada en ofrecer servicios de plomería industrial, enfocados en resolver problemas complejos de filtraciones, detección de fugas, mantenimiento de ductos y sistemas de inspección en grandes instalaciones como centros comerciales, condominios y empresas de gran escala.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "https://italplumbing.cl/",
+                text: "¡Visita su página web!"
+            },
+            year: 2024 // Nuevo campo
         },
         {
             titulo: "Miniabasto Liz",
@@ -196,7 +250,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/MAL2.webp"  
             ],
             descripcion: "Liz es un miniabasto que combina practicidad y calidez, ofreciendo productos esenciales en un espacio pequeño pero completo, ideal para compras rápidas y cercanas.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "",
+                text: ""
+            },
+            year: 2020 // Nuevo campo
         },
         {
             titulo: "Asuntos Legales",
@@ -205,7 +268,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/AL2.webp"  
             ],
             descripcion: "Asuntos Legales es tu aliado confiable en soluciones jurídicas. Con profesionalismo, claridad y un enfoque personalizado, brindamos asesoría legal eficiente para resolver tus necesidades con integridad y compromiso.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "",
+                text: ""
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "E-cat Technology",
@@ -216,7 +288,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/EC4.webp"  
             ],
             descripcion: "Programación con instinto felino: herramientas intuitivas, soluciones ágiles y algoritmos que aprenden en la sombra. Para mentes curiosas que buscan código elegante y sistemas que resuelvan con la precisión de una garra. Innovación que acecha en silencio",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "",
+                text: ""
+            },
+            year: 2022 // Nuevo campo
         },
         {
             titulo: "Albert Super Hamburguesas",
@@ -227,7 +308,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/ASH4.webp",  
             ],
             descripcion: "Donde la ciencia culinaria se fusiona con el arte de la hamburguesa. Nuestras creaciones, inspiradas en el genio innovador de Albert, mezclan cortes premium, ingredientes inesperados y panes artesanales horneados al instante. Cada bocado es una explosión de sabores audaces y texturas perfectas.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "",
+                text: ""
+            },
+            year: 2023 // Nuevo campo
         },
         {
             titulo: "Auto Servicio Zamper",
@@ -236,7 +326,16 @@ document.addEventListener('DOMContentLoaded', () => {
                   
             ],
             descripcion: "Tu taller mecánico de confianza, donde la tecnología y la precisión se alían para dar vida a tu vehículo. Diagnóstico avanzado, mantenimiento experto y reparaciones complejas con atención personalizada y soluciones rápidas.",
-            tags: ["Branding"]
+            tags: ["Branding"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+                { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
+            ],
+            link: { // Nuevo campo
+                url: "",
+                text: ""
+            },
+            year: 2022 // Nuevo campo
         },
         {
             titulo: "Conejo entre los Arboles",
@@ -246,8 +345,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                   
             ],
-            descripcion: "https://hive.blog/hive-174695/@edgarafernandezp/lets-make-a-collage-a-contest-for-all-creatives-on-hive-round-103-space-travel-rabbit-among-the-trees",
-            tags: ["Collage"]
+            descripcion: "",
+            tags: ["Collage"],
+            softwareIcons: [ // Nuevo campo
+                { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
+            ],
+            link: { // Nuevo campo
+                url: "https://hive.blog/hive-174695/@edgarafernandezp/lets-make-a-collage-a-contest-for-all-creatives-on-hive-round-103-space-travel-rabbit-among-the-trees",
+                text: "Lee más sobre este collage..."
+            },
+            year: 2021 // Nuevo campo
         },
         {
             titulo: "Patinaje sobre hielo",
