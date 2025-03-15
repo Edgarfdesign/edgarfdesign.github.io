@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "images/proyectos/TV8.webp"
             ],
             descripcion: "Tecnoventas es una empresa de tecnología especializada en la reparación de equipos de cómputo. Ofrecen un servicio integral con profesionales altamente capacitados y tecnologías de última generación, garantizando soluciones rápidas y eficientes.",
-            tags: ["Branding"]
+            tags: ["Branding"],
             softwareIcons: [ // Nuevo campo
                 { nombre: "Photoshop", icono: "images/icons/photoshop.svg" },
                 { nombre: "Illustrator", icono: "images/icons/illustrator.svg" }
