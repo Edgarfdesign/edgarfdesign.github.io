@@ -380,6 +380,54 @@ body {
     object-fit: cover;
 }
 
+/* Estilos para los nuevos elementos */
+.proyecto-link {
+    display: inline-block;
+    color: var(--color-secundario);
+    text-decoration: none;
+    margin: 0.3rem 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.proyecto-link:hover {
+    text-decoration: underline;
+    transform: translateX(5px);
+}
+
+.software-icons {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.software-icons img {
+    width: 45px;
+    height: 45px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.software-icons img:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.proyecto-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.proyecto-year {
+    font-size: 1rem;
+    color: #161225;
+    font-style: bold;
+    font-family: 'Roboto';
+    
+}
+
 .card-content {
     padding: 1.5rem;
 }
