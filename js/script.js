@@ -15,6 +15,68 @@ window.addEventListener('load', () => {
     }, 1500);
 });
 
+// Agrega esto en tu archivo JS
+const aiProjects = [
+    {
+        title: "Bot de Whatsapp para automatizar tienda de ropa",
+        description: "Este proyecto consiste en un bot automatizado para WhatsApp diseñado para optimizar y simplificar la gestión de una tienda de ropa. Su objetivo principal es mejorar la experiencia del cliente y agilizar procesos como consultas de productos, pedidos, seguimiento de inventario, confirmación de pagos y atención al cliente, todo desde la plataforma de WhatsApp, una de las aplicaciones más utilizadas globalmente.",
+        image: "images/ai-projects/Botwhatsapp.jpg",
+        technologies: ["Python", "WhatsApp API"],
+        aiModel: "Deepseek",
+        demoLink: "#",
+        github: "#"
+    },
+    {
+        title: "Bot de discord para gestionar correos electronicos",
+        description: "Este proyecto consiste en un bot de Discord diseñado para integrar y gestionar correos electrónicos directamente desde servidores de Discord, facilitando la comunicación centralizada y optimizando tareas administrativas. Ideal para comunidades, equipos de trabajo o servidores que requieran manejar consultas, soporte técnico o coordinación a través de correo electrónico sin salir de la plataforma.",
+        image: "images/ai-projects/Botdiscord.jpg",
+        technologies: ["Python", "Discord API"],
+        aiModel: "deepseek",
+        demoLink: "#",
+        github: "#"
+    }
+];
+
+// Función para generar proyectos AI
+function renderAIProjects() {
+    const grid = document.querySelector('.ai-projects-grid');
+    
+    aiProjects.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'ai-project-card';
+        card.innerHTML = `
+            <img src="${project.image}" alt="${project.title}">
+            <div class="ai-project-content">
+                <h4>${project.title}</h4>
+                <p>${project.description}</p>
+                
+                <div class="ai-project-meta">
+                    <div class="ai-technologies">
+                        ${project.technologies.map(tech => `
+                            <span class="tech-tag">${tech}</span>
+                        `).join('')}
+                    </div>
+                    
+                    <div class="ai-model">
+                        <i class="fas fa-brain"></i>
+                        ${project.aiModel}
+                    </div>
+                </div>
+                
+                <div class="ai-project-links">
+                    <a href="${project.demoLink}" class="ai-link" target="_blank">
+                        <i class="fas fa-eye"></i> Demo
+                    </a>
+                    <a href="${project.github}" class="ai-link" target="_blank">
+                        <i class="fab fa-github"></i> Código
+                    </a>
+                </div>
+            </div>
+        `;
+        grid.appendChild(card);
+    });
+}
+
 // JavaScript para clonar automáticamente
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.slider-track');
@@ -1598,65 +1660,6 @@ function filtrarProyectos(e) {
     });
 
     // Agrega esto en tu archivo JS
-const aiProjects = [
-    {
-        title: "Bot de Whatsapp para automatizar tienda de ropa",
-        description: "Herramienta que sugiere paletas de color y composiciones usando redes neuronales",
-        image: "images/ai-projects/design-ai.jpg",
-        technologies: [["Python","Deepseek"]],
-        aiModel: "GAN Personalizado",
-        demoLink: "#",
-        github: "#"
-    },
-    {
-        title: "Bot de discord para gestionar correos electronicos",
-        description: "Generador automático de textos para branding usando GPT-4",
-        image: "images/ai-projects/copywriting-ai.jpg",
-        technologies: ["Python","Deepseek"],
-        aiModel: "GPT-4",
-        demoLink: "#",
-        github: "#"
-    }
-];
 
-// Función para generar proyectos AI
-function renderAIProjects() {
-    const grid = document.querySelector('.ai-projects-grid');
-    
-    aiProjects.forEach(project => {
-        const card = document.createElement('div');
-        card.className = 'ai-project-card';
-        card.innerHTML = `
-            <img src="${project.image}" alt="${project.title}">
-            <div class="ai-project-content">
-                <h4>${project.title}</h4>
-                <p>${project.description}</p>
-                
-                <div class="ai-project-meta">
-                    <div class="ai-technologies">
-                        ${project.technologies.map(tech => `
-                            <span class="tech-tag">${tech}</span>
-                        `).join('')}
-                    </div>
-                    
-                    <div class="ai-model">
-                        <i class="fas fa-brain"></i>
-                        ${project.aiModel}
-                    </div>
-                </div>
-                
-                <div class="ai-project-links">
-                    <a href="${project.demoLink}" class="ai-link" target="_blank">
-                        <i class="fas fa-eye"></i> Demo
-                    </a>
-                    <a href="${project.github}" class="ai-link" target="_blank">
-                        <i class="fab fa-github"></i> Código
-                    </a>
-                </div>
-            </div>
-        `;
-        grid.appendChild(card);
-    });
-}
 
 });
