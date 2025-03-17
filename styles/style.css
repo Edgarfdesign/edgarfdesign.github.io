@@ -1214,7 +1214,7 @@ body {
 
 .ai-project-card img {
     width: 100%;
-    height: 400px;
+    height: 700px;
     object-fit: cover;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 12px 12px 0 0;
