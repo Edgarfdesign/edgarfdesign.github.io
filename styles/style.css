@@ -1377,14 +1377,7 @@ body {
     gap: 1rem;
 }
 
-.typewriter-text {
-    font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid var(--color-secundario);
-    box-sizing: border-box;
-    width: 100%;
-}
+
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
