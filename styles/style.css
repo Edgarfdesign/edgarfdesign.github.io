@@ -1205,11 +1205,7 @@ body {
 
 }
 
-/* Efecto hover profesional */
-.ai-project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
+
 
 .ai-project-card img {
     width: 100%;
@@ -1230,7 +1226,7 @@ body {
 /* Espaciado entre elementos */
 .ai-project-content h4 {
     margin-bottom: 1rem;
-    color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .ai-project-content p {
