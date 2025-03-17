@@ -1215,7 +1215,6 @@ body {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-bottom: 3px solid var(--color-secundario);
 }
 
 .ai-project-card:hover img {
