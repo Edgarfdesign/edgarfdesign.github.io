@@ -15,6 +15,29 @@ window.addEventListener('load', () => {
     }, 1500);
 });
 
+// Modifica la función typeWriterEffect
+function typeWriterEffect(element, text, speed = 100) {
+    let i = 0;
+    element.innerHTML = ''; // Limpiar contenido
+    
+    const write = () => {
+        if (i < text.length) {
+            element.innerHTML = text.substr(0, i+1) + '<span class="blinking-cursor">|</span>';
+            i++;
+            setTimeout(write, speed);
+            
+            // Scroll suave para móvil
+            if (window.innerWidth < 768) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        } else {
+            element.innerHTML = text; // Eliminar cursor al final
+        }
+    }
+    
+    write();
+}
+
 // JavaScript para clonar automáticamente
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.slider-track');
