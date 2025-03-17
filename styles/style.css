@@ -1426,6 +1426,17 @@ body {
     width: 100%;
 }
 
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .typewriter-text {
+        white-space: normal;
+        overflow: visible;
+        border-right: none;
+        padding: 0 15px;
+        display: inline-block;
+    }
+}
+
 .typewriter-sub {
     text-align: center;
     position: relative;
@@ -1469,16 +1480,6 @@ body {
         transform: scale(1.1) rotate(-10deg);
         opacity: 1;
     }
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1 }
-    50% { opacity: 0 }
 }
 
 @media (max-width: 768px) {
