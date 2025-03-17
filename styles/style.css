@@ -1458,16 +1458,3 @@ body {
         height: 50px;
     }
 }
-
-.section-title:hover .typewriter-wrapper::after {
-    animation: 
-        blink 0.5s infinite,
-        colorShift 2s infinite;
-}
-
-@keyframes colorShift {
-    0% { color: var(--color-secundario) }
-    50% { color: #00ff88 }
-    100% { color: var(--color-secundario) }
-}
-
