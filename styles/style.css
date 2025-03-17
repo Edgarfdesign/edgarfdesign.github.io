@@ -1254,16 +1254,6 @@ body {
     }
 }
 
-/* Efecto hover */
-.ai-project-card:hover::after {
-    opacity: 1;
-}
-
-.ai-project-card:hover .ai-project-content {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .ai-project-content {
     padding: 1.5rem;
 }
