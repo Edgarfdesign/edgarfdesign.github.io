@@ -1422,11 +1422,8 @@ body {
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid var(--color-secundario);
-    animation: 
-        typing 1.5s steps(15, end),
-        blink-caret 0.75s step-end infinite;
-    text-align: center;
-    position: relative;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .typewriter-sub {
@@ -1472,33 +1469,6 @@ body {
         transform: scale(1.1) rotate(-10deg);
         opacity: 1;
     }
-}
-
-
-
-/* Efecto máquina de escribir */
-.typewriter-wrapper {
-    position: relative;
-    display: inline-block;
-    color: var(--color-fondo);
-}
-
-.typewriter-wrapper::after {
-    content: "|";
-    position: absolute;
-    right: -15px;
-    color:var(--color-fondo);
-    animation: blink 1s infinite;
-}
-
-.section-title1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    position: relative;
-    display: inline-block;
-    animation: typing 3s steps(20, end) forwards;
-    color: var(--color-fondo);
-
 }
 
 @keyframes typing {
@@ -1547,19 +1517,4 @@ body {
     background: linear-gradient(45deg, #fff 0%, #e0e0e0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-
-
-/* Añade este media query para móvil */
-@media (max-width: 768px) {
-    .blinking-cursor {
-        margin-left: 1px;
-        top: 0;
-    }
-    
-    .typewriter-wrapper {
-        white-space: pre-wrap; /* Permite ajuste de línea */
-        word-break: keep-all; /* Evita separación de palabras */
-    }
 }
