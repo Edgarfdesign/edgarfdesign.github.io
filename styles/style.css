@@ -1267,24 +1267,6 @@ body {
     }
 }
 
-.professional-description {
-    max-width: 90%;
-    margin: 1rem auto;
-    padding: 0 15px;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .professional-description {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-}
-
-
 /* Efecto hover */
 .ai-project-card:hover::after {
     opacity: 1;
@@ -1443,6 +1425,8 @@ body {
     animation: 
         typing 1.5s steps(15, end),
         blink-caret 0.75s step-end infinite;
+    text-align: center;
+    position: relative;
 }
 
 .typewriter-sub {
@@ -1451,11 +1435,7 @@ body {
     padding: 1rem 0;
 }
 
-.typewriter-sub::after {
-    content: "|";
-    animation: blink 1s infinite;
-    color: var(--color-secundario);
-}
+
 
 @keyframes blink {
     0%, 100% { opacity: 1 }
