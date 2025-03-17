@@ -1217,10 +1217,6 @@ body {
     object-fit: cover;
 }
 
-.ai-project-card:hover img {
-    transform: scale(1.05);
-}
-
 .ai-project-content {
     padding: 1.5rem;
     background: rgba(32, 32, 32, 0.852);
