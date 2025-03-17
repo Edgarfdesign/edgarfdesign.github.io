@@ -1471,11 +1471,3 @@ body {
     100% { color: var(--color-secundario) }
 }
 
-.developer-ai .section-title {
-    text-shadow: 
-        0 2px 4px rgba(0,0,0,0.3),
-        0 0 20px rgba(84,89,240,0.15);
-    background: linear-gradient(45deg, #fff 0%, #e0e0e0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
