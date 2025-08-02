@@ -1293,7 +1293,38 @@ document.addEventListener('DOMContentLoaded', () => {
     generarFiltros(); // Añade esta línea después de inicializar todo
     filtrarProyectos({ target: document.querySelector('[data-tag="todos"]') }); // Mostrar todos al inicio
 
+    // Bio Modal
+const bioModal = document.getElementById('bio-modal');
+const bioModalClose = document.querySelector('.bio-modal-close');
+const heroAvatar = document.querySelector('.hero-avatar');
 
+// Abrir modal al hacer clic en el avatar
+heroAvatar.addEventListener('click', () => {
+    bioModal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Bloquear scroll del body
+});
+
+// Cerrar modal
+bioModalClose.addEventListener('click', () => {
+    bioModal.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Restaurar scroll
+});
+
+// Cerrar al hacer clic fuera del contenido
+bioModal.addEventListener('click', (e) => {
+    if(e.target === bioModal) {
+        bioModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Cerrar con Escape
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && bioModal.classList.contains('active')) {
+        bioModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
 
 
     // Función para generar los botones de filtro
