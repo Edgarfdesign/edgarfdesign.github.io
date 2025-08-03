@@ -1302,6 +1302,12 @@ const heroAvatar = document.querySelector('.hero-avatar');
 heroAvatar.addEventListener('click', () => {
     bioModal.classList.add('active');
     document.body.style.overflow = 'hidden'; // Bloquear scroll del body
+    
+    // Desactivar el preloader si está visible
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+        preloader.style.display = 'none';
+    }
 });
 
 // Cerrar modal
