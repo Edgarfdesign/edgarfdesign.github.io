@@ -12,6 +12,7 @@
         body.loaded { opacity: 1; overflow: auto; transition: opacity 0.5s ease; }
     </style>
 </head>
+
 <body>
     <div class="preloader">
         <div class="preloader-spinner">
@@ -29,8 +30,9 @@
             <nav class="nav-menu">
                 <a href="#habilidades">Habilidades</a>
                 <a href="#proyectos">Proyectos</a>
-                <a href="#developer-ai">Developers</a>
+                <a href="#developer-ai">Developer</a>
                 <a href="#contacto">Contacto</a>
+                <a href="#mobile-videos">Videos Móviles</a>
             </nav>
         </div>
     </header>
@@ -178,6 +180,72 @@
     </div>
 </section>
 
+<!-- Videos para Móviles - VERSIÓN MEJORADA -->
+<section class="mobile-videos" id="mobile-videos">
+    <h2 class="section-title">Videos para Móviles</h2>
+    
+    <div class="phone-mockup-container">
+        <!-- Mockup del teléfono -->
+        <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-frame">
+                <div class="phone-screen">
+                    <div class="video-container">
+                        <!-- Solo un video se mostrará a la vez -->
+                        <video class="mobile-video active" controls poster="images/videos/video1-poster.jpg" preload="metadata">
+                            <source src="videos/video1.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento video.
+                        </video>
+                        <video class="mobile-video" controls poster="images/videos/video2-poster.jpg" preload="metadata">
+                            <source src="videos/video2.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento video.
+                        </video>
+                        <video class="mobile-video" controls poster="images/videos/video3-poster.jpg" preload="metadata">
+                            <source src="videos/video3.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controles de navegación -->
+        <button class="slider-nav prev" aria-label="Video anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-nav next" aria-label="Video siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+    
+    <!-- Indicadores de video -->
+    <div class="video-indicators">
+        <span class="video-indicator active" data-video="0"></span>
+        <span class="video-indicator" data-video="1"></span>
+        <span class="video-indicator" data-video="2"></span>
+    </div>
+    
+    <div class="video-info">
+        <h3>Contenido en formato vertical</h3>
+        <p>Especializado en la creación de videos optimizados para plataformas móviles como Instagram Reels, TikTok y Stories.</p>
+        
+        <div class="video-stats">
+            <div class="stat">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Videos creados</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Formato vertical</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">After Effects</span>
+                <span class="stat-label">Software principal</span>
+            </div>
+        </div>
+    </div>
+    
+</section>
 
      <!-- Footer -->
      <footer class="main-footer" id="contacto">
@@ -206,6 +274,9 @@
         <div class="footer-copyright">
             <p>© 2025 Edgarfdesign. Todos los derechos reservados</p>
         </div>
+
+
+        
     </footer>
     
     <!-- Bio Modal -->
