@@ -1615,8 +1615,9 @@ body {
     height: auto;
      max-height: 450px;
     display: block;
-    object-fit: cover;      /* Si la imagen es más alta, recorta un poco */
-    object-position: center 30%; /* Controla qué parte se recorta (ej. centro hacia arriba) */
+    object-fit: cover;
+    object-position: center 30%;
+    aspect-ratio: 24 / 9; /* Mantiene proporción, pero si quieres que ocupe toda la altura puedes cambiarlo */
 }
 
 /* El resto del código (botones, indicadores, caption, etc.) se mantiene igual */
