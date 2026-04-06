@@ -1767,6 +1767,26 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .hero {
+        padding-top: 120px;  /* Ajusta este valor si es necesario */
+        margin-top: 0;
+    }
+    
+    /* Si el header tiene altura dinámica, también puedes usar un enfoque más robusto */
+    .main-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.97);
+        z-index: 1000;
+    }
+    
+    /* Opcional: agregar un padding superior al body cuando el header es fijo */
+    body {
+        padding-top: 0;
+    }
+
     .hero-cta {
         flex-direction: column;
         align-items: center;
