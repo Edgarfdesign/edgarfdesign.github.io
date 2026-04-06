@@ -1810,3 +1810,47 @@ body {
         font-size: 1rem;
     }
 }
+
+/* =========================================
+   TÍTULOS DE SECCIÓN - BANNER FULL WIDTH
+   ========================================= */
+.section-title {
+    background: var(--color-secundario);
+    color: white;
+    font-size: 1.8rem;        /* Más pequeño que el original (2.5rem) */
+    text-align: center;
+    padding: 0.8rem 1rem;
+    margin: 0 0 2.5rem 0;     /* Separación inferior */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Restauramos el título de la sección Developer AI a su estilo original */
+.developer-ai .section-title {
+    background: transparent;
+    color: white;
+    font-size: 2.5rem;
+    width: auto;
+    position: static;
+    transform: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+}
+
+/* Ajuste para que en móviles no quede demasiado grande */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.4rem;
+        padding: 0.6rem 1rem;
+        margin-bottom: 2rem;
+    }
+    .developer-ai .section-title {
+        font-size: 1.8rem;
+    }
+}
