@@ -1613,7 +1613,7 @@ body {
 .banner-slide img {
     width: 100%;
     height: auto;
-     max-height: 450px;
+    max-height: 450px;
     display: block;
     object-fit: cover;
     object-position: center 30%;
