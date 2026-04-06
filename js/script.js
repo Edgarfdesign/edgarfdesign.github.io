@@ -593,7 +593,7 @@ const datosProyectos = [
 const bannersData = [
     {
         img: "images/banners/banner1.webp",
-        caption: "Flayers para RRSS",
+        
         link: "#"   // opcional: al hacer clic en el banner redirige
     },
     {
