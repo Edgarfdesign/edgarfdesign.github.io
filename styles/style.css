@@ -1667,21 +1667,18 @@ body {
 .banner-next { right: 20px; }
 
 .banner-indicators {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     gap: 12px;
-    z-index: 10;
+    margin-top: 1.5rem;     /* Separación respecto al slider */
+    padding-bottom: 0.5rem;
 }
 
 .banner-indicator {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.5);
+    background: rgba(0, 0, 0, 0.3);  /* Color más neutro y suave */
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -1689,26 +1686,31 @@ body {
 .banner-indicator.active {
     background: var(--color-secundario);
     transform: scale(1.2);
-    box-shadow: 0 0 8px rgba(84,89,240,0.6);
+    box-shadow: 0 0 6px rgba(84,89,240,0.5);
 }
 
 /* Responsive para móviles */
+/* Versión móvil: más pequeños */
 @media (max-width: 768px) {
-    .banner-slider-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
+    .banner-indicators {
+        gap: 8px;
+        margin-top: 1rem;
     }
-    .banner-prev { left: 10px; }
-    .banner-next { right: 10px; }
-    .banner-caption {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
-        bottom: 15%;
-    }
+    
     .banner-indicator {
         width: 8px;
         height: 8px;
+    }
+    
+    .banner-indicator.active {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-indicator {
+        width: 6px;
+        height: 6px;
     }
 }
 
