@@ -1724,15 +1724,13 @@ body {
 /* Botón de descarga CV */
 .cta-download {
     background: transparent;
-    border: 2px solid #2A2A2A;  /* Color oscuro para diferenciar */
-    color: #2A2A2A;
+    border: 2px solid var(--color-secundario);
+    color: var(--color-secundario);
 }
 
 .cta-download:hover {
-    background: #2A2A2A;
+    background: var(--color-secundario);
     color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 768px) {
