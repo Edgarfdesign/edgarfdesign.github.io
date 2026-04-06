@@ -1579,20 +1579,24 @@ body {
 /* =========================================
    BANNER SLIDER (Entre Hero y Habilidades)
    ========================================= */
+/* =========================================
+   BANNER SLIDER (Full width, sin bordes)
+   ========================================= */
 .banner-slider-section {
-    padding: 2rem 0 4rem 0;
+    padding: 0;            /* Elimina padding interno */
     background: var(--color-fondo);
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 
 .banner-slider-container {
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;             /* Sin margen */
     position: relative;
-    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-radius: 0;      /* Sin bordes redondeados */
+    box-shadow: none;      /* Elimina sombra si la tenía */
 }
 
 .banner-slider-track {
@@ -1611,11 +1615,10 @@ body {
     height: auto;
     display: block;
     object-fit: cover;
-    aspect-ratio: 16 / 9; /* Relación de aspecto consistente */
-    transition: transform 0.4s ease;
+    aspect-ratio: 16 / 9; /* Mantiene proporción, pero si quieres que ocupe toda la altura puedes cambiarlo */
 }
 
-/* Contenido opcional sobre el banner (si quieres texto) */
+/* El resto del código (botones, indicadores, caption, etc.) se mantiene igual */
 .banner-caption {
     position: absolute;
     bottom: 20%;
@@ -1632,7 +1635,6 @@ body {
     animation: fadeInUp 0.6s ease;
 }
 
-/* Botones de navegación */
 .banner-slider-btn {
     position: absolute;
     top: 50%;
@@ -1659,15 +1661,9 @@ body {
     transform: translateY(-50%) scale(1.1);
 }
 
-.banner-prev {
-    left: 20px;
-}
+.banner-prev { left: 20px; }
+.banner-next { right: 20px; }
 
-.banner-next {
-    right: 20px;
-}
-
-/* Indicadores (puntos) */
 .banner-indicators {
     position: absolute;
     bottom: 20px;
@@ -1696,25 +1692,18 @@ body {
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
-    .banner-slider-section {
-        padding: 1rem 0 2rem;
-    }
-    
     .banner-slider-btn {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
     }
-    
     .banner-prev { left: 10px; }
     .banner-next { right: 10px; }
-    
     .banner-caption {
         font-size: 0.9rem;
         padding: 0.6rem 1.2rem;
         bottom: 15%;
     }
-    
     .banner-indicator {
         width: 8px;
         height: 8px;
