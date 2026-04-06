@@ -593,7 +593,7 @@ const datosProyectos = [
 const bannersData = [
     {
         img: "images/banners/banner1.webp",
-        
+        caption: "",
         link: "#"   // opcional: al hacer clic en el banner redirige
     },
     {
