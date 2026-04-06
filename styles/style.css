@@ -1769,7 +1769,7 @@ body {
 @media (max-width: 768px) {
 
     .hero {
-        padding-top: 150px;  /* Ajusta este valor si es necesario */
+        padding-top: 250px;  /* Ajusta este valor si es necesario */
         margin-top: 0;
     }
     
