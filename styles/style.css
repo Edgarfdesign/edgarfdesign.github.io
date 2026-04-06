@@ -1583,7 +1583,7 @@ body {
    BANNER SLIDER (Full width, sin bordes)
    ========================================= */
 .banner-slider-section {
-    padding: 0;            /* Elimina padding interno */
+    padding: 2rem 0;            /* Elimina padding interno */
     background: var(--color-fondo);
     overflow: hidden;
     position: relative;
@@ -1615,7 +1615,7 @@ body {
     height: auto;
     display: block;
     object-fit: cover;
-    aspect-ratio: 26 / 9; /* Mantiene proporción, pero si quieres que ocupe toda la altura puedes cambiarlo */
+    aspect-ratio: 24 / 9; /* Mantiene proporción, pero si quieres que ocupe toda la altura puedes cambiarlo */
 }
 
 /* El resto del código (botones, indicadores, caption, etc.) se mantiene igual */
