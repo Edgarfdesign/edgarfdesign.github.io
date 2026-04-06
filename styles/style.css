@@ -1470,6 +1470,11 @@ body {
     .social-link i {
         color: white !important;
     }
+
+     /* Ocultar iconos sociales en móvil/tablet */
+    .social-links {
+        display: none;
+    }
 }
 
 /* Mobile Standard (768px and down) */
