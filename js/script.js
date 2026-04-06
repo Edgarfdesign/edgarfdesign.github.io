@@ -593,8 +593,8 @@ const datosProyectos = [
 const bannersData = [
     {
         img: "images/banners/banner1.webp",
-        caption: "Diseño de Identidad Corporativa",
-        link: "#proyectos"   // opcional: al hacer clic en el banner redirige
+        caption: "Flayers para RRSS",
+        link: "#"   // opcional: al hacer clic en el banner redirige
     },
     {
         img: "images/banners/banner2.webp",
