@@ -594,7 +594,7 @@ const bannersData = [
     {
         img: "images/banners/banner1.webp",
         caption: "",
-        link: "#https://wa.me/message/2EWSSFEJTDP2G1"   // opcional: al hacer clic en el banner redirige
+        link: "https://wa.me/message/2EWSSFEJTDP2G1"   // opcional: al hacer clic en el banner redirige
     },
     {
         img: "images/banners/banner2.webp",
