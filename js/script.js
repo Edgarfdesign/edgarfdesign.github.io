@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initVideoSlider();
     initLogoSlider();
     initBioModal();
+    initBannerSlider();
     
     // Cargar datos y renderizar secciones dinámicas
     initPortfolio();     // Carga proyectos y filtros
@@ -582,3 +583,211 @@ const datosProyectos = [
     }
     
 ];
+
+// =========================================
+// BANNER SLIDER (Imágenes destacadas)
+// =========================================
+
+// 📌 Aquí es donde tú subes tus banners
+// Solo tienes que editar este array con las rutas de tus imágenes
+const bannersData = [
+    {
+        img: "images/banners/banner1.webp",
+        caption: "Diseño de Identidad Corporativa",
+        link: "#proyectos"   // opcional: al hacer clic en el banner redirige
+    },
+    {
+        img: "images/banners/banner2.webp",
+        caption: "Branding para Empresas",
+        link: "#proyectos"
+    },
+    {
+        img: "images/banners/banner3.webp",
+        caption: "Videos para Móviles",
+        link: "#mobile-videos"
+    }
+    // Agrega cuantos banners quieras
+];
+
+function initBannerSlider() {
+    const track = document.querySelector('.banner-slider-track');
+    const indicatorsContainer = document.querySelector('.banner-indicators');
+    const prevBtn = document.querySelector('.banner-prev');
+    const nextBtn = document.querySelector('.banner-next');
+    
+    if (!track || !indicatorsContainer || bannersData.length === 0) return;
+    
+    let currentIndex = 0;
+    let autoPlayInterval;
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    
+    // 1. Construir los slides dinámicamente
+    function buildSlides() {
+        track.innerHTML = '';
+        indicatorsContainer.innerHTML = '';
+        
+        bannersData.forEach((banner, idx) => {
+            // Crear slide
+            const slide = document.createElement('div');
+            slide.className = 'banner-slide';
+            slide.setAttribute('data-index', idx);
+            
+            const img = document.createElement('img');
+            img.src = banner.img;
+            img.alt = banner.caption || `Banner ${idx+1}`;
+            img.loading = 'lazy';
+            
+            slide.appendChild(img);
+            
+            // Si hay caption, añadirlo
+            if (banner.caption) {
+                const captionDiv = document.createElement('div');
+                captionDiv.className = 'banner-caption';
+                captionDiv.textContent = banner.caption;
+                slide.appendChild(captionDiv);
+            }
+            
+            // Si el banner tiene link, todo el slide se vuelve clicable
+            if (banner.link) {
+                slide.style.cursor = 'pointer';
+                slide.addEventListener('click', (e) => {
+                    // Evitar que el clic en los botones navegue
+                    if (e.target.closest('.banner-slider-btn')) return;
+                    window.location.href = banner.link;
+                });
+            }
+            
+            track.appendChild(slide);
+            
+            // Crear indicador
+            const indicator = document.createElement('div');
+            indicator.className = 'banner-indicator';
+            if (idx === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => goToSlide(idx));
+            indicatorsContainer.appendChild(indicator);
+        });
+    }
+    
+    // 2. Función para mover el slider
+    function goToSlide(index) {
+        if (index < 0) index = 0;
+        if (index >= bannersData.length) index = bannersData.length - 1;
+        currentIndex = index;
+        const translateX = -currentIndex * 100;
+        track.style.transform = `translateX(${translateX}%)`;
+        
+        // Actualizar indicadores activos
+        document.querySelectorAll('.banner-indicator').forEach((ind, i) => {
+            if (i === currentIndex) ind.classList.add('active');
+            else ind.classList.remove('active');
+        });
+        
+        resetAutoPlay();
+    }
+    
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+    
+    function prevSlide() {
+        goToSlide(currentIndex - 1);
+    }
+    
+    // 3. Autoplay (cada 5 segundos)
+    function startAutoPlay() {
+        if (autoPlayInterval) clearInterval(autoPlayInterval);
+        autoPlayInterval = setInterval(() => {
+            // Solo avanzar si no se está haciendo drag y el slider es visible
+            if (!isDragging && track.offsetParent !== null) {
+                let next = currentIndex + 1;
+                if (next >= bannersData.length) next = 0;
+                goToSlide(next);
+            }
+        }, 5000);
+    }
+    
+    function resetAutoPlay() {
+        if (autoPlayInterval) clearInterval(autoPlayInterval);
+        startAutoPlay();
+    }
+    
+    // 4. Eventos táctiles y ratón (drag para móviles)
+    function dragStart(e) {
+        isDragging = true;
+        startPos = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+        track.style.transition = 'none';
+        resetAutoPlay();
+    }
+    
+    function dragMove(e) {
+        if (!isDragging) return;
+        const currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+        const diff = currentX - startPos;
+        const movePercent = (diff / track.offsetWidth) * 100;
+        let newTranslate = -currentIndex * 100 + movePercent;
+        // Limitar arrastre para no mostrar bordes
+        if (newTranslate > 0) newTranslate = 0;
+        if (newTranslate < -(bannersData.length - 1) * 100) newTranslate = -(bannersData.length - 1) * 100;
+        track.style.transform = `translateX(${newTranslate}%)`;
+    }
+    
+    function dragEnd(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        const endX = e.type === 'mouseup' ? e.clientX : e.changedTouches[0].clientX;
+        const diff = endX - startPos;
+        const threshold = track.offsetWidth * 0.2;
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) prevSlide();
+            else nextSlide();
+        } else {
+            goToSlide(currentIndex);
+        }
+        startAutoPlay();
+    }
+    
+    // 5. Pausar autoplay cuando el mouse entra (opcional)
+    function pauseOnHover() {
+        if (autoPlayInterval) clearInterval(autoPlayInterval);
+    }
+    function resumeOnLeave() {
+        startAutoPlay();
+    }
+    
+    // 6. Conectar eventos
+    buildSlides();
+    goToSlide(0);
+    startAutoPlay();
+    
+    // Botones
+    if (prevBtn) prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevSlide(); });
+    if (nextBtn) nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSlide(); });
+    
+    // Eventos táctiles / mouse drag
+    track.addEventListener('mousedown', dragStart);
+    track.addEventListener('mousemove', dragMove);
+    track.addEventListener('mouseup', dragEnd);
+    track.addEventListener('touchstart', dragStart);
+    track.addEventListener('touchmove', dragMove);
+    track.addEventListener('touchend', dragEnd);
+    
+    // Pausar al hover (mejor experiencia)
+    track.addEventListener('mouseenter', pauseOnHover);
+    track.addEventListener('mouseleave', resumeOnLeave);
+    
+    // Teclado (si el slider está visible)
+    document.addEventListener('keydown', (e) => {
+        const sliderSection = document.getElementById('banner-slider');
+        if (!sliderSection || !isElementInViewport(sliderSection)) return;
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+    });
+    
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight - 100 && rect.bottom > 100;
+    }
+}
