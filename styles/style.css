@@ -1723,14 +1723,42 @@ body {
 
 /* Botón de descarga CV */
 .cta-download {
-    background: transparent;
+    position: relative;
     border: 2px solid var(--color-secundario);
+    background: transparent;
     color: var(--color-secundario);
+    transition: all 0.3s ease;
+    /* Sombra base */
+    box-shadow: 0 0 5px rgba(84,89,240,0.3), 0 0 10px rgba(255,255,255,0.2);
 }
 
+/* Efecto de resplandor animado (pulso) */
+@keyframes glow-pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(84,89,240,0.3), 0 0 10px rgba(255,255,255,0.2);
+        border-color: var(--color-secundario);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(84,89,240,0.8), 0 0 20px rgba(255,255,255,0.6);
+        border-color: #fff;
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(84,89,240,0.3), 0 0 10px rgba(255,255,255,0.2);
+        border-color: var(--color-secundario);
+    }
+}
+
+.cta-download {
+    animation: glow-pulse 2s infinite ease-in-out;
+}
+
+/* Al hacer hover se intensifica */
 .cta-download:hover {
     background: var(--color-secundario);
     color: white;
+    animation: none;
+    box-shadow: 0 0 20px rgba(84,89,240,0.9), 0 0 30px rgba(255,255,255,0.8);
+    transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
@@ -1742,5 +1770,18 @@ body {
     .cta-button {
         width: 80%;
         justify-content: center;
+    }
+}
+
+/* Botones más pequeños en desktop */
+@media (min-width: 769px) {
+    .hero-cta .cta-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.95rem;
+        gap: 0.6rem;
+    }
+    
+    .hero-cta .cta-button i {
+        font-size: 1rem;
     }
 }
