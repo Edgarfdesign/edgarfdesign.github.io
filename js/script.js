@@ -598,13 +598,13 @@ const bannersData = [
     },
     {
         img: "images/banners/banner2.webp",
-        caption: "Branding para Empresas",
-        link: "#proyectos"
+        caption: "",
+        link: "#"
     },
     {
         img: "images/banners/banner3.webp",
-        caption: "Videos para Móviles",
-        link: "#mobile-videos"
+        caption: "",
+        link: "#"
     }
     // Agrega cuantos banners quieras
 ];
