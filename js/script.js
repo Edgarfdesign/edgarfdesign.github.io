@@ -599,12 +599,12 @@ const bannersData = [
     {
         img: "images/banners/banner2.webp",
         caption: "",
-        link: "#"
+        link: "https://wa.me/message/2EWSSFEJTDP2G1"
     },
     {
         img: "images/banners/banner3.webp",
         caption: "",
-        link: "#"
+        link: "https://wa.me/message/2EWSSFEJTDP2G1"
     }
     // Agrega cuantos banners quieras
 ];
