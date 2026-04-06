@@ -1613,9 +1613,10 @@ body {
 .banner-slide img {
     width: 100%;
     height: auto;
+     max-height: 450px;
     display: block;
-    object-fit: cover;
-    aspect-ratio: 24 / 9; /* Mantiene proporción, pero si quieres que ocupe toda la altura puedes cambiarlo */
+    object-fit: cover;      /* Si la imagen es más alta, recorta un poco */
+    object-position: center 30%; /* Controla qué parte se recorta (ej. centro hacia arriba) */
 }
 
 /* El resto del código (botones, indicadores, caption, etc.) se mantiene igual */
