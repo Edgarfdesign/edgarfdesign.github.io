@@ -35,8 +35,8 @@
 
   /* rhythm */
   --nav: 72px;
-  --padt: 96px;
-  --padb: 64px;
+  --padt: 80px;
+  --padb: 56px;
   --gut: 80px;
   --wrap: 1280px;
 
@@ -143,7 +143,7 @@ html { scrollbar-color: #3a3944 transparent; }
 
 .section {
   padding: var(--padt) 0 var(--padb);
-  min-height: calc(var(--h, 1) * 100svh);
+  min-height: 0;
   display: flex;
   align-items: flex-start;
   background: var(--bg);
@@ -421,10 +421,10 @@ html { scrollbar-color: #3a3944 transparent; }
 
 /* Retrato en placa 3:4, con filete fino que la separa del negro */
 .hero__media > img {
-  width: clamp(240px, 21vw, 302px);
+  width: clamp(260px, 30vw, 440px);
   height: auto;
-  aspect-ratio: 3 / 4;
-  border-radius: 6px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   object-fit: cover;
   object-position: center;
   border: 1px solid color-mix(in oklab, #f4f3f7 20%, transparent);
@@ -489,7 +489,7 @@ html { scrollbar-color: #3a3944 transparent; }
 }
 .video__text .head__lead { margin-top: var(--s-5); max-width: 34ch; }
 
-.facts { margin-top: auto; padding-top: var(--s-7); display: grid; gap: var(--s-3); }
+.facts { margin-top: var(--s-6); padding-top: 0; display: grid; gap: var(--s-3); }
 .facts li {
   display: flex;
   justify-content: space-between;
@@ -711,7 +711,7 @@ html { scrollbar-color: #3a3944 transparent; }
   background: var(--bg);
   color: var(--ink);
   padding: var(--padt) 0 var(--s-6);
-  min-height: 100svh;
+  min-height: 0;
   display: flex;
   align-items: flex-start;
 }
@@ -719,8 +719,7 @@ html { scrollbar-color: #3a3944 transparent; }
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--s-7) var(--s-5);
-  align-content: space-between;
-  min-height: calc(100svh - var(--padt) - var(--s-6));
+  align-content: start;
 }
 .closing__cta { grid-column: 1 / span 9; }
 .closing__cta h2 {
