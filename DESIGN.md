@@ -203,9 +203,10 @@ Las placas del muro son la excepción deliberada: radio 0 y sin borde. La cuadr�
 - **States:** el enlace activo lleva subrayado de un píxel; el hover baja el tono a `--muted`. En móvil se convierte en un botón de menú y una hoja a pantalla completa.
 
 ### Muro de trabajo
-- **Qué es:** doce botones con una pieza cada uno, sin leyenda, que abren la galería del proyecto completo.
+- **Qué es:** doce enlaces con una pieza cada uno que abren la galería del proyecto completo. En reposo no muestran texto.
+- **Etiqueta:** el nombre y el año aparecen sobre un degradado al pasar el ratón o al enfocar con el teclado. Nunca son una leyenda fija y no existen en táctil, donde el contexto lo da la galería.
 - **Comportamiento:** la imagen escala a 1.045 en hover, 1.02 en pulsación. El foco dibuja un anillo interior de 3 px en violeta con 5 px de separación del borde, por encima de la imagen.
-- **Regla:** el muro no lleva texto. Ni nombre, ni año, ni disciplina, ni pie de foto.
+- **Regla:** el muro está mudo en reposo. Ni nombre, ni año, ni disciplina fijos; la etiqueta solo responde a la intención.
 
 ### Retrato
 - **Qué es:** la foto del diseñador, en blanco y negro, en un círculo de 411 px que acaba en el margen derecho.
@@ -221,7 +222,7 @@ Las placas del muro son la excepción deliberada: radio 0 y sin borde. La cuadr�
 - **Do** mantener el retrato en blanco y negro: el color de la página viene de las marcas, no de la foto.
 
 ### Don't:
-- **Don't** poner leyendas, nombres ni años bajo las imágenes del muro.
+- **Don't** poner leyendas fijas bajo las imágenes del muro: la etiqueta aparece al buscar, no antes.
 - **Don't** añadir sombras, halos o desenfoques decorativos: el sistema es plano y tonal.
 - **Don't** introducir una segunda familia tipográfica para «dar carácter».
 - **Don't** usar el violeta como fondo de sección ni como degradado; solo como señal de acción.

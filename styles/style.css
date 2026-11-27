@@ -1023,6 +1023,70 @@ html { scrollbar-color: #3a3944 transparent; }
 body { caret-color: var(--accent); }
 a { text-underline-offset: 3px; }
 .lightbox__bar { min-width: 0; }
-.lightbox__title { min-width: 0; overflow-wrap: anywhere; }
+.lightbox__title { flex: 1 1 auto; min-width: 0; overflow-wrap: break-word; }
 /* un nombre largo no puede empujar el contador fuera de la barra */
 .lightbox__count, .lightbox__hint { flex: none; }
+
+
+/* ---------- CLARIFY: el muro dice que es cada pieza al buscarlo ---------- */
+.tile__label {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-2);
+  padding: var(--s-6) var(--s-3) var(--s-3);
+  background: linear-gradient(to top, rgb(8 8 10 / .88), rgb(8 8 10 / 0));
+  color: #f4f3f7;
+  font-size: var(--t-label);
+  line-height: 1.3;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 180ms var(--ease), transform 220ms var(--ease-enter);
+  pointer-events: none;
+}
+.tile__label strong { font-weight: 500; letter-spacing: -0.01em; }
+.tile__label span { color: #cfccd6; font-variant-numeric: tabular-nums; }
+.tile:hover .tile__label,
+.tile:focus-visible .tile__label {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tile__label { transition: none; transform: none; }
+}
+/* en tactil no hay hover: la galeria da el contexto */
+@media (hover: none) {
+  .tile__label { display: none; }
+}
+
+/* ---------- ADAPT: cerrar la galeria en el telefono ---------- */
+@media (max-width: 767px) {
+  .lightbox__close {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    left: 50%;
+    bottom: calc(var(--s-5) + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%);
+    background: rgb(8 8 10 / .92);
+    border-color: rgb(244 243 247 / .28);
+    z-index: 3;
+  }
+  .lightbox__stage { padding-bottom: calc(var(--s-9) + env(safe-area-inset-bottom, 0px)); }
+  /* en el telefono la pista se come el ancho del titulo: ahi no cabe */
+  .lightbox__hint { display: none; }
+  .lightbox__bar { gap: var(--s-3); }
+  .lightbox__title { font-size: var(--t-small); }
+}
+
+
+/* ---------- ANIMATE: el video se pausa y se ve como se pausa ---------- */
+.phone__play .i-pause { display: none; }
+.phone.is-playing .phone__play { opacity: .48; }
+.phone.is-playing .phone__play:hover,
+.phone.is-playing .phone__play:focus-visible { opacity: 1; }
+.phone.is-playing .phone__play .i-play { display: none; }
+.phone.is-playing .phone__play .i-pause { display: block; }

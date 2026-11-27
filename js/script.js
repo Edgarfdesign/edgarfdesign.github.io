@@ -174,16 +174,23 @@
     });
 
     // deslizar en pantalla táctil
-    var startX = null;
-    stage.addEventListener('pointerdown', function (e) { startX = e.clientX; });
+    var startX = null, startY = null;
+    stage.addEventListener('pointerdown', function (e) {
+      startX = e.clientX;
+      startY = e.clientY;
+    });
     stage.addEventListener('pointerup', function (e) {
       if (startX === null) return;
       var dx = e.clientX - startX;
+      var dy = e.clientY - startY;
       startX = null;
+      startY = null;
+      // deslizar hacia abajo cierra: el pulgar no llega a la esquina
+      if (dy > 90 && Math.abs(dy) > Math.abs(dx) * 1.5) { close(); return; }
       if (Math.abs(dx) < 40) return;
       show(dx > 0 ? index - 1 : index + 1);
     });
-    stage.addEventListener('pointercancel', function () { startX = null; });
+    stage.addEventListener('pointercancel', function () { startX = null; startY = null; });
   })();
 
   /* ---------- Slider de videos ---------- */
