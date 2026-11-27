@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://edgarfdesign.github.io/sitemap.xml
