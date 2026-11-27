@@ -444,45 +444,31 @@ html { scrollbar-color: #3a3944 transparent; }
 .hero__fact strong { font-size: 1.0625rem; font-weight: 500; letter-spacing: -0.02em; }
 .hero__fact span { font-size: var(--t-small); color: var(--muted); }
 .wall {
+  --bleed: max(var(--gut), calc((100vw - var(--wrap)) / 2));
+  width: calc(100% + 2 * var(--bleed));
+  margin-left: calc(-1 * var(--bleed));
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--s-5) var(--s-4);
+  gap: 3px;
+  background: var(--line);
 }
 .tile {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 100%;
   padding: 0;
-  border: 1px solid var(--line);
-  border-radius: var(--r-md);
+  border: 0;
+  border-radius: 0;
   overflow: hidden;
   background: var(--surface);
   cursor: pointer;
-  text-align: left;
-  transition: transform 180ms var(--ease), border-color 180ms var(--ease);
-}
-.tile:hover {
-  transform: translateY(-2px);
-  border-color: color-mix(in oklab, #f4f3f7 34%, transparent);
+  aspect-ratio: 4 / 5;
 }
 .tile img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
+  height: 100%;
   object-fit: cover;
   transition: transform var(--m-image) var(--ease);
 }
-.tile__meta {
-  display: grid;
-  gap: 2px;
-  padding: var(--s-3) var(--s-4) var(--s-4);
-}
-.tile__meta strong {
-  font-size: 0.9375rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-.tile__meta span { font-size: var(--t-label); color: var(--muted); }
 .tile:hover img { transform: scale(1.045); }
 .tile:active img { transform: scale(1.02); }
 .tile:focus-visible { outline-offset: -4px; }
@@ -943,6 +929,7 @@ html { scrollbar-color: #3a3944 transparent; }
 
   .head { margin-bottom: var(--s-6); }
   .wall { grid-template-columns: repeat(2, 1fr); }
+  .wall .tile { aspect-ratio: 1 / 1; }
 
 
   .slider { max-width: 340px; margin-inline: auto; }
@@ -969,6 +956,7 @@ html { scrollbar-color: #3a3944 transparent; }
 
 @media (max-width: 359px) {
   .wall { grid-template-columns: 1fr; }
+  .wall .tile { aspect-ratio: 4 / 3; }
 }
 
 /* ---------- 17. Reduced motion ---------- */
