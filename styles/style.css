@@ -412,6 +412,13 @@ html { scrollbar-color: #3a3944 transparent; }
 
 .hero__media {
   position: relative;
+  align-self: center;
+  justify-self: end;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 5;
+  margin-right: var(--gut);
+  border-radius: var(--r-md);
   overflow: hidden;
   background: var(--surface);
   animation: media-in 1100ms var(--ease-enter) 120ms both;
@@ -845,7 +852,10 @@ html { scrollbar-color: #3a3944 transparent; }
   }
   .hero__text { padding: var(--s-6) var(--gut) var(--s-6); }
   .hero__h1 { max-width: 20ch; }
-  .hero__media { height: 46vh; min-height: 300px; }
+  .hero__media {
+    height: 46vh; min-height: 300px;
+    aspect-ratio: auto; max-width: none; margin-right: 0; justify-self: stretch;
+  }
 
   .wall { grid-template-columns: repeat(3, 1fr); }
   .logos { grid-template-columns: repeat(3, 1fr); }
