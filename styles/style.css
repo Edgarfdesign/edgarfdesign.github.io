@@ -1090,3 +1090,14 @@ a { text-underline-offset: 3px; }
 .phone.is-playing .phone__play:focus-visible { opacity: 1; }
 .phone.is-playing .phone__play .i-play { display: none; }
 .phone.is-playing .phone__play .i-pause { display: block; }
+
+
+/* ---------- CLARIFY: lo que cuesta y lo que tarda, en palabras ---------- */
+.serv__price {
+  margin-top: var(--s-6);
+  font-size: var(--t-small);
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 52ch;
+}
+.serv__price strong { color: var(--ink); font-weight: 500; }
