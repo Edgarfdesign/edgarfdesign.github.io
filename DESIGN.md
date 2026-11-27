@@ -12,6 +12,8 @@ colors:
   papel-sombreado: "#e8e6ee"
   tinta: "#16151a"
   grafito: "#4a4852"
+  sala-negra: "#08080a"
+  pantalla: "#000000"
 typography:
   display:
     fontFamily: "Schibsted Grotesk, system-ui, sans-serif"
@@ -53,6 +55,10 @@ rounded:
   sm: "6px"
   md: "10px"
   lg: "16px"
+  frame: "26px"
+  frame-inner: "22px"
+  screen: "18px"
+  pill: "999px"
   full: "50%"
 spacing:
   s1: "4px"
@@ -125,6 +131,8 @@ Paleta de penumbra con un acento eléctrico: negros con un punto de azul, tiza c
 - **Papel sombreado** (#e8e6ee): la superficie del mundo claro, el panel de herramientas.
 - **Tinta** (#16151a): el texto del mundo claro.
 - **Grafito** (#4a4852): el secundario del mundo claro, también a 7:1.
+- **Sala negra** (#08080a): el fondo de la galería, un escalón por debajo del negro de la página, para que la pieza flote.
+- **Pantalla** (#000000): el interior del teléfono del video, donde la pieza manda y nada compite.
 
 ### Named Rules
 **La regla del interruptor.** Los dos mundos comparten tokens; solo cambian sus valores dentro de `.section--light`. Un color nuevo del mundo claro sin su pareja oscura es un error, no una excepción.
@@ -171,7 +179,7 @@ Eso obliga a que cualquier elevación nueva sea tonal. Una sombra difusa, un hal
 
 ## Shapes
 
-Tres radios y un círculo. `--r-sm` (6 px) para botones, enlaces y campos; `--r-md` (10 px) para medios y el panel pequeño; `--r-lg` (16 px) para el panel de herramientas. El retrato es el único círculo del sistema (50 %) y por eso funciona como firma.
+Tres radios de componente, dos de objeto y un círculo. `--r-sm` (6 px) para botones, enlaces y campos; `--r-md` (10 px) para medios y el panel pequeño; `--r-lg` (16 px) para el panel de herramientas. El marco del teléfono usa 26 px y su pantalla 18 px, con 22 px en el borde interior: son radios de objeto, no de componente, y por eso no entran en la escala. Las píldoras de herramientas usan 999 px. El retrato es el único círculo del sistema (50 %) y por eso funciona como firma.
 
 Las placas del muro son la excepción deliberada: radio 0 y sin borde. La cuadrícula las une con 3 px de fondo, así que el conjunto lee como una sola pieza partida, no como doce tarjetas.
 

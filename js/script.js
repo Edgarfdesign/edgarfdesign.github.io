@@ -88,6 +88,27 @@
         t.sx.toFixed(4) + ',' + t.sy.toFixed(4) + ')';
     }
 
+    // Pista de primera vez: ensena a navegar una sola vez y se va sola.
+    var hintSeen = false;
+    try { hintSeen = localStorage.getItem('lb-hint') === '1'; } catch (e) {}
+
+    function showHint() {
+      if (hintSeen || !bar || !countEl) return;
+      hintSeen = true;
+      try { localStorage.setItem('lb-hint', '1'); } catch (e) {}
+      var touch = window.matchMedia('(hover: none)').matches;
+      var hint = document.createElement('span');
+      hint.className = 'lightbox__hint';
+      hint.textContent = touch
+        ? 'Desliza para cambiar de pieza'
+        : 'Usa las flechas para cambiar de pieza';
+      bar.insertBefore(hint, countEl.nextSibling);
+      window.setTimeout(function () {
+        hint.classList.add('is-gone');
+        window.setTimeout(function () { hint.remove(); }, 450);
+      }, 4200);
+    }
+
     function open(button) {
       var raw = button.getAttribute('data-images') || '';
       images = raw.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
@@ -97,6 +118,7 @@
       var from = reduce ? null : button.getBoundingClientRect();
       show(0);
       dialog.showModal();
+      showHint();
       if (reduce) return;
 
       requestAnimationFrame(function () {

@@ -153,6 +153,36 @@
      "#d4d3d7",
      "#f2f2f3"
     ]
+   },
+   "sala-negra": {
+    "role": "neutral",
+    "displayName": "Sala negra",
+    "canonical": "#08080a",
+    "tonalRamp": [
+     "#232329",
+     "#3e3e49",
+     "#57576a",
+     "#70708b",
+     "#9090a5",
+     "#b1b1bf",
+     "#d2d2d9",
+     "#f1f1f3"
+    ]
+   },
+   "pantalla": {
+    "role": "neutral",
+    "displayName": "Pantalla",
+    "canonical": "#000000",
+    "tonalRamp": [
+     "#262626",
+     "#434343",
+     "#616161",
+     "#7e7e7e",
+     "#9b9b9b",
+     "#b8b8b8",
+     "#d5d5d5",
+     "#f2f2f2"
+    ]
    }
   },
   "typographyMeta": {
