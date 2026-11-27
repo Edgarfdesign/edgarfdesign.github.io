@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-radius="soft" data-buttons="solid">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Edgar Fernández — Diseño gráfico y branding | San Cristóbal</title>
-<meta name="description" content="Diseñador gráfico y especialista en branding. Identidad visual, piezas para redes y video vertical para marcas de Venezuela y Chile. Doce marcas, de la primera idea a la calle.">
-<meta name="theme-color" content="#fafaf8">
+<meta name="description" content="Diseñador gráfico y especialista en branding. Identidad visual, piezas para redes y video vertical para marcas de Venezuela y Chile. Trabajo real, sin intermediarios.">
+<meta name="theme-color" content="#0e0e11">
 <link rel="icon" href="images/Isotipo1.svg" type="image/svg+xml">
 <link rel="canonical" href="https://edgarfdesign.github.io/">
 
@@ -25,188 +25,152 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-<a class="skip-link" href="#indice">Saltar al índice</a>
+<a class="skip-link" href="#main">Saltar al contenido</a>
 
-<header class="top nav">
-  <div class="wrap top__in">
-    <a class="top__name" href="#top">
-      <img src="images/Isotipo1.svg" alt="" width="28" height="28">
-      <span>Edgar Fernández</span>
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#main" aria-label="Edgar A. Fernández P., ir al inicio">
+      <img src="images/Isotipo1.svg" alt="" width="34" height="34" class="brand__mark">
+      <span class="brand__name">Edgar A. Fernández P.</span>
     </a>
-    <p class="top__meta">Diseño gráfico · San Cristóbal, VE</p>
-    <a class="top__cta" href="#contacto">Contacto</a>
+
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#video">Video</a>
+      <a href="#desarrollo">Desarrollo</a>
+      <a href="#servicios">Servicios</a>
+    </nav>
+
+    <a class="btn btn--primary nav__cta" href="#contacto">Hablemos</a>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="sheet" id="menu" hidden>
+    <nav class="sheet__list" aria-label="Menú">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#video">Video</a>
+      <a href="#desarrollo">Desarrollo</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="sheet__foot">
+      <a class="btn btn--primary btn--block" href="https://wa.me/message/2EWSSFEJTDP2G1">Hablemos por WhatsApp</a>
+      <a class="sheet__mail" href="mailto:edgarafperez@gmail.com">edgarafperez@gmail.com</a>
+    </div>
   </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-  <!-- ============ PORTADA ============ -->
-  <section class="intro" aria-labelledby="intro-h">
-    <div class="wrap intro__in">
-      <h1 id="intro-h" class="intro__h1">Diseño marcas completas, no&nbsp;solo logos</h1>
-      <p class="intro__lead">Identidad visual, piezas para redes y video vertical. Seis años trabajando con negocios de Venezuela y Chile, del logotipo a la calle.</p>
-      <div class="intro__foot">
-        <span>Doce marcas · 2019 — 2024</span>
-        <span>Venezuela y Chile</span>
-        <a href="#indice">Índice completo ↓</a>
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-enter aria-labelledby="hero-h">
+    <div class="hero__text">
+        <h1 id="hero-h" class="hero__h1">Diseño marcas completas, no solo logos</h1>
+        <p class="hero__lead">Identidad visual, piezas para redes y video vertical. Seis años trabajando con negocios de Venezuela y Chile.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="https://wa.me/message/2EWSSFEJTDP2G1">
+            Hablemos
+            <svg class="m-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--secondary" href="#trabajo">Ver el trabajo</a>
+        </div>
+        <p class="hero__services">Identidad visual · Contenido vertical · Diseño web</p>
+        <div class="hero__foot">
+          <a class="link" href="mailto:edgarafperez@gmail.com">edgarafperez@gmail.com</a>
+          <a class="link" href="https://www.behance.net/edgarafernandezp" rel="me">Behance</a>
+          <a class="link" href="https://www.instagram.com/edgarfdesign/" rel="me">Instagram</a>
+          <a class="link" href="https://t.me/edgarafernandezp" rel="me">Telegram</a>
+        </div>
       </div>
-    </div>
+
+      <div class="hero__media">
+        <img src="images/retrato.webp" srcset="images/retrato-720.webp 720w, images/retrato.webp 1080w" sizes="(max-width: 1023px) 280px, 410px" alt="Edgar Fernández, diseñador gráfico" width="1080" height="1440">
+        <div class="hero__fact">
+          <strong>12 marcas</strong>
+          <span>en Venezuela y Chile</span>
+        </div>
+      </div>
   </section>
 
-  <!-- ============ ÍNDICE ============ -->
-  <section class="indice" id="indice" aria-labelledby="indice-h">
-    <div class="wrap indice__in">
-      <div class="indice__head">
-        <h2 id="indice-h">Índice</h2>
-        <p>Abre cualquier nombre para ver el proyecto entero. En escritorio, pásale el cursor para previsualizarlo.</p>
+  <!-- ============ TRABAJO ============ -->
+  <section class="section" id="trabajo" style="--h:2" data-moment="picture-develops" aria-labelledby="trabajo-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="trabajo-h">Doce marcas, de la primera idea a la calle</h2>
+        <p class="head__lead">Identidades completas entre 2019 y 2024. Toca cualquier pieza para ver el proyecto entero.</p>
       </div>
 
-      <div class="indice__list" id="lista">
-        <button class="row" type="button" data-project="Tecnoventas"
-                data-images="images/proyectos/TV1.webp,images/proyectos/TV2.1.webp,images/proyectos/TV2.webp,images/proyectos/TV3.webp,images/proyectos/TV4.webp,images/proyectos/TV5.webp,images/proyectos/TV6.webp,images/proyectos/TV7.webp,images/proyectos/TV8.webp" data-year="2020"
-                aria-label="Ver el proyecto Tecnoventas, 2020">
-          <span class="row__n">01</span>
-          <img class="row__thumb" src="images/proyectos/s-TV1.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Tecnoventas</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2020</span>
-        </button>
-        <button class="row" type="button" data-project="Culperma"
-                data-images="images/proyectos/CP1.webp,images/proyectos/CP2.webp,images/proyectos/CP3.webp,images/proyectos/CP4.webp,images/proyectos/CP5.webp,images/proyectos/CP6.webp,images/proyectos/CP7.webp,images/proyectos/CP8.webp" data-year="2019"
-                aria-label="Ver el proyecto Culperma, 2019">
-          <span class="row__n">02</span>
-          <img class="row__thumb" src="images/proyectos/s-CP1.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Culperma</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2019</span>
-        </button>
-        <button class="row" type="button" data-project="MyMy"
-                data-images="images/proyectos/MY01.webp,images/proyectos/MY02.webp,images/proyectos/MY03.webp,images/proyectos/MY04.webp,images/proyectos/MY05.webp,images/proyectos/MY06.webp,images/proyectos/MY07.webp,images/proyectos/MY08.webp,images/proyectos/MY09.webp,images/proyectos/MY10.webp,images/proyectos/MY11.webp,images/proyectos/MY12.webp,images/proyectos/MY13.webp,images/proyectos/MY14.webp,images/proyectos/MY15.webp,images/proyectos/MY16.webp" data-year="2022"
-                aria-label="Ver el proyecto MyMy, 2022">
-          <span class="row__n">03</span>
-          <img class="row__thumb" src="images/proyectos/s-MY01.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">MyMy</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2022</span>
-        </button>
-        <button class="row" type="button" data-project="Máxima Bisutería"
-                data-images="images/proyectos/MB01.webp,images/proyectos/MB02.webp,images/proyectos/MB03.webp,images/proyectos/MB04.webp,images/proyectos/MB05.webp,images/proyectos/MB06.webp" data-year="2022"
-                aria-label="Ver el proyecto Máxima Bisutería, 2022">
-          <span class="row__n">04</span>
-          <img class="row__thumb" src="images/proyectos/s-MB01.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Máxima Bisutería</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2022</span>
-        </button>
-        <button class="row" type="button" data-project="Calza Yoing"
-                data-images="images/proyectos/CY01.webp,images/proyectos/CY02.webp,images/proyectos/CY03.webp,images/proyectos/CY04.webp,images/proyectos/CY05.webp,images/proyectos/CY06.webp,images/proyectos/CY07.webp,images/proyectos/CY08.webp,images/proyectos/CY09.webp,images/proyectos/CY10.webp" data-year="2021"
-                aria-label="Ver el proyecto Calza Yoing, 2021">
-          <span class="row__n">05</span>
-          <img class="row__thumb" src="images/proyectos/s-CY01.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Calza Yoing</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2021</span>
-        </button>
-        <button class="row" type="button" data-project="Yannilucio"
-                data-images="images/proyectos/Y1.webp,images/proyectos/Y2.webp,images/proyectos/Y3.webp,images/proyectos/Y4.webp,images/proyectos/Y5.webp,images/proyectos/Y6.webp,images/proyectos/Y7.webp,images/proyectos/Y8.webp,images/proyectos/Y9.webp" data-year="2024"
-                aria-label="Ver el proyecto Yannilucio, 2024">
-          <span class="row__n">06</span>
-          <img class="row__thumb" src="images/proyectos/s-Y1.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Yannilucio</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2024</span>
-        </button>
-        <button class="row" type="button" data-project="Italplumbing"
-                data-images="images/proyectos/IP0.webp,images/proyectos/IP1.webp,images/proyectos/IP2.webp,images/proyectos/IP3.webp,images/proyectos/IP4.webp,images/proyectos/IP5.webp,images/proyectos/IP6.webp,images/proyectos/IP7.webp,images/proyectos/IP8.webp,images/proyectos/IP9.webp,images/proyectos/IP10.webp,images/proyectos/IP11.webp,images/proyectos/IP12.webp,images/proyectos/IP13.webp,images/proyectos/IP14.webp,images/proyectos/IP15.webp,images/proyectos/IP16.webp" data-year="2024"
-                aria-label="Ver el proyecto Italplumbing, 2024">
-          <span class="row__n">07</span>
-          <img class="row__thumb" src="images/proyectos/s-IP0.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Italplumbing</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2024</span>
-        </button>
-        <button class="row" type="button" data-project="Miniabasto Liz"
-                data-images="images/proyectos/MAL1.webp,images/proyectos/MAL2.webp" data-year="2020"
-                aria-label="Ver el proyecto Miniabasto Liz, 2020">
-          <span class="row__n">08</span>
-          <img class="row__thumb" src="images/proyectos/s-MAL1.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Miniabasto Liz</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2020</span>
-        </button>
-        <button class="row" type="button" data-project="Asuntos Legales"
-                data-images="images/proyectos/AL1.webp,images/proyectos/AL2.webp" data-year="2021"
-                aria-label="Ver el proyecto Asuntos Legales, 2021">
-          <span class="row__n">09</span>
-          <img class="row__thumb" src="images/proyectos/s-AL1.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Asuntos Legales</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2021</span>
-        </button>
-        <button class="row" type="button" data-project="E-cat Technology"
-                data-images="images/proyectos/EC1.webp,images/proyectos/EC2.webp,images/proyectos/EC3.webp,images/proyectos/EC4.webp" data-year="2022"
-                aria-label="Ver el proyecto E-cat Technology, 2022">
-          <span class="row__n">10</span>
-          <img class="row__thumb" src="images/proyectos/s-EC1.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">E-cat Technology</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2022</span>
-        </button>
-        <button class="row" type="button" data-project="Albert Super Hamburguesas"
-                data-images="images/proyectos/ASH2.webp,images/proyectos/ASH3.webp,images/proyectos/ASH1.webp,images/proyectos/ASH4.webp" data-year="2023"
-                aria-label="Ver el proyecto Albert Super Hamburguesas, 2023">
-          <span class="row__n">11</span>
-          <img class="row__thumb" src="images/proyectos/s-ASH2.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Albert Super Hamburguesas</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2023</span>
-        </button>
-        <button class="row" type="button" data-project="Auto Servicio Zamper"
-                data-images="images/proyectos/ASZ1.webp" data-year="2022"
-                aria-label="Ver el proyecto Auto Servicio Zamper, 2022">
-          <span class="row__n">12</span>
-          <img class="row__thumb" src="images/proyectos/s-ASZ1.webp" alt="" loading="lazy" width="120" height="150">
-          <span class="row__name">Auto Servicio Zamper</span>
-          <span class="row__tag">Branding</span>
-          <span class="row__year">2022</span>
-        </button>
-      </div>
-
-      <figure class="indice__prev" aria-hidden="true">
-        <img id="prev-img" src="images/proyectos/t-TV1.webp" alt="">
-        <figcaption id="prev-cap">01 · Tecnoventas — 2020</figcaption>
-      </figure>
+      <ul class="wall" id="wall">
+        <li><button class="tile" type="button" data-project="Tecnoventas" data-images="images/proyectos/TV1.webp,images/proyectos/TV2.1.webp,images/proyectos/TV2.webp,images/proyectos/TV3.webp,images/proyectos/TV4.webp,images/proyectos/TV5.webp,images/proyectos/TV6.webp,images/proyectos/TV7.webp,images/proyectos/TV8.webp" aria-label="Ver el proyecto Tecnoventas, 2020"><img src="images/proyectos/t-TV1.webp" srcset="images/proyectos/m-TV1.webp 360w, images/proyectos/t-TV1.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Tecnoventas" loading="lazy" width="640" height="800">
+          <span class="tile__meta"><strong>Tecnoventas</strong><span>2020 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Culperma" data-images="images/proyectos/CP1.webp,images/proyectos/CP2.webp,images/proyectos/CP3.webp,images/proyectos/CP4.webp,images/proyectos/CP5.webp,images/proyectos/CP6.webp,images/proyectos/CP7.webp,images/proyectos/CP8.webp" aria-label="Ver el proyecto Culperma, 2019"><img src="images/proyectos/t-CP1.webp" srcset="images/proyectos/m-CP1.webp 360w, images/proyectos/t-CP1.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Culperma" loading="lazy" width="640" height="800">
+          <span class="tile__meta"><strong>Culperma</strong><span>2019 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="MyMy" data-images="images/proyectos/MY01.webp,images/proyectos/MY02.webp,images/proyectos/MY03.webp,images/proyectos/MY04.webp,images/proyectos/MY05.webp,images/proyectos/MY06.webp,images/proyectos/MY07.webp,images/proyectos/MY08.webp,images/proyectos/MY09.webp,images/proyectos/MY10.webp,images/proyectos/MY11.webp,images/proyectos/MY12.webp,images/proyectos/MY13.webp,images/proyectos/MY14.webp,images/proyectos/MY15.webp,images/proyectos/MY16.webp" aria-label="Ver el proyecto MyMy, 2022"><img src="images/proyectos/t-MY01.webp" srcset="images/proyectos/m-MY01.webp 360w, images/proyectos/t-MY01.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de MyMy" loading="lazy" width="640" height="504">
+          <span class="tile__meta"><strong>MyMy</strong><span>2022 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Máxima Bisutería" data-images="images/proyectos/MB01.webp,images/proyectos/MB02.webp,images/proyectos/MB03.webp,images/proyectos/MB04.webp,images/proyectos/MB05.webp,images/proyectos/MB06.webp" aria-label="Ver el proyecto Máxima Bisutería, 2022"><img src="images/proyectos/t-MB01.webp" srcset="images/proyectos/m-MB01.webp 360w, images/proyectos/t-MB01.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Máxima Bisutería" loading="lazy" width="640" height="640">
+          <span class="tile__meta"><strong>Máxima Bisutería</strong><span>2022 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Calza Yoing" data-images="images/proyectos/CY01.webp,images/proyectos/CY02.webp,images/proyectos/CY03.webp,images/proyectos/CY04.webp,images/proyectos/CY05.webp,images/proyectos/CY06.webp,images/proyectos/CY07.webp,images/proyectos/CY08.webp,images/proyectos/CY09.webp,images/proyectos/CY10.webp" aria-label="Ver el proyecto Calza Yoing, 2021"><img src="images/proyectos/t-CY01.webp" srcset="images/proyectos/m-CY01.webp 360w, images/proyectos/t-CY01.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Calza Yoing" loading="lazy" width="640" height="1138">
+          <span class="tile__meta"><strong>Calza Yoing</strong><span>2021 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Yannilucio" data-images="images/proyectos/Y1.webp,images/proyectos/Y2.webp,images/proyectos/Y3.webp,images/proyectos/Y4.webp,images/proyectos/Y5.webp,images/proyectos/Y6.webp,images/proyectos/Y7.webp,images/proyectos/Y8.webp,images/proyectos/Y9.webp" aria-label="Ver el proyecto Yannilucio, 2024"><img src="images/proyectos/t-Y1.webp" srcset="images/proyectos/m-Y1.webp 360w, images/proyectos/t-Y1.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Yannilucio" loading="lazy" width="640" height="720">
+          <span class="tile__meta"><strong>Yannilucio</strong><span>2024 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Italplumbing" data-images="images/proyectos/IP0.webp,images/proyectos/IP1.webp,images/proyectos/IP2.webp,images/proyectos/IP3.webp,images/proyectos/IP4.webp,images/proyectos/IP5.webp,images/proyectos/IP6.webp,images/proyectos/IP7.webp,images/proyectos/IP8.webp,images/proyectos/IP9.webp,images/proyectos/IP10.webp,images/proyectos/IP11.webp,images/proyectos/IP12.webp,images/proyectos/IP13.webp,images/proyectos/IP14.webp,images/proyectos/IP15.webp,images/proyectos/IP16.webp" aria-label="Ver el proyecto Italplumbing, 2024"><img src="images/proyectos/t-IP0.webp" srcset="images/proyectos/m-IP0.webp 360w, images/proyectos/t-IP0.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Italplumbing" loading="lazy" width="640" height="720">
+          <span class="tile__meta"><strong>Italplumbing</strong><span>2024 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Miniabasto Liz" data-images="images/proyectos/MAL1.webp,images/proyectos/MAL2.webp" aria-label="Ver el proyecto Miniabasto Liz, 2020"><img src="images/proyectos/t-MAL1.webp" srcset="images/proyectos/m-MAL1.webp 360w, images/proyectos/t-MAL1.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Miniabasto Liz" loading="lazy" width="640" height="800">
+          <span class="tile__meta"><strong>Miniabasto Liz</strong><span>2020 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Asuntos Legales" data-images="images/proyectos/AL1.webp,images/proyectos/AL2.webp" aria-label="Ver el proyecto Asuntos Legales, 2021"><img src="images/proyectos/t-AL1.webp" srcset="images/proyectos/m-AL1.webp 360w, images/proyectos/t-AL1.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Asuntos Legales" loading="lazy" width="640" height="800">
+          <span class="tile__meta"><strong>Asuntos Legales</strong><span>2021 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="E-cat Technology" data-images="images/proyectos/EC1.webp,images/proyectos/EC2.webp,images/proyectos/EC3.webp,images/proyectos/EC4.webp" aria-label="Ver el proyecto E-cat Technology, 2022"><img src="images/proyectos/t-EC1.webp" srcset="images/proyectos/m-EC1.webp 360w, images/proyectos/t-EC1.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de E-cat Technology" loading="lazy" width="640" height="800">
+          <span class="tile__meta"><strong>E-cat Technology</strong><span>2022 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Albert Super Hamburguesas" data-images="images/proyectos/ASH2.webp,images/proyectos/ASH3.webp,images/proyectos/ASH1.webp,images/proyectos/ASH4.webp" aria-label="Ver el proyecto Albert Super Hamburguesas, 2023"><img src="images/proyectos/t-ASH2.webp" srcset="images/proyectos/m-ASH2.webp 360w, images/proyectos/t-ASH2.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Albert Super Hamburguesas" loading="lazy" width="640" height="800">
+          <span class="tile__meta"><strong>Albert Super Hamburguesas</strong><span>2023 · Branding</span></span>
+        </button></li>
+        <li><button class="tile" type="button" data-project="Auto Servicio Zamper" data-images="images/proyectos/ASZ1.webp" aria-label="Ver el proyecto Auto Servicio Zamper, 2022"><img src="images/proyectos/t-ASZ1.webp" srcset="images/proyectos/m-ASZ1.webp 360w, images/proyectos/t-ASZ1.webp 640w" sizes="(max-width: 767px) 45vw, (max-width: 1023px) 30vw, 302px" alt="Identidad de Auto Servicio Zamper" loading="lazy" width="640" height="800">
+          <span class="tile__meta"><strong>Auto Servicio Zamper</strong><span>2022 · Branding</span></span>
+        </button></li>
+      </ul>
     </div>
   </section>
 
   <!-- ============ VIDEO ============ -->
-  <section class="video" id="video" aria-labelledby="video-h">
+  <section class="section" id="video" aria-labelledby="video-h">
     <div class="wrap video__grid">
       <div class="video__text">
         <h2 id="video-h">Video vertical</h2>
-        <p class="video__lead">Piezas de nueve por dieciséis para Reels, TikTok y Stories. Animadas en After Effects y entregadas listas para publicar.</p>
-        <ul class="video__facts">
-          <li><span>Formato</span><b>1080 × 1920</b></li>
-          <li><span>Herramienta</span><b>After Effects</b></li>
-          <li><span>Entrega</span><b>MP4 y WebM</b></li>
+        <p class="head__lead">Piezas de nueve por dieciséis para Reels, TikTok y Stories. Animadas en After Effects y entregadas listas para publicar.</p>
+        <ul class="facts">
+          <li><span>Formato</span><strong>1080 × 1920</strong></li>
+          <li><span>Herramienta</span><strong>After Effects</strong></li>
+          <li><span>Entrega</span><strong>MP4 y WebM</strong></li>
         </ul>
       </div>
 
       <div class="slider" id="video-slider" aria-label="Videos verticales">
-        <div class="slider__stage" id="slider-stage" tabindex="0"
-             aria-label="Videos. Arrastra con el ratón o usa las flechas del teclado.">
+        <div class="slider__stage" id="slider-stage" tabindex="0" aria-label="Videos. Arrastra con el ratón o usa las flechas del teclado.">
           <div class="slider__track" id="slider-track">
             <div class="slide">
               <div class="phone">
                 <div class="phone__screen">
                   <video class="phone__video" playsinline muted loop preload="none"
-                         poster="videos/video1-poster.webp" width="1080" height="1920"
-                         aria-label="Video vertical para redes, pieza uno">
+                         poster="videos/video1-poster.webp"
+                         width="1080" height="1920" aria-label="Video vertical para redes, pieza uno">
                     <source src="videos/video1.mp4" type="video/mp4">
                     <source src="videos/video1.webm" type="video/webm">
                   </video>
@@ -220,8 +184,8 @@
               <div class="phone">
                 <div class="phone__screen">
                   <video class="phone__video" playsinline muted loop preload="none"
-                         poster="videos/video2-poster.webp" width="1080" height="1920"
-                         aria-label="Video vertical para redes, pieza dos">
+                         poster="videos/video2-poster.webp"
+                         width="1080" height="1920" aria-label="Video vertical para redes, pieza dos">
                     <source src="videos/video2.mp4" type="video/mp4">
                     <source src="videos/video2.webm" type="video/webm">
                   </video>
@@ -235,8 +199,8 @@
               <div class="phone">
                 <div class="phone__screen">
                   <video class="phone__video" playsinline muted loop preload="none"
-                         poster="videos/video3-poster.webp" width="1080" height="1920"
-                         aria-label="Video vertical para redes, pieza tres">
+                         poster="videos/video3-poster.webp"
+                         width="1080" height="1920" aria-label="Video vertical para redes, pieza tres">
                     <source src="videos/video3.mp4" type="video/mp4">
                     <source src="videos/video3.webm" type="video/webm">
                   </video>
@@ -265,33 +229,74 @@
     </div>
   </section>
 
-  <!-- ============ SERVICIOS ============ -->
-  <section class="serv" id="servicios" aria-labelledby="serv-h">
-    <div class="wrap serv__grid">
-      <div class="serv__text">
-        <h2 id="serv-h">Qué hago</h2>
-        <p class="serv__lead">Trabajo solo. Lo que entra por la puerta lo hago yo de principio a fin, sin pasarlo a nadie.</p>
+  <!-- ============ DESARROLLO ============ -->
+  <section class="section" id="desarrollo" aria-labelledby="dev-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="dev-h">Además, construyo</h2>
+        <p class="head__lead">Cuando el proyecto lo pide, dejo el diseño y escribo el código. Los dos bots de abajo funcionan, pero su código no es público: si quieres verlos, te los enseño en una llamada.</p>
       </div>
 
-      <ol class="serv__list">
-        <li>
-          <h3>Identidad visual</h3>
-          <p>Logotipo, paleta, tipografía y todas sus aplicaciones: papelería, empaque, señalética.</p>
+      <ul class="dev-grid">
+        <li class="dev-card">
+          <img src="images/ai-projects/botwhatsapp-640.jpg" srcset="images/ai-projects/botwhatsapp-640.jpg 640w, images/ai-projects/Botwhatsapp.jpg 1080w" sizes="(max-width: 767px) 342px, 628px" alt="Bot de WhatsApp para una tienda de ropa" loading="lazy" width="640" height="533">
+          <div class="dev-card__body">
+            <h3>Bot de WhatsApp para una tienda de ropa</h3>
+            <p>Atiende el catálogo, responde precios y toma el pedido sin que nadie esté pendiente del teléfono.</p>
+            <ul class="tags"><li>Python</li><li>WhatsApp API</li><li>DeepSeek</li></ul>
+          </div>
         </li>
-        <li>
-          <h3>Contenido vertical</h3>
-          <p>Piezas de nueve por dieciséis para Reels, TikTok y Stories, animadas y listas para subir.</p>
+        <li class="dev-card">
+          <img src="images/ai-projects/botdiscord-640.jpg" srcset="images/ai-projects/botdiscord-640.jpg 640w, images/ai-projects/Botdiscord.jpg 1080w" sizes="(max-width: 767px) 342px, 628px" alt="Bot de Discord que gestiona correos electrónicos" loading="lazy" width="640" height="533">
+          <div class="dev-card__body">
+            <h3>Bot de Discord que gestiona correos</h3>
+            <p>Lee una bandeja, clasifica lo que llega y avisa en el canal correcto, sin abrir el correo.</p>
+            <ul class="tags"><li>Python</li><li>Discord API</li><li>DeepSeek</li></ul>
+          </div>
         </li>
-        <li>
-          <h3>Diseño web</h3>
-          <p>Maquetación y landings que se ven bien en un teléfono, entregadas como archivos planos.</p>
-        </li>
-      </ol>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section section--light" id="servicios" aria-labelledby="serv-h">
+    <div class="wrap serv__grid">
+      <div class="serv__text">
+        <h2 id="serv-h">Qué hago, y qué no</h2>
+        <p class="head__lead">Trabajo solo. Lo que entra por la puerta lo hago yo de principio a fin, sin pasarlo a nadie.</p>
+
+        <ul class="rows">
+          <li>
+            <h3>Identidad visual</h3>
+            <p>Logotipo, paleta, tipografía y todas sus aplicaciones: papelería, empaque, señalética.</p>
+          </li>
+          <li>
+            <h3>Contenido vertical</h3>
+            <p>Piezas de nueve por dieciséis para Reels, TikTok y Stories, animadas y listas para subir.</p>
+          </li>
+          <li>
+            <h3>Diseño web</h3>
+            <p>Maquetación y landings que se ven bien en un teléfono, entregadas como archivos planos.</p>
+          </li>
+        </ul>
+      </div>
 
       <div class="serv__aside">
-        <p class="serv__tools">Photoshop · Illustrator · After Effects</p>
-        <a class="link" href="assets/docs/CV-Edgar-Fernandez.pdf" download>Descargar el CV (PDF)</a>
-        <p class="serv__out">No hago campañas de medios, fotografía de producto ni aplicaciones con backend. Si tu proyecto necesita eso, te lo digo antes de empezar.</p>
+        <div class="panel">
+          <h3 class="panel__title">Herramientas</h3>
+          <ul class="tools">
+            <li><img src="images/icons/photoshop.svg" alt="" width="44" height="44" loading="lazy"><span>Photoshop</span></li>
+            <li><img src="images/icons/illustrator.svg" alt="" width="44" height="44" loading="lazy"><span>Illustrator</span></li>
+            <li><img src="images/icons/after-effects.svg" alt="" width="44" height="44" loading="lazy"><span>After Effects</span></li>
+          </ul>
+          <p class="panel__note">Seis años con el paquete de Adobe. Formación en informática, además de diseño.</p>
+          <a class="link" href="assets/docs/CV-Edgar-Fernandez.pdf" download>Descargar el CV (PDF)</a>
+
+          <div class="panel__out">
+            <h3 class="panel__title">Qué no hago</h3>
+            <p>Campañas de medios, fotografía de producto y aplicaciones con backend. Si tu proyecto necesita eso, te lo digo antes de empezar.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -299,41 +304,40 @@
 </main>
 
 <!-- ============ CIERRE ============ -->
-<footer class="cierre" id="contacto">
-  <div class="wrap cierre__grid">
-    <div class="cierre__cta">
+<footer class="closing" id="contacto" data-moment="word-highlight">
+  <div class="wrap closing__grid">
+    <div class="closing__cta">
       <h2>Cuéntame qué marca quieres construir</h2>
       <p>Escríbeme con dos líneas de qué se trata y te digo si puedo ayudarte, cuánto tarda y cuánto cuesta.</p>
       <div class="btn-row">
-        <a class="btn" href="mailto:edgarafperez@gmail.com?subject=Proyecto%20de%20marca">Escribir un correo</a>
-        <a class="btn btn--ghost" href="https://wa.me/message/2EWSSFEJTDP2G1">WhatsApp</a>
+        <a class="btn btn--primary" href="mailto:edgarafperez@gmail.com?subject=Proyecto%20de%20marca">
+          Escribir un correo
+          <svg class="m-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--secondary" href="https://wa.me/message/2EWSSFEJTDP2G1">WhatsApp</a>
       </div>
     </div>
 
-    <img class="cierre__photo" src="images/retrato.webp"
-         srcset="images/retrato-720.webp 720w, images/retrato.webp 1080w"
-         sizes="(max-width: 767px) 240px, 302px"
-         alt="Edgar Fernández, diseñador gráfico" width="1080" height="1440">
-
-    <div class="cierre__dir">
-      <div>
+    <div class="closing__bottom">
+    <div class="closing__dir">
+      <div class="dir-col">
         <h3>Secciones</h3>
-        <a href="#indice">Índice</a>
+        <a href="#trabajo">Trabajo</a>
         <a href="#video">Video</a>
         <a href="#servicios">Servicios</a>
       </div>
-      <div>
+      <div class="dir-col">
         <h3>Fuera de aquí</h3>
         <a href="https://www.behance.net/edgarafernandezp" rel="me">Behance</a>
         <a href="https://www.instagram.com/edgarfdesign/" rel="me">Instagram</a>
         <a href="https://hive.blog/@edgarafernandezp" rel="me">Hive</a>
         <a href="https://t.me/edgarafernandezp" rel="me">Telegram</a>
       </div>
-      <div>
+      <div class="dir-col">
         <h3>Directo</h3>
         <a href="mailto:edgarafperez@gmail.com">edgarafperez@gmail.com</a>
         <a href="tel:+584161317560">+58 416 131 7560</a>
-        <p>San Cristóbal, Venezuela.<br>Trabajo en remoto con Chile.</p>
+        <p class="dir-note">San Cristóbal, Venezuela.<br>Trabajo en remoto con Chile.</p>
       </div>
     </div>
 
@@ -341,10 +345,11 @@
       <span>© 2026 Edgarfdesign</span>
       <span>Diseño y código: Edgar Fernández</span>
     </div>
+    </div>
   </div>
 </footer>
 
-<!-- ============ GALERÍA ============ -->
+<!-- ============ LIGHTBOX ============ -->
 <dialog class="lightbox" id="lightbox" aria-label="Galería del proyecto">
   <div class="lightbox__bar">
     <h2 class="lightbox__title" id="lb-title"></h2>
