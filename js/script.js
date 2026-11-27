@@ -66,7 +66,7 @@
       img.src = images[index];
       img.alt = titleEl.textContent + ', pieza ' + (index + 1);
       stage.replaceChildren(img);
-      countEl.textContent = (index + 1) + ' / ' + images.length;
+      countEl.textContent = (index + 1) + ' de ' + images.length;
       btnPrev.hidden = images.length < 2;
       btnNext.hidden = images.length < 2;
     }
@@ -114,7 +114,9 @@
       images = raw.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
       if (!images.length) return;
       trigger = button;
-      titleEl.textContent = button.getAttribute('data-project') || 'Proyecto';
+      var nombre = button.getAttribute('data-project') || 'Proyecto';
+      var anio = button.getAttribute('data-year');
+      titleEl.textContent = anio ? nombre + ' · ' + anio : nombre;
       var from = reduce ? null : button.getBoundingClientRect();
       show(0);
       dialog.showModal();
@@ -149,7 +151,7 @@
     }
 
     document.querySelectorAll('.tile').forEach(function (button) {
-      button.addEventListener('click', function () { open(button); });
+      button.addEventListener('click', function (e) { e.preventDefault(); open(button); });
     });
 
     btnPrev.addEventListener('click', function () { show(index - 1); });
@@ -284,6 +286,14 @@
     stage.addEventListener('pointermove', onMove, { passive: false });
     stage.addEventListener('pointerup', onUp);
     stage.addEventListener('pointercancel', onUp);
+    stage.addEventListener('lostpointercapture', onUp);
+    window.addEventListener('blur', function () {
+      if (!dragging) return;
+      dragging = false;
+      pointerId = null;
+      root.classList.remove('is-dragging');
+      setIndex(index);
+    });
 
     /* un arrastre no debe acabar reproduciendo el video */
     stage.addEventListener('click', function (e) {

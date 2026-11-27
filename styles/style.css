@@ -967,8 +967,8 @@ html { scrollbar-color: #3a3944 transparent; }
 }
 
 @media (max-width: 359px) {
-  .wall { grid-template-columns: 1fr; }
-  .wall .tile { aspect-ratio: 4 / 3; }
+  .wall { grid-template-columns: repeat(2, 1fr); }
+  .wall .tile { aspect-ratio: 1 / 1; }
 }
 
 /* ---------- 17. Reduced motion ---------- */
@@ -992,3 +992,37 @@ html { scrollbar-color: #3a3944 transparent; }
 
 /* el muro abre con mas aire: es el cambio de ritmo tras la portada */
 #trabajo { padding-top: 96px; }
+
+
+/* ---------- ADAPT: areas seguras y telefono en horizontal ---------- */
+.nav {
+  height: calc(var(--nav) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.closing { padding-bottom: calc(var(--s-6) + env(safe-area-inset-bottom, 0px)); }
+.lightbox__nav--prev { left: max(var(--s-4), env(safe-area-inset-left, 0px)); }
+.lightbox__nav--next { right: max(var(--s-4), env(safe-area-inset-right, 0px)); }
+
+/* Telefono en horizontal: la portada no puede pedir una pantalla que no existe. */
+@media (max-height: 560px) and (orientation: landscape) {
+  :root { --t-h1: clamp(1.9rem, 4.2vw, 2.75rem); }
+  .hero { min-height: 0; }
+  .hero__text {
+    padding-top: calc(var(--nav) + var(--s-6));
+    padding-bottom: var(--s-6);
+  }
+  .hero__media > img { width: clamp(160px, 20vw, 220px); }
+  .hero__foot { display: none; }
+  .section { min-height: 0; }
+  .closing { min-height: 0; }
+  .closing__grid { min-height: 0; }
+}
+
+
+/* ---------- POLISH: las superficies que no dibujamos ---------- */
+body { caret-color: var(--accent); }
+a { text-underline-offset: 3px; }
+.lightbox__bar { min-width: 0; }
+.lightbox__title { min-width: 0; overflow-wrap: anywhere; }
+/* un nombre largo no puede empujar el contador fuera de la barra */
+.lightbox__count, .lightbox__hint { flex: none; }
