@@ -41,16 +41,21 @@
     });
   })();
 
-  /* ---------- Galería ---------- */
+  /* ---------- Galería: la pieza sale del muro y vuelve a él ---------- */
   (function gallery() {
     var dialog = document.getElementById('lightbox');
     var stage = document.getElementById('lb-stage');
     var titleEl = document.getElementById('lb-title');
     var countEl = document.getElementById('lb-count');
+    var bar = dialog && dialog.querySelector('.lightbox__bar');
     var btnPrev = dialog && dialog.querySelector('.lightbox__nav--prev');
     var btnNext = dialog && dialog.querySelector('.lightbox__nav--next');
     if (!dialog || !stage || !dialog.showModal) return;
 
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var IN = 420, OUT = 260;
+    var EASE_IN = 'cubic-bezier(.16,1,.3,1)';
+    var EASE_OUT = 'cubic-bezier(.4,0,1,1)';
     var images = [];
     var index = 0;
     var trigger = null;
@@ -66,19 +71,59 @@
       btnNext.hidden = images.length < 2;
     }
 
+    // La placa del muro y la caja de luz comparten geometría: de ahí sale el movimiento.
+    function delta(from) {
+      var s = stage.getBoundingClientRect();
+      if (!from || !s.width || !s.height) return null;
+      return {
+        sx: from.width / s.width,
+        sy: from.height / s.height,
+        dx: (from.left + from.width / 2) - (s.left + s.width / 2),
+        dy: (from.top + from.height / 2) - (s.top + s.height / 2)
+      };
+    }
+
+    function transformOf(t) {
+      return 'translate(' + t.dx.toFixed(1) + 'px,' + t.dy.toFixed(1) + 'px) scale(' +
+        t.sx.toFixed(4) + ',' + t.sy.toFixed(4) + ')';
+    }
+
     function open(button) {
       var raw = button.getAttribute('data-images') || '';
       images = raw.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
       if (!images.length) return;
       trigger = button;
       titleEl.textContent = button.getAttribute('data-project') || 'Proyecto';
+      var from = reduce ? null : button.getBoundingClientRect();
       show(0);
       dialog.showModal();
+      if (reduce) return;
+
+      requestAnimationFrame(function () {
+        var t = delta(from);
+        if (!t) return;
+        stage.animate(
+          [{ transform: transformOf(t), opacity: 0.3 }, { transform: 'none', opacity: 1 }],
+          { duration: IN, easing: EASE_IN }
+        );
+        if (bar) {
+          bar.animate([{ opacity: 0 }, { opacity: 1 }], {
+            duration: 240, delay: 140, easing: 'linear', fill: 'backwards'
+          });
+        }
+      });
     }
 
     function close() {
-      dialog.close();
-      stage.replaceChildren();
+      if (reduce || !trigger) { dialog.close(); return; }
+      var t = delta(trigger.getBoundingClientRect());
+      if (!t) { dialog.close(); return; }
+      var out = stage.animate(
+        [{ transform: 'none', opacity: 1 },
+         { transform: transformOf(t), opacity: 0.25 }],
+        { duration: OUT, easing: EASE_OUT }
+      );
+      out.onfinish = function () { dialog.close(); };
     }
 
     document.querySelectorAll('.tile').forEach(function (button) {
@@ -100,6 +145,7 @@
 
     dialog.addEventListener('close', function () {
       stage.replaceChildren();
+      stage.style.transform = '';
       if (trigger) trigger.focus({ preventScroll: false });
     });
 

@@ -1,0 +1,325 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-11-27T17:55:00-04:00",
+ "title": "Design System: Edgarfdesign",
+ "extensions": {
+  "colorMeta": {
+   "sala-oscura": {
+    "role": "neutral",
+    "displayName": "Sala oscura",
+    "canonical": "#0e0e11",
+    "tonalRamp": [
+     "#242429",
+     "#3e3e48",
+     "#595969",
+     "#727289",
+     "#9292a4",
+     "#b2b2be",
+     "#d2d2d8",
+     "#f1f1f3"
+    ]
+   },
+   "pizarra": {
+    "role": "neutral",
+    "displayName": "Pizarra",
+    "canonical": "#17171b",
+    "tonalRamp": [
+     "#242428",
+     "#3f3f47",
+     "#5a5a67",
+     "#747487",
+     "#9393a2",
+     "#b3b3bd",
+     "#d3d3d8",
+     "#f2f2f3"
+    ]
+   },
+   "tiza": {
+    "role": "neutral",
+    "displayName": "Tiza",
+    "canonical": "#f4f3f7",
+    "tonalRamp": [
+     "#24212b",
+     "#3e394e",
+     "#585071",
+     "#726696",
+     "#9188ae",
+     "#b2acc4",
+     "#d2cfdb",
+     "#f1f1f4"
+    ]
+   },
+   "ceniza": {
+    "role": "neutral",
+    "displayName": "Ceniza",
+    "canonical": "#aeabb5",
+    "tonalRamp": [
+     "#262528",
+     "#424047",
+     "#5e5b66",
+     "#7b7685",
+     "#9895a1",
+     "#b6b4bc",
+     "#d4d3d7",
+     "#f2f2f3"
+    ]
+   },
+   "violeta-senal": {
+    "role": "primary",
+    "displayName": "Violeta de senal",
+    "canonical": "#5459f0",
+    "tonalRamp": [
+     "#11123b",
+     "#191b6e",
+     "#1b20a6",
+     "#1920e2",
+     "#4b50eb",
+     "#8588eb",
+     "#bbbcf0",
+     "#ebecf9"
+    ]
+   },
+   "violeta-texto": {
+    "role": "primary",
+    "displayName": "Violeta de texto",
+    "canonical": "#8b8fff",
+    "tonalRamp": [
+     "#0d0f3f",
+     "#101476",
+     "#0e14b3",
+     "#060ef5",
+     "#3c42fa",
+     "#7b7ff5",
+     "#b5b8f5",
+     "#eaeafb"
+    ]
+   },
+   "papel-frio": {
+    "role": "neutral",
+    "displayName": "Papel frio",
+    "canonical": "#f4f3f7",
+    "tonalRamp": [
+     "#24212b",
+     "#3e394e",
+     "#585071",
+     "#726696",
+     "#9188ae",
+     "#b2acc4",
+     "#d2cfdb",
+     "#f1f1f4"
+    ]
+   },
+   "papel-sombreado": {
+    "role": "neutral",
+    "displayName": "Papel sombreado",
+    "canonical": "#e8e6ee",
+    "tonalRamp": [
+     "#24212b",
+     "#3f3a4d",
+     "#595170",
+     "#726794",
+     "#9289ad",
+     "#b2acc4",
+     "#d2cfdb",
+     "#f1f1f4"
+    ]
+   },
+   "tinta": {
+    "role": "neutral",
+    "displayName": "Tinta",
+    "canonical": "#16151a",
+    "tonalRamp": [
+     "#252429",
+     "#403e49",
+     "#5b5869",
+     "#76718a",
+     "#9591a5",
+     "#b4b2be",
+     "#d3d2d8",
+     "#f2f1f3"
+    ]
+   },
+   "grafito": {
+    "role": "neutral",
+    "displayName": "Grafito",
+    "canonical": "#4a4852",
+    "tonalRamp": [
+     "#252528",
+     "#414047",
+     "#5d5b66",
+     "#797685",
+     "#9795a1",
+     "#b6b4bc",
+     "#d4d3d7",
+     "#f2f2f3"
+    ]
+   }
+  },
+  "typographyMeta": {
+   "display": {
+    "displayName": "Display",
+    "purpose": "Solo el h1 de la portada."
+   },
+   "headline": {
+    "displayName": "Headline",
+    "purpose": "h2 de seccion y titular del cierre."
+   },
+   "title": {
+    "displayName": "Title",
+    "purpose": "Titulos de servicio y de tarjeta."
+   },
+   "body": {
+    "displayName": "Body",
+    "purpose": "Parrafos, medida maxima 46-52ch."
+   },
+   "lead": {
+    "displayName": "Lead",
+    "purpose": "Entradilla de seccion, en --muted."
+   },
+   "label": {
+    "displayName": "Label",
+    "purpose": "Datos, metadatos y pies."
+   }
+  },
+  "shadows": [],
+  "motion": [
+   {
+    "name": "ease-standard",
+    "value": "cubic-bezier(.2,.8,.2,1)",
+    "purpose": "Transiciones de estado."
+   },
+   {
+    "name": "ease-enter",
+    "value": "cubic-bezier(.22,1,.36,1)",
+    "purpose": "Entradas y salidas de material."
+   },
+   {
+    "name": "duration-in",
+    "value": "150ms",
+    "purpose": "Hover y cambio de tono."
+   },
+   {
+    "name": "duration-press",
+    "value": "90ms",
+    "purpose": "Pulsacion."
+   },
+   {
+    "name": "duration-image",
+    "value": "600ms",
+    "purpose": "Zoom de la pieza dentro del marco."
+   }
+  ],
+  "breakpoints": [
+   {
+    "name": "sm",
+    "value": "540px"
+   },
+   {
+    "name": "md",
+    "value": "767px"
+   },
+   {
+    "name": "lg",
+    "value": "1023px"
+   },
+   {
+    "name": "xl",
+    "value": "1279px"
+   }
+  ]
+ },
+ "components": [
+  {
+   "name": "Primary Button",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "La accion principal: hablar por WhatsApp, ver el trabajo.",
+   "html": "<button class=\"ds-btn\">Hablemos</button>",
+   "css": ".ds-btn{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;border:1px solid transparent;border-radius:6px;background:var(--accent,#5459f0);color:#f7f6fb;font:500 0.9375rem/1 Schibsted Grotesk,system-ui,sans-serif;cursor:pointer;transition:background-color 150ms cubic-bezier(.2,.8,.2,1),transform 150ms cubic-bezier(.2,.8,.2,1)}.ds-btn:hover{background:#6f74f2;transform:translateY(-1px)}.ds-btn:active{transform:translateY(1px) scale(.985);transition-duration:90ms}.ds-btn:focus-visible{outline:2px solid #8b8fff;outline-offset:3px}"
+  },
+  {
+   "name": "Ghost Button",
+   "kind": "button",
+   "refersTo": "button-ghost",
+   "description": "La accion secundaria, un escalon por debajo del primary.",
+   "html": "<button class=\"ds-btn-ghost\">Ver el trabajo</button>",
+   "css": ".ds-btn-ghost{display:inline-flex;align-items:center;height:46px;padding:0 24px;border:1px solid color-mix(in oklab,#f4f3f7 28%,transparent);border-radius:6px;background:transparent;color:#f4f3f7;font:500 0.9375rem/1 Schibsted Grotesk,system-ui,sans-serif;cursor:pointer;transition:background-color 150ms cubic-bezier(.2,.8,.2,1),border-color 150ms}.ds-btn-ghost:hover{background:#17171b;border-color:color-mix(in oklab,#f4f3f7 45%,transparent)}.ds-btn-ghost:active{transform:translateY(1px) scale(.985)}.ds-btn-ghost:focus-visible{outline:2px solid #8b8fff;outline-offset:3px}"
+  },
+  {
+   "name": "Nav Bar",
+   "kind": "nav",
+   "refersTo": "nav",
+   "description": "Barra fija de 72px con marca, enlaces y la accion principal.",
+   "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">Edgar A. Fernandez P.</span><span class=\"ds-nav-links\"><a href=\"#\">Trabajo</a><a href=\"#\">Video</a><a href=\"#\">Servicios</a></span><button class=\"ds-nav-cta\">Hablemos</button></nav>",
+   "css": ".ds-nav{display:flex;align-items:center;gap:32px;height:72px;padding:0 24px;background:#0e0e11;border-bottom:1px solid color-mix(in oklab,#f4f3f7 16%,transparent);color:#f4f3f7;font:500 0.9375rem/1 Schibsted Grotesk,system-ui,sans-serif}.ds-nav-brand{font-weight:600;letter-spacing:-0.01em}.ds-nav-links{display:flex;gap:24px;margin-left:auto}.ds-nav-links a{color:#f4f3f7;text-decoration:none;font-weight:400;transition:color 150ms}.ds-nav-links a:hover{color:#aeabb5}.ds-nav-cta{height:40px;padding:0 18px;border:0;border-radius:6px;background:#5459f0;color:#f7f6fb;font:500 0.875rem/1 inherit;cursor:pointer}"
+  },
+  {
+   "name": "Work Tile",
+   "kind": "custom",
+   "description": "Una pieza del muro: imagen sola, sin leyenda, que abre la galeria.",
+   "html": "<div class=\"ds-muro\"><button class=\"ds-tile\"><img src=\"\" alt=\"\"></button><button class=\"ds-tile\"><img src=\"\" alt=\"\"></button></div>",
+   "css": ".ds-muro{display:grid;grid-template-columns:repeat(2,1fr);gap:3px;background:color-mix(in oklab,#f4f3f7 16%,transparent)}.ds-tile{position:relative;display:block;padding:0;border:0;border-radius:0;overflow:hidden;background:#17171b;aspect-ratio:2/3;cursor:pointer}.ds-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 600ms cubic-bezier(.2,.8,.2,1)}.ds-tile:hover img{transform:scale(1.045)}.ds-tile:active img{transform:scale(1.02)}.ds-tile:focus-visible{outline:0}.ds-tile:focus-visible::after{content:\"\";position:absolute;inset:0;box-shadow:inset 0 0 0 3px #5459f0,inset 0 0 0 5px #0e0e11}"
+  },
+  {
+   "name": "Portrait",
+   "kind": "custom",
+   "description": "El retrato circular en blanco y negro: la unica curva del sistema.",
+   "html": "<img class=\"ds-portrait\" src=\"\" alt=\"Edgar Fernandez, disenador grafico\">",
+   "css": ".ds-portrait{width:180px;height:180px;aspect-ratio:1;border-radius:50%;object-fit:cover;border:1px solid color-mix(in oklab,#f4f3f7 20%,transparent);display:block;filter:grayscale(1)}"
+  },
+  {
+   "name": "Panel",
+   "kind": "card",
+   "refersTo": "panel",
+   "description": "El escalon tonal del mundo oscuro: herramientas, notas, datos.",
+   "html": "<div class=\"ds-panel\"><p class=\"ds-panel-title\">Herramientas</p><p class=\"ds-panel-note\">Photoshop, Illustrator y After Effects.</p></div>",
+   "css": ".ds-panel{background:#17171b;border:1px solid color-mix(in oklab,#f4f3f7 16%,transparent);border-radius:16px;padding:32px;color:#f4f3f7;font:400 1rem/1.6 Schibsted Grotesk,system-ui,sans-serif}.ds-panel-title{font-size:0.8125rem;color:#aeabb5;margin:0 0 12px;letter-spacing:0.02em}.ds-panel-note{font-size:0.875rem;color:#aeabb5;margin:0;max-width:36ch}"
+  }
+ ],
+ "narrative": {
+  "northStar": "La sala de proyeccion",
+  "overview": "La pagina es una sala a oscuras y el trabajo es lo unico iluminado. El fondo casi negro no es un tema oscuro de interfaz: es la penumbra que hace que la pared de piezas brille. La interfaz se retira y deja que doce marcas reales ocupen la pared en placas contiguas.",
+  "keyCharacteristics": [
+   "Dos mundos de color con un solo interruptor de clase, no dos sistemas.",
+   "Una sola familia tipografica; la jerarquia la hace el tamano y el tracking.",
+   "Cero sombras: la profundidad es tonal mas filetes.",
+   "El muro no lleva leyendas, ni bordes, ni radio.",
+   "El violeta es de las acciones, no del ambiente."
+  ],
+  "rules": [
+   {
+    "name": "La regla del interruptor",
+    "body": "Los dos mundos comparten tokens; solo cambian sus valores dentro de .section--light.",
+    "section": "colors"
+   },
+   {
+    "name": "La regla del violeta escaso",
+    "body": "El violeta no decora: senala lo pulsable.",
+    "section": "colors"
+   },
+   {
+    "name": "La regla de una sola voz",
+    "body": "Ninguna seccion introduce una familia nueva.",
+    "section": "typography"
+   },
+   {
+    "name": "La regla plana",
+    "body": "Una superficie en reposo no proyecta sombra.",
+    "section": "elevation"
+   }
+  ],
+  "dos": [
+   "Do mantener el violeta por debajo del 10 % de cualquier pantalla.",
+   "Do usar --muted para el texto secundario y comprobar 7:1 en los dos mundos.",
+   "Do separar secciones con aire y con el cambio de mundo, nunca con una linea a todo el ancho.",
+   "Do mantener el retrato en blanco y negro."
+  ],
+  "donts": [
+   "Don't poner leyendas, nombres ni anos bajo las imagenes del muro.",
+   "Don't anadir sombras, halos o desenfoques decorativos.",
+   "Don't introducir una segunda familia tipografica.",
+   "Don't usar el violeta como fondo de seccion ni como degradado.",
+   "Don't cambiar el radio de las placas del muro."
+  ]
+ }
+}
