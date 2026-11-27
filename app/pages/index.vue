@@ -25,8 +25,8 @@ useHead({
       <div class="portada__velo" aria-hidden="true"></div>
 
       <div class="portada__texto">
-        <h1 id="portada-h" class="portada__claim">Una marca a la altura de tu negocio</h1>
-        <p class="portada__lead">Diseño la identidad completa de negocios como el tuyo: el logo, la papelería y las piezas para redes. Trabajo contigo uno a uno, y te digo qué necesitas, qué no y cuánto cuesta antes de empezar.</p>
+        <h1 id="portada-h" class="portada__claim">Tu negocio ya es bueno. Que tu marca lo demuestre.</h1>
+        <p class="portada__lead">Diseño la identidad completa de negocios como el tuyo: logo, papelería y piezas para redes. Te digo qué necesitas, qué no y cuánto cuesta antes de empezar.</p>
         <div class="btn-row portada__acciones">
           <a class="btn btn--primary" href="#contacto">Hablemos
             <svg class="m-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>

@@ -1319,3 +1319,137 @@ a { text-underline-offset: 3px; }
   ::view-transition-old(*),
   ::view-transition-new(*) { animation: none !important; }
 }
+
+
+/* ============================================================
+   Arreglos: el slider, el menu movil y el aire
+   ============================================================ */
+
+/* ---------- El slider: una pieza a la vez, deslizable ---------- */
+.slider { min-width: 0; }
+.slider__pista {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  gap: var(--s-4);
+  padding-bottom: var(--s-2);
+}
+.slider__pista::-webkit-scrollbar { display: none; }
+.slider__pista > .slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: grid;
+  place-items: center;
+}
+.slider__pista .phone {
+  width: min(100%, 300px);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 5px;
+  background: #17171b;
+}
+.slider__pista .phone__screen {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 9 / 19.5;
+}
+.slider__pista video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ---------- El menu de hamburguesa: hoja entera, no una lista ---------- */
+.nav__sheet {
+  position: fixed;
+  inset: var(--nav) 0 0 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  padding: var(--s-6) var(--gut) var(--s-7);
+  z-index: 45;
+  overflow-y: auto;
+}
+.nav__sheet-cerrar {
+  align-self: flex-end;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  margin-bottom: var(--s-4);
+}
+.nav__sheet-links { display: grid; }
+.nav__sheet-links a {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.nav__sheet-links a:active { color: var(--accent); }
+.nav__sheet-cta {
+  margin-top: var(--s-6);
+  height: 56px;
+  justify-content: center;
+  font-size: 1rem;
+}
+.nav__sheet-pie {
+  margin-top: auto;
+  padding-top: var(--s-6);
+  font-size: var(--t-label);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+/* ---------- Menos aire en pantallas pequenas ---------- */
+@media (max-width: 1023px) {
+  /* ninguna seccion reserva pantallas enteras: mide lo que mide su contenido */
+  .section { min-height: 0; }
+  .closing { min-height: 0; }
+  .closing__grid { min-height: 0; }
+  .section { padding-top: var(--s-8); padding-bottom: var(--s-7); }
+  .head { margin-bottom: var(--s-6); }
+  .video__grid { gap: var(--s-6); }
+  .video__facts { margin-top: var(--s-5); }
+}
+
+
+/* con la hoja abierta sobra la hamburguesa: ya hay un boton de cerrar dentro */
+.nav--abierto .nav__toggle { visibility: hidden; }
+
+/* los datos del video, con su etiqueta y su valor separados */
+.video__facts { display: grid; gap: 0; margin-top: var(--s-6); padding: 0; }
+.video__facts li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding-bottom: var(--s-3);
+  margin-bottom: var(--s-3);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--t-label);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.video__facts li:last-child { border-bottom: 0; margin-bottom: 0; }
+.video__facts b {
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.875rem;
+  text-align: right;
+}
