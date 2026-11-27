@@ -1108,114 +1108,102 @@ a { text-underline-offset: 3px; }
    La sala sigue a oscuras; cambia la planta.
    ============================================================ */
 
-/* ---------- Portada partida: el texto manda, el trabajo asoma ---------- */
-.portada {
+/* ---------- Portada: el muro primero, el texto encima ---------- */
+.portada--muro {
+  position: relative;
   height: 100svh;
-  min-height: 100svh;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 34vw);
-  align-items: stretch;
-  gap: 0;
   padding-top: var(--nav);
+  overflow: hidden;
+  display: block;
+}
+.portada__muro {
+  position: absolute;
+  inset: var(--nav) 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3px;
+  background: var(--line);
+}
+.portada__muro img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.portada__velo {
+  position: absolute;
+  inset: var(--nav) 0 0 0;
+  background: linear-gradient(100deg,
+    rgb(8 8 10 / .99) 0%,
+    rgb(8 8 10 / .97) 34%,
+    rgb(8 8 10 / .88) 54%,
+    rgb(8 8 10 / .38) 78%);
 }
 .portada__texto {
+  position: relative;
+  height: 100%;
+  max-width: 820px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--s-9) var(--s-7) var(--s-8) max(var(--gut), calc((100vw - var(--wrap)) / 2));
+  padding: 0 var(--s-7) 0 max(var(--gut), calc((100vw - var(--wrap)) / 2));
 }
 .portada__claim {
-  font-size: clamp(2.75rem, 5.6vw, 5.25rem);
+  font-size: clamp(2.5rem, 5.6vw, 5.25rem);
   line-height: 0.97;
   letter-spacing: -0.05em;
   font-weight: 500;
-  max-width: 16ch;
+  max-width: 14ch;
   text-wrap: balance;
 }
 .portada__lead {
   margin-top: var(--s-6);
   font-size: var(--t-lead);
   line-height: 1.6;
-  color: var(--muted);
-  max-width: 44ch;
+  color: #cfccd6;
+  max-width: 46ch;
 }
 .portada__acciones { margin-top: var(--s-6); }
-
-/* retrato pequeño, en línea con el dato: ya no es el segundo protagonista */
 .portada__pie {
-  margin-top: auto;
-  padding-top: var(--s-8);
+  margin-top: var(--s-7);
   display: flex;
   align-items: center;
-  gap: var(--s-4);
-  border-top: 1px solid var(--line);
+  gap: var(--s-3);
 }
 .portada__retrato {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   flex: none;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(1);
-  border: 1px solid color-mix(in oklab, #f4f3f7 18%, transparent);
+  border: 1px solid color-mix(in oklab, #f4f3f7 22%, transparent);
 }
 .portada__dato {
   font-size: var(--t-label);
-  color: var(--muted);
+  color: #cfccd6;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   line-height: 1.6;
 }
 .portada__dato strong { color: var(--ink); font-weight: 500; }
 
-/* columna de placas que se sale por la derecha: el muro no cabe en una pantalla */
-.portada__tira {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: var(--s-3);
-  height: 100%;
-  padding: calc(var(--nav) + var(--s-5)) 0 var(--s-5);
-  margin-right: calc(-1 * var(--gut));
-  overflow: hidden;
-}
-.portada__placa {
-  position: relative;
-  height: 100%;
-  border-radius: 0;
-  overflow: hidden;
-  background: var(--surface);
-}
-.portada__placa img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transform: translateY(0);
-  transition: transform 700ms var(--ease-enter);
-}
-.portada__placa:hover img { transform: scale(1.04); }
-
 @media (max-width: 1023px) {
-  .portada {
-    grid-template-columns: 1fr;
-    height: auto;
-    min-height: 0;
-    overflow: visible;
+  .portada--muro { height: auto; min-height: 100svh; }
+  .portada__muro { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); }
+  .portada__velo {
+    background: linear-gradient(180deg,
+      rgb(8 8 10 / .97) 0%,
+      rgb(8 8 10 / .92) 55%,
+      rgb(8 8 10 / .80) 100%);
   }
-  .portada__texto { padding: calc(var(--nav) + var(--s-7)) var(--gut) var(--s-6); }
-  .portada__tira {
-    grid-template-rows: none;
-    grid-template-columns: repeat(3, 1fr);
-    height: auto;
-    margin-right: 0;
-    padding: 0 var(--gut) var(--s-7);
+  .portada__texto {
+    min-height: calc(100svh - var(--nav));
+    padding: var(--s-7) var(--gut);
+    justify-content: center;
   }
-  .portada__placa { aspect-ratio: 1 / 1; height: auto; }
-  .portada__pie { padding-top: var(--s-6); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portada__muro img { transition: none; }
 }
 
-/* ---------- Muro con ritmo: doce placas, cuatro compases ---------- */
+/* ---------- Muro: doce placas iguales, comparables ---------- */
 .muro {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -1238,9 +1226,7 @@ a { text-underline-offset: 3px; }
   transition: transform 700ms var(--ease-enter);
 }
 .muro__placa:hover img { transform: scale(1.04); }
-.muro__placa--m { grid-column: span 4; aspect-ratio: 4 / 5; }
-.muro__placa--w { grid-column: span 6; aspect-ratio: 16 / 10; }
-.muro__placa--s { grid-column: span 3; aspect-ratio: 1 / 1; }
+.muro__placa { grid-column: span 3; aspect-ratio: 4 / 5; }
 .muro__placa:focus-visible { outline: 0; }
 .muro__placa:focus-visible::after {
   content: "";
@@ -1264,13 +1250,10 @@ a { text-underline-offset: 3px; }
 .muro__placa:focus-visible .muro__nombre { opacity: 1; transform: none; }
 
 @media (max-width: 1023px) {
-  .muro__placa--m { grid-column: span 6; }
-  .muro__placa--w { grid-column: span 12; }
-  .muro__placa--s { grid-column: span 6; aspect-ratio: 4 / 5; }
+  .muro__placa { grid-column: span 4; }
 }
 @media (max-width: 600px) {
-  .muro__placa--m, .muro__placa--s { grid-column: span 6; aspect-ratio: 1 / 1; }
-  .muro__placa--w { grid-column: span 12; aspect-ratio: 4 / 3; }
+  .muro__placa { grid-column: span 6; aspect-ratio: 1 / 1; }
 }
 
 /* ---------- Página de caso ---------- */

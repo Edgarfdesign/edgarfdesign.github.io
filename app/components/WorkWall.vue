@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import { projects } from '~/data/projects'
 
-// Cuatro compases: tres medios, dos anchos, cuatro pequeños, tres medios.
-const tamanos = ['m', 'm', 'm', 'w', 'w', 's', 's', 's', 's', 'm', 'm', 'm'] as const
 </script>
 
 <template>
   <ul class="muro">
-    <li v-for="(p, i) in projects" :key="p.slug" :class="['muro__placa', 'muro__placa--' + tamanos[i]]">
+    <li v-for="(p, i) in projects" :key="p.slug" class="muro__placa">
       <NuxtLink :to="'/proyecto/' + p.slug" :aria-label="'Ver el caso de ' + p.name + ', ' + p.year">
         <img
           :src="'/' + p.thumb"
