@@ -64,7 +64,8 @@ detalle al abrirlas.
 - Diez logos en `images/logo*.svg` y tres videos verticales en `videos/`.
 - Dos proyectos de desarrollo con IA documentados (bot de WhatsApp, bot de Discord) sin repositorio
   público ni demo en línea.
-- Retrato del autor en `images/retrato.webp` y CV en PDF.
+- Retrato del autor en `images/retrato.webp` (recorte cuadrado en blanco y negro) con el
+  original en `images/retrato-original.jpg` para volver a recortar, y CV en PDF.
 - Ausencias que no se deben inventar: no hay testimonios, clientes citados, premios, precios ni
   número de proyectos entregados.
 
