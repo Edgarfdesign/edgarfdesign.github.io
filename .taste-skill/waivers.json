@@ -1,0 +1,22 @@
+[
+ {
+  "check": "phone-number",
+  "target": "div.closing__dir",
+  "reason": "Es la linea de negocio real del cliente, no un dato de demostracion: inventarla o quitarla empeora la pagina."
+ },
+ {
+  "check": "container-edges",
+  "target": "section.hero",
+  "reason": "El hero es una portada a sangre de dos columnas; su contenido si empieza en 80 y acaba en 1360."
+ },
+ {
+  "check": "container-edges",
+  "target": "a.skip-link",
+  "reason": "El enlace de salto tiene que ser el primer tab stop, asi que vive antes de los landmarks."
+ },
+ {
+  "check": "no-visual",
+  "target": "section#servicios",
+  "reason": "Es una lista de servicios con el panel de herramientas reales; una foto repetiria una pieza ya vista en el muro."
+ }
+]

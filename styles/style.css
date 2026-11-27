@@ -10,7 +10,7 @@
   --bg: #0e0e11;
   --surface: #17171b;
   --ink: #f4f3f7;
-  --muted: #a3a0aa;
+  --muted: #aeabb5;
   --line: color-mix(in oklab, #f4f3f7 16%, transparent);
 
   --accent: #5459f0;
@@ -60,7 +60,7 @@
   --bg: #f4f3f7;
   --surface: #e8e6ee;
   --ink: #16151a;
-  --muted: #5f5d68;
+  --muted: #4a4852;
   --line: color-mix(in oklab, #16151a 14%, transparent);
   --accent-text: #4649d8;
   --btn-bg: #5459f0;
@@ -143,7 +143,7 @@ html { scrollbar-color: #3a3944 transparent; }
 
 .section {
   padding: var(--padt) 0 var(--padb);
-  min-height: 0;
+  min-height: calc(var(--h, 1) * 100svh);
   display: flex;
   align-items: flex-start;
   background: var(--bg);
@@ -159,7 +159,6 @@ html { scrollbar-color: #3a3944 transparent; }
   font-size: var(--t-h2);
   letter-spacing: -0.045em;
   padding-bottom: var(--s-5);
-  border-bottom: 1px solid var(--line);
 }
 .head__lead {
   margin-top: var(--s-5);
@@ -421,7 +420,7 @@ html { scrollbar-color: #3a3944 transparent; }
 
 /* Retrato en placa 3:4, con filete fino que la separa del negro */
 .hero__media > img {
-  width: clamp(260px, 30vw, 440px);
+  width: clamp(260px, 28.5vw, 411px);
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -444,9 +443,6 @@ html { scrollbar-color: #3a3944 transparent; }
 .hero__fact strong { font-size: 1.0625rem; font-weight: 500; letter-spacing: -0.02em; }
 .hero__fact span { font-size: var(--t-small); color: var(--muted); }
 .wall {
-  --bleed: max(var(--gut), calc((100vw - var(--wrap)) / 2));
-  width: calc(100% + 2 * var(--bleed));
-  margin-left: calc(-1 * var(--bleed));
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3px;
@@ -461,7 +457,7 @@ html { scrollbar-color: #3a3944 transparent; }
   overflow: hidden;
   background: var(--surface);
   cursor: pointer;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 2 / 3;
 }
 .tile img {
   width: 100%;
@@ -471,7 +467,15 @@ html { scrollbar-color: #3a3944 transparent; }
 }
 .tile:hover img { transform: scale(1.045); }
 .tile:active img { transform: scale(1.02); }
-.tile:focus-visible { outline-offset: -4px; }
+.tile { position: relative; }
+.tile:focus-visible { outline: 0; }
+.tile:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 3px var(--accent), inset 0 0 0 5px var(--bg);
+}
 
 /* ---------- 10. Video: un teléfono, deslizable ---------- */
 .video__grid {
@@ -480,12 +484,11 @@ html { scrollbar-color: #3a3944 transparent; }
   gap: var(--s-5);
   align-items: stretch;
 }
-.video__text { grid-column: 1 / span 4; display: flex; flex-direction: column; }
+.video__text { grid-column: 1 / span 6; display: flex; flex-direction: column; }
 .video__text h2 {
   font-size: var(--t-h2);
   letter-spacing: -0.045em;
   padding-bottom: var(--s-5);
-  border-bottom: 1px solid var(--line);
 }
 .video__text .head__lead { margin-top: var(--s-5); max-width: 34ch; }
 
@@ -495,7 +498,6 @@ html { scrollbar-color: #3a3944 transparent; }
   justify-content: space-between;
   gap: var(--s-4);
   padding-bottom: var(--s-3);
-  border-bottom: 1px solid var(--line);
   font-size: var(--t-small);
 }
 .facts span { color: var(--muted); }
@@ -664,7 +666,6 @@ html { scrollbar-color: #3a3944 transparent; }
   font-size: var(--t-h2);
   letter-spacing: -0.045em;
   padding-bottom: var(--s-5);
-  border-bottom: 1px solid var(--line);
 }
 .serv__text .head__lead { margin-top: var(--s-5); }
 
@@ -674,13 +675,13 @@ html { scrollbar-color: #3a3944 transparent; }
 .rows h3 { font-size: var(--t-h3); margin-bottom: var(--s-2); }
 .rows p { font-size: var(--t-small); color: var(--muted); max-width: 46ch; }
 
-.serv__aside { grid-column: 8 / span 5; }
+.serv__aside { grid-column: 7 / span 6; }
 .panel {
   background: var(--surface);
   border-radius: var(--r-lg);
   padding: var(--s-6);
 }
-.panel__title {
+.panel__title, .dir-col__title {
   font-size: var(--t-label);
   font-weight: 500;
   color: var(--muted);
@@ -704,14 +705,14 @@ html { scrollbar-color: #3a3944 transparent; }
   border-top: 1px solid var(--line);
 }
 .panel__out p { font-size: var(--t-small); color: var(--muted); max-width: 40ch; }
-.panel__out .panel__title { margin-bottom: var(--s-3); }
+.panel__out .panel__title, .dir-col__title { margin-bottom: var(--s-3); }
 
 /* ---------- 13. Cierre (tinta) ---------- */
 .closing {
   background: var(--bg);
   color: var(--ink);
   padding: var(--padt) 0 var(--s-6);
-  min-height: 0;
+  min-height: 100svh;
   display: flex;
   align-items: flex-start;
 }
@@ -719,7 +720,8 @@ html { scrollbar-color: #3a3944 transparent; }
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--s-7) var(--s-5);
-  align-content: start;
+  align-content: space-between;
+  min-height: calc(100svh - var(--padt) - var(--s-6));
 }
 .closing__cta { grid-column: 1 / span 9; }
 .closing__cta h2 {
@@ -879,8 +881,8 @@ html { scrollbar-color: #3a3944 transparent; }
   .nav__toggle { display: flex; margin-left: auto; }
   .nav__cta { margin-left: auto; }
 
-  .section { min-height: 100svh; padding: var(--padt) 0 var(--padb); }
-  .section[style*="--h:2"] { min-height: 0; }
+  .section { --h: 2; min-height: calc(2 * 100svh); padding: var(--padt) 0 var(--padb); }
+  .section[style*="--h:2"] { min-height: calc(2 * 100svh); }
 
   /* el hero pasa a una columna: texto y foto debajo */
   .hero {
@@ -903,8 +905,8 @@ html { scrollbar-color: #3a3944 transparent; }
   .serv__grid { grid-template-columns: 1fr; gap: var(--s-6); }
   .serv__text, .serv__aside { grid-column: 1; }
 
-  .closing { min-height: 0; }
-  .closing__grid { min-height: 0; grid-template-columns: 1fr; }
+  .closing { min-height: 200svh; }
+  .closing__grid { min-height: calc(200svh - var(--padt) - var(--s-6)); grid-template-columns: 1fr; }
   .closing__cta { grid-column: 1; }
   .closing__dir { grid-template-columns: repeat(2, 1fr); gap: var(--s-6); }
   .legal { grid-column: 1; }
@@ -928,6 +930,7 @@ html { scrollbar-color: #3a3944 transparent; }
 
   .head { margin-bottom: var(--s-6); }
   .wall { grid-template-columns: repeat(2, 1fr); }
+  .wall .tile { aspect-ratio: 1 / 1; }
   .wall .tile { aspect-ratio: 1 / 1; }
 
 

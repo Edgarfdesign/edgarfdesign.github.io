@@ -1,0 +1,941 @@
+{
+ "start": "2026-11-27T09:17:02.264Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-27T09:32:06.415Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 38,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-27T09:38:47.437Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 19,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-27T09:41:30.536Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 15,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "service",
+  "category": "diseno de marca para pequenas empresas",
+  "primary": "Escribir por WhatsApp",
+  "rounds": 3,
+  "start": "2026-11-27T09:17:02.264Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "b39ebd86d7c25e68:d093f2cd",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "b39ebd86d7c25e68",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "no-visual",
+    "where": "section#servicios \"Qué hago, y qué no\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "section#servicios \"Qué hago, y qué no\""
+    ]
+   },
+   {
+    "check": "copy-headings",
+    "where": "h2#video-h \"Piezas de video vertical\"",
+    "msg": "\"Piezas de video vertical\" names no product, part, place or section (3 headings like it; at most one brand line per page) (and 2 more like it: \"Además, construyo sitios\", \"Qué hago, y qué no\")",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headings"
+    ],
+    "wheres": [
+     "h2#video-h \"Piezas de video vertical\""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#servicios / footer#contacto",
+    "msg": "336px between these sections, +105% against the median 164px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#servicios / footer#contacto"
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "div.closing__bottom > div.closing__dir > div.dir-col:nth-of-type(3) > a:nth-of-type(2) \"+58 416 131 7560\"",
+    "msg": "a phone number in international format: \"+58 416 131 7560\"; a visitor can dial it and reach a stranger (and 1 more like it: again here)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.closing__bottom > div.closing__dir > div.dir-col:nth-of-type(3) > a:nth-of-type(2) \"+58 416 131 7560\""
+    ]
+   },
+   {
+    "check": "focus-ring",
+    "where": ".tile:focus-visible",
+    "msg": "\".tile:focus-visible\" in style.css?v=a1d822ea removes the focus outline and sets nothing in its place",
+    "fix": "keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-ring"
+    ],
+    "wheres": [
+     ".tile:focus-visible"
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "ul#wall > li:nth-of-type(1) > button.tile \"Ver el proyecto Tecnoventas, 2020\"",
+    "msg": "Tab stop 14, button \"Ver el proyecto Tecnoventas, 2020\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "ul#wall > li:nth-of-type(1) > button.tile \"Ver el proyecto Tecnoventas, 2020\""
+    ]
+   },
+   {
+    "check": "hero-enter",
+    "where": "main#main > section.hero",
+    "msg": "the hero does not enter on load: no head line setting html.m-enter (motion.md, The hero's entrance)",
+    "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "hero-enter"
+    ],
+    "wheres": [
+     "main#main > section.hero"
+    ]
+   },
+   {
+    "check": "moment-none",
+    "where": "(the page)",
+    "msg": "a service page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+    "fix": "deal one (moments.mjs pick --page service --photo) and mount it in its own section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "moment-none"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "footer#contacto \"Cuéntame qué marca quieres construir Esc\"",
+    "msg": "the section's content does not fit it: its lowest content ends 865px below its top, past 844px (the section less 56px of bottom padding) (SR-2)",
+    "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "footer#contacto \"Cuéntame qué marca quieres construir Esc\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "footer#contacto > div.wrap.closing__grid > div.closing__bottom > div.closing__dir \"Secciones Trabajo Video Servicios Fuera \"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "footer#contacto > div.wrap.closing__grid > div.closing__bottom > div.closing__dir \"Secciones Trabajo Video Servicios Fuera \""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "main#main > section.hero \"Diseño marcas completas, no solo logos I\"",
+    "msg": "the content of section 1 runs 0px from the left and 80px from the right (read from its outermost blocks: no .wrap): the page's container starts at 80px; 0 and 80px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "main#main > section.hero \"Diseño marcas completas, no solo logos I\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "a.skip-link \"Saltar al contenido\"",
+    "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "a.skip-link \"Saltar al contenido\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section.hero > div.hero__media > div.hero__fact > strong \"12 marcas\"",
+    "msg": "1 text block starts on a left line at x 1197, 1117px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section.hero > div.hero__media > div.hero__fact > strong \"12 marcas\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section.hero > div.hero__media > div.hero__fact > span \"en Venezuela y Chile\"",
+    "msg": "1 text block starts on a left line at x 1168, 1088px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section.hero > div.hero__media > div.hero__fact > span \"en Venezuela y Chile\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "h1#hero-h \"Diseño marcas completas, no solo logos\"",
+    "msg": "3 text blocks start on a left line at x 160, 80px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"Identidad visual, piezas para re\", \"Identidad visual · Contenido ver\") (and 1 more like it: \"Diseño marcas completas,\") (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "h1#hero-h \"Diseño marcas completas, no solo logos\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "div#slider-stage \"Videos. Arrastra con el ratón o usa las \"",
+    "msg": "a clipped carousel: its window runs 732-1360px, not on the container at 80-1360px (SR-7)",
+    "fix": "show every item inside the container, or stack them: no sideways scroller, no half-cut carousel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "div#slider-stage \"Videos. Arrastra con el ratón o usa las \""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#main > section.hero / section#trabajo",
+    "msg": "76px between these sections, -83% against the median 439px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "main#main > section.hero / section#trabajo"
+    ]
+   },
+   {
+    "check": "empty-area",
+    "where": "footer#contacto \"Cuéntame qué marca quieres construir\"",
+    "msg": "56% of the section is empty: 608px of empty rows between its content, 19% beside content that covers under half the container, in its 1592px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "empty-area"
+    ],
+    "wheres": [
+     "footer#contacto \"Cuéntame qué marca quieres construir\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "no-visual",
+    "where": "main#main > section.hero \"Diseño marcas completas, no solo logos\"",
+    "msg": "pictures, effects and mocks cover 18% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#video \"Piezas de video vertical\"",
+    "msg": "pictures, effects and mocks cover 18% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-buttons",
+    "where": "header#nav > div.wrap.nav__inner > a.btn.btn--primary \"Hablemos\"",
+    "msg": "\"Hablemos\" does not start with a verb (book, buy, try, start, get, see...) (and 3 more like it: \"Ver el trabajo\", \"Escribir un correo\", \"WhatsApp\")",
+    "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "section.hero > div.hero__text > div.btn-row > a.btn.btn--primary \"Hablemos\"",
+    "msg": "2 labels for one target /message/2EWSSFEJTDP2G1: \"Hablemos\", \"WhatsApp\"",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "(the page)",
+    "msg": "the main action \"Escribir por WhatsApp\" does not read word for word the same in the nav or hero and the closing section",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "body-size",
+    "where": "ul.dev-grid > li.dev-card:nth-of-type(1) > div.dev-card__body > p \"Atiende el catálogo, responde precios y \"",
+    "msg": "6 of 11 paragraphs of running text are set under 16px (14px)",
+    "fix": "set running text at 16px or more",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#servicios / footer#contacto",
+    "msg": "uneven space at the edge of a band: 72px outside its edge, 264px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "header#nav > div.wrap.nav__inner > a.btn.btn--primary \"Hablemos\"",
+    "msg": "\"Hablemos\" goes to #contacto, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div#menu > nav.sheet__list > a:nth-of-type(5) \"Contacto\"",
+    "msg": "\"Contacto\" goes to #contacto, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "ul#wall > li:nth-of-type(6) > button.tile > img \"m-Y1.webp\"",
+    "msg": "11 photographs in more than one look: lightness from 0.08 to 0.99; saturation from 0.02 to 0.97; warm and cool photographs mixed (b* -64 to +49); the odd one out is m-Y1.webp",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header#nav > div.wrap.nav__inner > nav.nav__links > a:nth-of-type(1) \"Trabajo\"",
+    "msg": "\"Trabajo\" opens a section headed \"Doce marcas, de la primera idea a la calle\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header#nav > div.wrap.nav__inner > nav.nav__links > a:nth-of-type(3) \"Desarrollo\"",
+    "msg": "\"Desarrollo\" opens a section headed \"Además, construyo sitios web\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header#nav > div.wrap.nav__inner > nav.nav__links > a:nth-of-type(4) \"Servicios\"",
+    "msg": "\"Servicios\" opens a section headed \"Qué hago, y qué no\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div#menu > nav.sheet__list > a:nth-of-type(1) \"Trabajo\"",
+    "msg": "\"Trabajo\" opens a section headed \"Doce marcas, de la primera idea a la calle\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div#menu > nav.sheet__list > a:nth-of-type(3) \"Desarrollo\"",
+    "msg": "\"Desarrollo\" opens a section headed \"Además, construyo sitios web\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div#menu > nav.sheet__list > a:nth-of-type(4) \"Servicios\"",
+    "msg": "\"Servicios\" opens a section headed \"Qué hago, y qué no\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div#menu > nav.sheet__list > a:nth-of-type(5) \"Contacto\"",
+    "msg": "\"Contacto\" opens a section headed \"Cuéntame qué marca quieres construir\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header#nav",
+    "msg": "the nav stays on screen with 4 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "main#main > section.hero \"Diseño marcas completas, no solo logos\"",
+    "msg": "40% of the section is empty: 128px above its first content, 64px of empty rows between its content, 48px under its last (a.link:nth-of-type(1)), 14% beside content that covers under half the container, in its 900px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header#nav > div.wrap.nav__inner:nth-of-type(1) > a.btn.btn--primary:nth-of-type(2) \"hablemos\"",
+    "msg": "\"hablemos\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header#nav > div.wrap.nav__inner > a.brand \"Edgar A. Fernández P.\"",
+    "msg": "a 190x32px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "div#video-slider > div.slider__controls > div.slider__dots > button.slider__dot:nth-of-type(1)",
+    "msg": "a 32x32px tap target (and 2 more like it on this screen): under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "div.wrap.serv__grid > div.serv__aside > div.panel > a.link \"Descargar el CV (PDF)\"",
+    "msg": "a 145x23px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "div.closing__bottom > div.closing__dir > div.dir-col:nth-of-type(1) > a:nth-of-type(1) \"Trabajo\"",
+    "msg": "a 48x32px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#desarrollo \"Además, construyo sitios web\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#video / section#desarrollo",
+    "msg": "653px between these sections, +49% against the median 439px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#desarrollo / section#servicios",
+    "msg": "625px between these sections, +40% against the median 448px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "ul#wall > li:nth-of-type(1) > button.tile > img \"m-TV1.webp\"",
+    "msg": "14 photographs in more than one look: lightness from 0.09 to 0.99; saturation from 0.02 to 0.95; warm and cool photographs mixed (b* -32 to +50); the odd one out is m-TV1.webp",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 121,
+   "layout": 15
+  }
+ },
+ "open": [
+  {
+   "check": "copy-headings",
+   "where": "h2#video-h \"Piezas de video vertical\"",
+   "msg": "\"Piezas de video vertical\" names no product, part, place or section (3 headings like it; at most one brand line per page) (and 2 more like it: \"Además, construyo sitios\", \"Qué hago, y qué no\")",
+   "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headings"
+   ],
+   "wheres": [
+    "h2#video-h \"Piezas de video vertical\""
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#servicios / footer#contacto",
+   "msg": "336px between these sections, +105% against the median 164px of gaps at a change of ground",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#servicios / footer#contacto"
+   ]
+  },
+  {
+   "check": "focus-ring",
+   "where": ".tile:focus-visible",
+   "msg": "\".tile:focus-visible\" in style.css?v=a1d822ea removes the focus outline and sets nothing in its place",
+   "fix": "keep the kit's :focus-visible ring, or put a change of the same strength (a 2px line in --action) in the rule that removes it",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-ring"
+   ],
+   "wheres": [
+    ".tile:focus-visible"
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "ul#wall > li:nth-of-type(1) > button.tile \"Ver el proyecto Tecnoventas, 2020\"",
+   "msg": "Tab stop 14, button \"Ver el proyecto Tecnoventas, 2020\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "ul#wall > li:nth-of-type(1) > button.tile \"Ver el proyecto Tecnoventas, 2020\""
+   ]
+  },
+  {
+   "check": "hero-enter",
+   "where": "main#main > section.hero",
+   "msg": "the hero does not enter on load: no head line setting html.m-enter (motion.md, The hero's entrance)",
+   "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "hero-enter"
+   ],
+   "wheres": [
+    "main#main > section.hero"
+   ]
+  },
+  {
+   "check": "moment-none",
+   "where": "(the page)",
+   "msg": "a service page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+   "fix": "deal one (moments.mjs pick --page service --photo) and mount it in its own section",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "moment-none"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "footer#contacto \"Cuéntame qué marca quieres construir Esc\"",
+   "msg": "the section's content does not fit it: its lowest content ends 865px below its top, past 844px (the section less 56px of bottom padding) (SR-2)",
+   "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "footer#contacto \"Cuéntame qué marca quieres construir Esc\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "footer#contacto > div.wrap.closing__grid > div.closing__bottom > div.closing__dir \"Secciones Trabajo Video Servicios Fuera \"",
+   "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+   "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "footer#contacto > div.wrap.closing__grid > div.closing__bottom > div.closing__dir \"Secciones Trabajo Video Servicios Fuera \""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "main#main > section.hero \"Diseño marcas completas, no solo logos I\"",
+   "msg": "the content of section 1 runs 0px from the left and 80px from the right (read from its outermost blocks: no .wrap): the page's container starts at 80px; 0 and 80px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+   "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "main#main > section.hero \"Diseño marcas completas, no solo logos I\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section.hero > div.hero__media > div.hero__fact > strong \"12 marcas\"",
+   "msg": "1 text block starts on a left line at x 1197, 1117px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section.hero > div.hero__media > div.hero__fact > strong \"12 marcas\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section.hero > div.hero__media > div.hero__fact > span \"en Venezuela y Chile\"",
+   "msg": "1 text block starts on a left line at x 1168, 1088px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section.hero > div.hero__media > div.hero__fact > span \"en Venezuela y Chile\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "h1#hero-h \"Diseño marcas completas, no solo logos\"",
+   "msg": "3 text blocks start on a left line at x 160, 80px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"Identidad visual, piezas para re\", \"Identidad visual · Contenido ver\") (and 1 more like it: \"Diseño marcas completas,\") (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "h1#hero-h \"Diseño marcas completas, no solo logos\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "div#slider-stage \"Videos. Arrastra con el ratón o usa las \"",
+   "msg": "a clipped carousel: its window runs 732-1360px, not on the container at 80-1360px (SR-7)",
+   "fix": "show every item inside the container, or stack them: no sideways scroller, no half-cut carousel",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "div#slider-stage \"Videos. Arrastra con el ratón o usa las \""
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "main#main > section.hero / section#trabajo",
+   "msg": "76px between these sections, -83% against the median 439px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "main#main > section.hero / section#trabajo"
+   ]
+  },
+  {
+   "check": "empty-area",
+   "where": "footer#contacto \"Cuéntame qué marca quieres construir\"",
+   "msg": "56% of the section is empty: 608px of empty rows between its content, 19% beside content that covers under half the container, in its 1592px of rows (WARN over 35%, FAIL over 50%)",
+   "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "empty-area"
+   ],
+   "wheres": [
+    "footer#contacto \"Cuéntame qué marca quieres construir\""
+   ]
+  }
+ ],
+ "waived": [
+  {
+   "check": "no-visual",
+   "where": "section#servicios \"Qué hago, y qué no\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "section#servicios \"Qué hago, y qué no\""
+   ],
+   "reason": "Es una lista de servicios con el panel de herramientas reales; una foto repetiria una pieza ya vista en el muro."
+  },
+  {
+   "check": "phone-number",
+   "where": "div.closing__bottom > div.closing__dir > div.dir-col:nth-of-type(3) > a:nth-of-type(2) \"+58 416 131 7560\"",
+   "msg": "a phone number in international format: \"+58 416 131 7560\"; a visitor can dial it and reach a stranger (and 1 more like it: again here)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.closing__bottom > div.closing__dir > div.dir-col:nth-of-type(3) > a:nth-of-type(2) \"+58 416 131 7560\""
+   ],
+   "reason": "Es la linea de negocio real del cliente, no un dato de demostracion: inventarla o quitarla empeora la pagina."
+  },
+  {
+   "check": "container-edges",
+   "where": "a.skip-link \"Saltar al contenido\"",
+   "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "a.skip-link \"Saltar al contenido\""
+   ],
+   "reason": "El enlace de salto tiene que ser el primer tab stop, asi que vive antes de los landmarks."
+  }
+ ],
+ "warnCount": 28,
+ "at": "2026-11-27T09:41:30.536Z",
+ "openTold": true
+}
