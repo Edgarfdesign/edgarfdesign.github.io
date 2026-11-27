@@ -41,7 +41,6 @@
 
     <nav class="nav__links" aria-label="Secciones">
       <a href="#trabajo">Trabajo</a>
-      <a href="#identidades">Identidades</a>
       <a href="#video">Video</a>
       <a href="#desarrollo">Desarrollo</a>
       <a href="#servicios">Servicios</a>
@@ -57,7 +56,6 @@
   <div class="sheet" id="menu" hidden>
     <nav class="sheet__list" aria-label="Menú">
       <a href="#trabajo">Trabajo</a>
-      <a href="#identidades">Identidades</a>
       <a href="#video">Video</a>
       <a href="#desarrollo">Desarrollo</a>
       <a href="#servicios">Servicios</a>
@@ -94,7 +92,7 @@
       </div>
 
       <div class="hero__media">
-        <img src="images/retrato.webp" srcset="images/retrato-720.webp 720w, images/retrato.webp 1080w" sizes="(max-width: 1023px) 100vw, 520px" alt="Edgar Fernández, diseñador gráfico" width="1080" height="1080">
+        <img src="images/retrato.webp" srcset="images/retrato-720.webp 720w, images/retrato.webp 1080w" sizes="(max-width: 479px) 240px, (max-width: 1023px) 320px, 460px" alt="Edgar Fernández, diseñador gráfico" width="1080" height="1080">
         <div class="hero__fact">
           <strong>12 marcas</strong>
           <span>en Venezuela y Chile</span>
@@ -127,29 +125,6 @@
     </div>
   </section>
 
-  <!-- ============ IDENTIDADES ============ -->
-  <section class="section section--light" id="identidades" aria-labelledby="id-h">
-    <div class="wrap">
-      <div class="head">
-        <h2 id="id-h">Logofolio</h2>
-        <p class="head__lead">Las diez marcas que dibujé primero. Todas siguen en uso.</p>
-      </div>
-      <ul class="logos">
-        <li><img src="images/logo1.svg" alt="Logotipo para Tecnoventas" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo2.svg" alt="Logotipo para Culperma" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo3.svg" alt="Logotipo para MyMy" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo4.svg" alt="Logotipo para Máxima Bisutería" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo5.svg" alt="Logotipo para Calza Yoing" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo6.svg" alt="Logotipo para Yannilucio" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo7.svg" alt="Logotipo para Italplumbing" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo8.svg" alt="Logotipo para Miniabasto Liz" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo9.svg" alt="Logotipo para Asuntos Legales" loading="lazy" width="220" height="110"></li>
-        <li><img src="images/logo12.svg" alt="Logotipo para Auto Servicio Zamper" loading="lazy" width="220" height="110"></li>
-      </ul>
-      <p class="logos-note">Cada identidad salió con su logotipo, su paleta y sus tipografías, más las aplicaciones base: papelería, empaque y señalética.</p>
-    </div>
-  </section>
-
   <!-- ============ VIDEO ============ -->
   <section class="section" id="video" aria-labelledby="video-h">
     <div class="wrap video__grid">
@@ -163,47 +138,70 @@
         </ul>
       </div>
 
-      <ul class="phones">
-        <li class="phone">
-          <div class="phone__screen">
-            <video class="phone__video" playsinline muted loop preload="none"
-                   poster="videos/video1-poster.webp" data-src="videos/video1.mp4"
-                   width="1080" height="1920" aria-label="Video vertical para redes, pieza uno">
-              <source src="videos/video1.mp4" type="video/mp4">
-              <source src="videos/video1.webm" type="video/webm">
-            </video>
-            <button class="phone__play" type="button" aria-label="Reproducir el video uno">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
-            </button>
+      <div class="slider" id="video-slider" aria-label="Videos verticales">
+        <div class="slider__stage" id="slider-stage" tabindex="0" aria-label="Videos. Arrastra con el ratón o usa las flechas del teclado.">
+          <div class="slider__track" id="slider-track">
+            <div class="slide">
+              <div class="phone">
+                <div class="phone__screen">
+                  <video class="phone__video" playsinline muted loop preload="none"
+                         poster="videos/video1-poster.webp"
+                         width="1080" height="1920" aria-label="Video vertical para redes, pieza uno">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    <source src="videos/video1.webm" type="video/webm">
+                  </video>
+                  <button class="phone__play" type="button" aria-label="Reproducir el video uno">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="phone">
+                <div class="phone__screen">
+                  <video class="phone__video" playsinline muted loop preload="none"
+                         poster="videos/video2-poster.webp"
+                         width="1080" height="1920" aria-label="Video vertical para redes, pieza dos">
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    <source src="videos/video2.webm" type="video/webm">
+                  </video>
+                  <button class="phone__play" type="button" aria-label="Reproducir el video dos">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="phone">
+                <div class="phone__screen">
+                  <video class="phone__video" playsinline muted loop preload="none"
+                         poster="videos/video3-poster.webp"
+                         width="1080" height="1920" aria-label="Video vertical para redes, pieza tres">
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    <source src="videos/video3.webm" type="video/webm">
+                  </video>
+                  <button class="phone__play" type="button" aria-label="Reproducir el video tres">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </li>
-        <li class="phone">
-          <div class="phone__screen">
-            <video class="phone__video" playsinline muted loop preload="none"
-                   poster="videos/video2-poster.webp" data-src="videos/video2.mp4"
-                   width="1080" height="1920" aria-label="Video vertical para redes, pieza dos">
-              <source src="videos/video2.mp4" type="video/mp4">
-              <source src="videos/video2.webm" type="video/webm">
-            </video>
-            <button class="phone__play" type="button" aria-label="Reproducir el video dos">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
-            </button>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn slider__btn--prev" type="button" aria-label="Video anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="slider__dots">
+            <button class="slider__dot is-active" type="button" aria-label="Ir al video 1" aria-current="true"></button>
+            <button class="slider__dot" type="button" aria-label="Ir al video 2"></button>
+            <button class="slider__dot" type="button" aria-label="Ir al video 3"></button>
           </div>
-        </li>
-        <li class="phone">
-          <div class="phone__screen">
-            <video class="phone__video" playsinline muted loop preload="none"
-                   poster="videos/video3-poster.webp" data-src="videos/video3.mp4"
-                   width="1080" height="1920" aria-label="Video vertical para redes, pieza tres">
-              <source src="videos/video3.mp4" type="video/mp4">
-              <source src="videos/video3.webm" type="video/webm">
-            </video>
-            <button class="phone__play" type="button" aria-label="Reproducir el video tres">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
-            </button>
-          </div>
-        </li>
-      </ul>
+          <button class="slider__btn slider__btn--next" type="button" aria-label="Video siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -301,7 +299,6 @@
       <div class="dir-col">
         <h3>Secciones</h3>
         <a href="#trabajo">Trabajo</a>
-        <a href="#identidades">Identidades</a>
         <a href="#video">Video</a>
         <a href="#servicios">Servicios</a>
       </div>

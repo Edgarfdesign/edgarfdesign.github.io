@@ -116,39 +116,157 @@
     stage.addEventListener('pointercancel', function () { startX = null; });
   })();
 
-  /* ---------- Videos verticales ---------- */
-  (function videos() {
-    var phones = document.querySelectorAll('.phone');
-    if (!phones.length) return;
+  /* ---------- Slider de videos ---------- */
+  (function videoSlider() {
+    var root = document.getElementById('video-slider');
+    if (!root) return;
 
-    phones.forEach(function (phone) {
-      var video = phone.querySelector('video');
-      var play = phone.querySelector('.phone__play');
+    var stage = document.getElementById('slider-stage');
+    var track = document.getElementById('slider-track');
+    var slides = Array.prototype.slice.call(track.children);
+    var dots = Array.prototype.slice.call(root.querySelectorAll('.slider__dot'));
+    var btnPrev = root.querySelector('.slider__btn--prev');
+    var btnNext = root.querySelector('.slider__btn--next');
+    var count = slides.length;
+    var index = 0;
+    var width = 0;
+    var dragging = false;
+    var pointerId = null;
+    var startX = 0;
+    var startTime = 0;
+    var dx = 0;
+    var baseX = 0;
+    var justDragged = false;
+    var duration = reduceMotion ? 0 : 380;
+
+    function measure() { width = stage.getBoundingClientRect().width; }
+
+    function apply(x, animate) {
+      track.style.transition = animate ? 'transform ' + duration + 'ms cubic-bezier(.32,.72,0,1)' : 'none';
+      track.style.transform = 'translate3d(' + x + 'px,0,0)';
+    }
+
+    function pauseAllBut(keep) {
+      slides.forEach(function (s, i) {
+        if (i === keep) return;
+        var v = s.querySelector('video');
+        if (v && !v.paused) v.pause();
+      });
+    }
+
+    function setIndex(i, animate) {
+      index = Math.max(0, Math.min(count - 1, i));
+      baseX = -index * width;
+      apply(baseX, animate !== false);
+      dots.forEach(function (d, n) {
+        d.classList.toggle('is-active', n === index);
+        if (n === index) d.setAttribute('aria-current', 'true');
+        else d.removeAttribute('aria-current');
+      });
+      if (btnPrev) btnPrev.disabled = index === 0;
+      if (btnNext) btnNext.disabled = index === count - 1;
+      pauseAllBut(index);
+    }
+
+    /* Arrastre: 1:1 con el puntero, captura, amortiguación en los extremos */
+    function onDown(e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      if (pointerId !== null) return; /* un segundo dedo no mueve el carril */
+      measure();
+      pointerId = e.pointerId;
+      dragging = true;
+      justDragged = false;
+      startX = e.clientX;
+      startTime = performance.now();
+      dx = 0;
+      baseX = -index * width;
+      track.style.transition = 'none';
+      try { stage.setPointerCapture(pointerId); } catch (err) {}
+      root.classList.add('is-dragging');
+    }
+
+    function onMove(e) {
+      if (!dragging || e.pointerId !== pointerId) return;
+      dx = e.clientX - startX;
+      if (Math.abs(dx) > 8) justDragged = true;
+      var x = baseX + dx;
+      var min = -(count - 1) * width;
+      if (x > 0) x *= 0.35;
+      if (x < min) x = min + (x - min) * 0.35;
+      track.style.transform = 'translate3d(' + x + 'px,0,0)';
+      if (e.cancelable) e.preventDefault();
+    }
+
+    function onUp(e) {
+      if (!dragging || e.pointerId !== pointerId) return;
+      dragging = false;
+      pointerId = null;
+      root.classList.remove('is-dragging');
+      var elapsed = Math.max(1, performance.now() - startTime);
+      var velocity = dx / elapsed; /* px por milisegundo */
+      var threshold = width * 0.18;
+      var next = index;
+      if (Math.abs(dx) > threshold || Math.abs(velocity) > 0.11) {
+        next = index + (dx < 0 ? 1 : -1);
+      }
+      setIndex(next);
+    }
+
+    stage.addEventListener('pointerdown', onDown);
+    stage.addEventListener('pointermove', onMove, { passive: false });
+    stage.addEventListener('pointerup', onUp);
+    stage.addEventListener('pointercancel', onUp);
+
+    /* un arrastre no debe acabar reproduciendo el video */
+    stage.addEventListener('click', function (e) {
+      if (!justDragged) return;
+      e.preventDefault();
+      e.stopPropagation();
+      justDragged = false;
+    }, true);
+
+    if (btnPrev) btnPrev.addEventListener('click', function () { setIndex(index - 1); });
+    if (btnNext) btnNext.addEventListener('click', function () { setIndex(index + 1); });
+    dots.forEach(function (dot, n) {
+      dot.addEventListener('click', function () { setIndex(n); });
+    });
+
+    root.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); setIndex(index - 1); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); setIndex(index + 1); }
+    });
+
+    window.addEventListener('resize', function () {
+      measure();
+      apply(-index * width, false);
+    });
+
+    /* Reproducción: uno a la vez */
+    slides.forEach(function (slide) {
+      var phone = slide.querySelector('.phone');
+      var video = slide.querySelector('video');
+      var play = slide.querySelector('.phone__play');
       if (!video || !play) return;
 
       video.muted = true;
 
       play.addEventListener('click', function () {
-        phones.forEach(function (other) {
-          if (other === phone) return;
-          var v = other.querySelector('video');
-          if (v && !v.paused) { v.pause(); other.classList.remove('is-playing'); }
-        });
-
+        pauseAllBut(slides.indexOf(slide));
         video.muted = false;
         var playing = video.play();
         if (playing && playing.catch) playing.catch(function () { video.muted = true; video.play(); });
-        phone.classList.add('is-playing');
       });
 
       video.addEventListener('click', function () {
-        if (video.paused) { video.play(); phone.classList.add('is-playing'); }
-        else { video.pause(); phone.classList.remove('is-playing'); }
+        if (video.paused) video.play(); else video.pause();
       });
-
-      video.addEventListener('pause', function () { phone.classList.remove('is-playing'); });
       video.addEventListener('play', function () { phone.classList.add('is-playing'); });
+      video.addEventListener('pause', function () { phone.classList.remove('is-playing'); });
     });
+
+    measure();
+    setIndex(0, false);
+    window.addEventListener('load', function () { measure(); apply(-index * width, false); });
   })();
 
   /* ---------- Muro: el trabajo se revela al entrar ---------- */

@@ -67,7 +67,6 @@
   --btn-ink: #f7f6fb;
 }
 
-#identidades { padding-bottom: 56px; }
 #desarrollo { padding-top: 80px; }
 
 /* ---------- 2. Base ---------- */
@@ -411,45 +410,39 @@ html { scrollbar-color: #3a3944 transparent; }
 .hero__foot .link:hover { color: var(--accent-text); }
 
 .hero__media {
-  position: relative;
   align-self: center;
   justify-self: end;
-  width: 100%;
-  max-width: 520px;
-  aspect-ratio: 4 / 5;
   margin-right: var(--gut);
-  border-radius: var(--r-md);
-  overflow: hidden;
-  background: var(--surface);
-  animation: media-in 1100ms var(--ease-enter) 120ms both;
+  display: grid;
+  justify-items: center;
+  gap: var(--s-5);
+  animation: avatar-in 700ms var(--ease-enter) 140ms both;
 }
+
+/* Foto de perfil en círculo, con un filete fino que la separa del negro */
 .hero__media > img {
-  width: 100%;
-  height: 100%;
+  width: clamp(240px, 28.5vw, 410px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center 20%;
+  border: 1px solid color-mix(in oklab, #f4f3f7 22%, transparent);
 }
-@keyframes media-in {
-  from { clip-path: inset(0 0 100% 0); transform: scale(1.06); }
-  to   { clip-path: inset(0 0 0 0); transform: scale(1); }
+
+@keyframes avatar-in {
+  from { opacity: 0; transform: scale(.94); }
+  to   { opacity: 1; transform: none; }
 }
 
 .hero__fact {
-  position: absolute;
-  left: var(--s-5);
-  bottom: var(--s-6);
-  width: 280px;
-  padding: var(--s-4) var(--s-5);
-  background: var(--bg);
-  border: 1px solid var(--line);
-  border-radius: var(--r-md);
   display: grid;
   gap: 2px;
+  justify-items: center;
+  text-align: center;
 }
 .hero__fact strong { font-size: 1.0625rem; font-weight: 500; letter-spacing: -0.02em; }
 .hero__fact span { font-size: var(--t-small); color: var(--muted); }
-
-/* ---------- 8. Muro a sangre ---------- */
 .wall {
   --bleed: max(var(--gut), calc((100vw - var(--wrap)) / 2));
   width: calc(100% + 2 * var(--bleed));
@@ -480,47 +473,14 @@ html { scrollbar-color: #3a3944 transparent; }
 .tile:active img { transform: scale(1.02); }
 .tile:focus-visible { outline-offset: -4px; }
 
-/* ---------- 9. Logofolio (papel) ---------- */
-.logos {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: var(--s-4);
-}
-.logos li {
-  aspect-ratio: 1 / 1;
-  display: grid;
-  place-items: center;
-  padding: var(--s-4);
-  background: var(--surface);
-  border-radius: var(--r-md);
-  transition: transform 180ms var(--ease), box-shadow 180ms var(--ease);
-}
-.logos img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  transition: transform var(--m-image) var(--ease);
-}
-.logos li:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -18px rgb(22 21 26 / 0.45); }
-.logos li:hover img { transform: scale(1.06); }
-
-.logos-note {
-  margin-top: var(--s-4);
-  font-size: var(--t-small);
-  color: var(--muted);
-  max-width: 58ch;
-}
-
-/* ---------- 10. Video (tinta) ---------- */
+/* ---------- 10. Video: un teléfono, deslizable ---------- */
 .video__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--s-5);
   align-items: stretch;
 }
-.video__text { grid-column: 1 / span 3; display: flex; flex-direction: column; }
+.video__text { grid-column: 1 / span 4; display: flex; flex-direction: column; }
 .video__text h2 {
   font-size: var(--t-h2);
   letter-spacing: -0.045em;
@@ -541,14 +501,38 @@ html { scrollbar-color: #3a3944 transparent; }
 .facts span { color: var(--muted); }
 .facts strong { font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
 
-.phones {
-  grid-column: 4 / span 9;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--s-4);
-  align-items: start;
+.slider {
+  grid-column: 7 / span 6;
+  width: 100%;
+  justify-self: stretch;
 }
+
+.slider__stage {
+  overflow: hidden;
+  touch-action: pan-y;        /* el arrastre horizontal no secuestra el scroll vertical */
+  cursor: grab;
+  border-radius: 26px;
+  outline-offset: 8px;
+}
+.slider.is-dragging .slider__stage { cursor: grabbing; }
+.slider.is-dragging .slide { user-select: none; }
+
+.slider__track {
+  display: flex;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: grid;
+  place-items: center;
+  padding: 0 var(--s-2);
+}
+.slide video, .slide img { -webkit-user-drag: none; }
+
 .phone {
+  width: 100%;
+  max-width: 300px;
   border: 1px solid color-mix(in oklab, #f4f3f7 22%, transparent);
   border-radius: 22px;
   padding: 5px;
@@ -577,6 +561,61 @@ html { scrollbar-color: #3a3944 transparent; }
 .phone__play:hover { background: rgb(0 0 0 / 0.32); }
 .phone__play:hover svg { transform: scale(1.08); }
 .phone.is-playing .phone__play { opacity: 0; pointer-events: none; }
+
+/* Controles del slider */
+.slider__controls {
+  margin-top: var(--s-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-5);
+}
+.slider__btn {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition:
+    background-color var(--m-in) var(--ease),
+    border-color var(--m-in) var(--ease),
+    transform var(--m-in) var(--ease),
+    opacity var(--m-in) var(--ease);
+}
+.slider__btn svg { width: 20px; height: 20px; }
+.slider__btn:hover:not(:disabled) {
+  background: color-mix(in oklab, #f4f3f7 10%, transparent);
+  border-color: color-mix(in oklab, #f4f3f7 40%, transparent);
+}
+.slider__btn:active:not(:disabled) { transform: scale(.96); transition-duration: var(--m-press); }
+.slider__btn:disabled { opacity: .3; cursor: default; }
+
+.slider__dots { display: flex; gap: var(--s-1); }
+.slider__dot {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.slider__dot::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: color-mix(in oklab, #f4f3f7 28%, transparent);
+  transition: background-color 200ms var(--ease), transform 200ms var(--ease);
+}
+.slider__dot:hover::before { background: color-mix(in oklab, #f4f3f7 60%, transparent); }
+.slider__dot.is-active::before { background: var(--accent-text); transform: scale(1.35); }
 
 /* ---------- 11. Desarrollo (tinta) ---------- */
 .dev-grid {
@@ -830,7 +869,7 @@ html { scrollbar-color: #3a3944 transparent; }
   .hero__h1 { max-width: 13ch; }
 
   .video__grid { grid-template-columns: 1fr; gap: var(--s-6); }
-  .video__text, .phones { grid-column: 1; }
+  .video__text, .slider { grid-column: 1; }
   .facts { margin-top: var(--s-6); padding-top: 0; max-width: 420px; }
 }
 
@@ -853,12 +892,12 @@ html { scrollbar-color: #3a3944 transparent; }
   .hero__text { padding: var(--s-6) var(--gut) var(--s-6); }
   .hero__h1 { max-width: 20ch; }
   .hero__media {
-    height: 46vh; min-height: 300px;
-    aspect-ratio: auto; max-width: none; margin-right: 0; justify-self: stretch;
+    height: auto; min-height: 0;
+    justify-self: center; margin-right: 0;
+    aspect-ratio: auto; max-width: none;
   }
 
   .wall { grid-template-columns: repeat(3, 1fr); }
-  .logos { grid-template-columns: repeat(3, 1fr); }
   .dev-grid { grid-template-columns: 1fr; }
   #desarrollo { padding-top: 80px; }
 
@@ -884,7 +923,6 @@ html { scrollbar-color: #3a3944 transparent; }
   .hero__lead { font-size: 1.0625rem; max-width: 34ch; }
   .hero__text .btn-row { flex-direction: column; }
   .hero__text .btn { width: 100%; }
-  .hero__media { height: 236px; min-height: 0; }
   .hero__fact { display: none; }
   .hero__foot { padding-top: var(--s-4); }
   .hero__services { margin-top: var(--s-4); }
@@ -893,10 +931,8 @@ html { scrollbar-color: #3a3944 transparent; }
   .wall { grid-template-columns: repeat(2, 1fr); }
   .wall .tile { aspect-ratio: 1 / 1; }
 
-  .logos { grid-template-columns: repeat(2, 1fr); gap: var(--s-3); }
-  .logos li { padding: var(--s-4); }
 
-  .phones { grid-template-columns: 1fr; max-width: 186px; margin-inline: auto; gap: var(--s-4); }
+  .slider { max-width: 340px; margin-inline: auto; }
 
   .dev-grid { grid-template-columns: 1fr; }
   .dev-card img { aspect-ratio: 16 / 9; }
@@ -927,11 +963,10 @@ html { scrollbar-color: #3a3944 transparent; }
   .hero__h1, .hero__lead, .hero__text .btn-row, .hero__foot,
   .hero__media { animation: none; opacity: 1; transform: none; clip-path: none; }
   .closing__cta h2 .w { color: var(--ink); }
-  .tile:hover img, .logos li:hover img, .dev-card:hover img, .btn:hover { transform: none; }
+  .tile:hover img, .dev-card:hover img, .btn:hover { transform: none; }
 }
 
 /* ---------- 18. Hover solo con puntero fino ---------- */
 @media (hover: none) {
-  .tile:hover img, .logos li:hover img, .dev-card:hover img, .btn:hover { transform: none; }
-  .logos li:hover { transform: none; box-shadow: none; }
+  .tile:hover img, .dev-card:hover img, .btn:hover { transform: none; }
 }
