@@ -419,15 +419,15 @@ html { scrollbar-color: #3a3944 transparent; }
   animation: avatar-in 700ms var(--ease-enter) 140ms both;
 }
 
-/* Foto de perfil en círculo, con un filete fino que la separa del negro */
+/* Retrato en placa 3:4, con filete fino que la separa del negro */
 .hero__media > img {
-  width: clamp(240px, 28.5vw, 410px);
+  width: clamp(260px, 28.5vw, 410px);
   height: auto;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--r-lg);
   object-fit: cover;
-  object-position: center 20%;
-  border: 1px solid color-mix(in oklab, #f4f3f7 22%, transparent);
+  object-position: center;
+  border: 1px solid color-mix(in oklab, #f4f3f7 20%, transparent);
 }
 
 @keyframes avatar-in {
