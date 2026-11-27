@@ -1,4 +1,13 @@
-﻿# artefactos de los verificadores de diseño
+# dependencias y artefactos de Nuxt
+node_modules/
+.nuxt/
+.output/
+.data/
+.nitro/
+.cache/
+dist/
+
+# artefactos de los verificadores de diseno
 .taste-skill/chrome-*/
 .taste-skill/consistency/
 shots/
