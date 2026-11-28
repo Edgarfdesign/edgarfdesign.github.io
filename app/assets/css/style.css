@@ -1426,8 +1426,7 @@ a { text-underline-offset: 3px; }
 }
 
 
-/* con la hoja abierta sobra la hamburguesa: ya hay un boton de cerrar dentro */
-.nav--abierto .nav__toggle { visibility: hidden; }
+
 
 /* los datos del video, con su etiqueta y su valor separados */
 .video__facts { display: grid; gap: 0; margin-top: var(--s-6); padding: 0; }
@@ -1522,3 +1521,108 @@ a { text-underline-offset: 3px; }
 
 /* la portada y la pila vertical ya no se usan */
 .caso__portada, .caso__piezas { display: none; }
+
+
+/* ============================================================
+   El boton del menu: una sola pieza que pasa de hamburguesa a X
+   ============================================================ */
+.nav__toggle {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 150ms var(--ease), border-color 150ms var(--ease);
+}
+.nav__toggle:hover { background: var(--surface); border-color: rgba(244, 243, 247, .3); }
+.nav__toggle:active { transform: scale(.97); }
+.nav__toggle svg {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  transition: opacity 140ms var(--ease), transform 180ms var(--ease-enter);
+}
+.nav__burger { opacity: 1; transform: none; }
+.nav__equis { opacity: 0; transform: rotate(-90deg) scale(.7); }
+.nav__toggle.is-open .nav__burger { opacity: 0; transform: rotate(90deg) scale(.7); }
+.nav__toggle.is-open .nav__equis { opacity: 1; transform: none; }
+
+/* ---------- La hoja: enlaces con flecha, aire justo, entrada corta ---------- */
+.nav__sheet {
+  position: fixed;
+  inset: var(--nav) 0 0 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  padding: var(--s-5) var(--gut) var(--s-7);
+  z-index: 44;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.nav__sheet-links { display: grid; }
+.nav__sheet-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+  min-height: 66px;
+  font-size: 1.4375rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  transition: color 120ms var(--ease);
+}
+.nav__sheet-links a svg {
+  width: 18px;
+  height: 18px;
+  color: var(--muted);
+  transition: transform 160ms var(--ease), color 120ms var(--ease);
+}
+.nav__sheet-links a:hover svg,
+.nav__sheet-links a:focus-visible svg { transform: translateX(3px); color: var(--accent); }
+.nav__sheet-links a:active { color: var(--accent); }
+.nav__sheet-cta {
+  margin-top: var(--s-5);
+  height: 56px;
+  justify-content: center;
+  font-size: 1rem;
+}
+.nav__sheet-pie {
+  margin-top: auto;
+  padding-top: var(--s-6);
+  display: grid;
+  gap: var(--s-3);
+}
+.nav__sheet-pie a {
+  font-size: var(--t-small);
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  width: fit-content;
+}
+.nav__sheet-pie p {
+  font-size: var(--t-label);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+/* entrada y salida de la hoja */
+.hoja-enter-active, .hoja-leave-active { transition: opacity 160ms var(--ease), transform 220ms var(--ease-enter); }
+.hoja-enter-from, .hoja-leave-to { opacity: 0; transform: translateY(-10px); }
+@media (prefers-reduced-motion: reduce) {
+  .hoja-enter-active, .hoja-leave-active { transition: none; }
+  .nav__toggle svg { transition: none; }
+}
