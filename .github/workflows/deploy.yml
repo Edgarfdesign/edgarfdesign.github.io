@@ -28,7 +28,10 @@ jobs:
           cache: pnpm
       # --no-frozen-lockfile porque el lockfile nace en Windows: en Linux faltan
       # los binarios nativos (rollup, esbuild) y el install estricto se niega.
-      - run: pnpm install --no-frozen-lockfile
+      # --ignore-scripts: el postinstall del proyecto es `nuxt prepare`, y si
+      # tropieza, tumba el install entero antes de poder ver por que.
+      - run: pnpm install --no-frozen-lockfile --ignore-scripts
+      - run: pnpm exec nuxt prepare
       - run: pnpm run generate
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
