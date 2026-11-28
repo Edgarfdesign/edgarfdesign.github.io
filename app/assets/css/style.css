@@ -2198,3 +2198,20 @@ a { text-underline-offset: 3px; }
   .cierre__punto { animation: none; }
   .cierre__correo, .cierre__correo::after, .cierre__flecha, .cierre__luz { transition: none; }
 }
+
+
+/* ---------- iconos de redes en el pie ---------- */
+.dir-col a { display: inline-flex; align-items: center; gap: 9px; }
+.icono-red {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  opacity: 0.75;
+  transition: opacity 160ms var(--ease), filter 200ms var(--ease);
+}
+.dir-col a:hover .icono-red {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgb(139 143 255 / .8));
+}
+/* Behance trae su propio encuadre: se le da algo mas de ancho para no cortarlo */
+.dir-col a:first-of-type .icono-red { width: 17px; }

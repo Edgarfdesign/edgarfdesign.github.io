@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { redes } from '~/data/redes'
+
 const año = new Date().getFullYear()
 const correo = 'edgarafperez@gmail.com'
 const whatsapp = 'https://wa.me/584161317560?text=Hola%20Edgar%2C%20vi%20tu%20portafolio%20y%20quiero%20hablar%20de%20mi%20marca.'
@@ -52,7 +54,6 @@ function salir() {
 
       <div class="cierre__acciones">
         <a class="btn btn--primary" :href="whatsapp" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-        <a class="cierre__cv" href="/assets/docs/CV-Edgar-Fernandez.pdf" download>Descargar el CV (PDF)</a>
       </div>
     </div>
 
@@ -66,11 +67,17 @@ function salir() {
           <a href="/#servicios">Servicios</a>
         </div>
         <div class="dir-col">
-          <p class="dir-col__title">Fuera de aquí</p>
-          <a href="https://www.behance.net/edgarafernandezp" target="_blank" rel="noopener noreferrer me">Behance ↗</a>
-          <a href="https://www.instagram.com/edgarfdesign/" target="_blank" rel="noopener noreferrer me">Instagram ↗</a>
-          <a href="https://hive.blog/@edgarafernandezp" target="_blank" rel="noopener noreferrer me">Hive ↗</a>
-          <a href="https://t.me/edgarafernandezp" target="_blank" rel="noopener noreferrer me">Telegram ↗</a>
+          <p class="dir-col__title">También estoy en</p>
+          <a
+            v-for="r in redes"
+            :key="r.id"
+            :href="r.url"
+            target="_blank"
+            rel="noopener noreferrer me"
+          >
+            <IconoRed :nombre="r.id" />
+            <span>{{ r.nombre }}</span>
+          </a>
         </div>
         <div class="dir-col">
           <p class="dir-col__title">Directo</p>
