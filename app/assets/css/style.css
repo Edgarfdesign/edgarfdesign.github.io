@@ -3060,3 +3060,199 @@ a { text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   .dev__punto { animation: none; left: 50%; opacity: 1; }
 }
+
+
+/* ============================================================
+   Video: un estante a sangre, los telefonos grandes y luz abajo
+   ============================================================ */
+#video {
+  display: block;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(56px, 7vw, 112px) 0 clamp(32px, 4vw, 64px);
+}
+#video::before {
+  content: "";
+  position: absolute;
+  inset: auto -10% -30% -10%;
+  height: 70%;
+  background: radial-gradient(50% 60% at 50% 100%, rgb(84 89 240 / .40), transparent 72%);
+  filter: blur(64px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.video__grid { display: block; }
+.video__text {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: var(--s-4) var(--s-8);
+  align-items: end;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--gut);
+}
+.video__text h2 {
+  font-size: clamp(2.25rem, 4.4vw, 3.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  max-width: 16ch;
+  grid-column: 1;
+}
+.video__lead {
+  grid-column: 1;
+  margin-top: var(--s-4);
+  font-size: clamp(0.9375rem, 1.05vw, 1.0625rem);
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 44ch;
+}
+.video__facts {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: end;
+  display: grid;
+  gap: var(--s-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.video__facts li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding-bottom: var(--s-3);
+  border-bottom: 1px solid var(--line);
+  font-size: var(--t-small);
+}
+.video__facts li span { color: var(--muted); }
+.video__facts li b { font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* el estante: los telefonos salen del envoltorio y se cortan en los bordes */
+.slider { margin-top: clamp(40px, 5vw, 80px); }
+.slider__pista {
+  display: flex;
+  gap: clamp(16px, 2vw, 32px);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-inline: max(var(--gut), calc((100vw - var(--wrap)) / 2));
+  padding-bottom: var(--s-4);
+  scrollbar-width: none;
+}
+.slider__pista::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 auto; scroll-snap-align: center; }
+
+.phone {
+  width: clamp(260px, 26vw, 380px);
+  border-radius: 34px;
+  padding: 10px;
+  background: #17171c;
+  border: 1px solid rgb(244 243 247 / .14);
+  box-shadow: 0 40px 80px -50px #000, 0 0 60px -30px rgb(84 89 240 / .8);
+  transition: transform 420ms var(--ease-enter), box-shadow 420ms var(--ease-enter), border-color 300ms var(--ease);
+}
+.phone:hover {
+  transform: translateY(-8px);
+  border-color: rgb(139 143 255 / .5);
+  box-shadow: 0 56px 100px -50px #000, 0 0 80px -24px rgb(84 89 240 / 1);
+}
+.phone__screen { border-radius: 26px; overflow: hidden; background: #000; }
+.phone__video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover; }
+
+/* los controles, flotando a la derecha sobre el estante */
+.slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--s-3);
+  max-width: var(--wrap);
+  margin: var(--s-5) auto 0;
+  padding-inline: var(--gut);
+}
+.slider__btn {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgb(244 243 247 / .22);
+  background: rgb(244 243 247 / .05);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color 180ms var(--ease), border-color 180ms var(--ease), transform 180ms var(--ease);
+}
+.slider__btn svg { width: 18px; height: 18px; }
+.slider__btn:hover { background: rgb(139 143 255 / .18); border-color: rgb(139 143 255 / .7); transform: translateY(-2px); }
+.slider__dots { display: flex; align-items: center; gap: 8px; }
+.slider__dot {
+  width: 26px;
+  height: 3px;
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  background: rgb(244 243 247 / .22);
+  cursor: pointer;
+  transition: background-color 200ms var(--ease), width 260ms var(--ease);
+}
+.slider__dot.is-active { background: var(--accent-text); width: 40px; }
+
+@media (max-width: 767px) {
+  .video__text { grid-template-columns: 1fr; }
+  .video__facts { grid-column: 1; grid-row: auto; margin-top: var(--s-5); }
+  .slider__pista { padding-inline: var(--gut); }
+  .slider__controls { justify-content: space-between; }
+  .phone { width: 72vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .phone, .slider__btn { transition: none; }
+  .phone:hover { transform: none; }
+}
+
+
+/* el snap al centro arrastraba la pista al cargar y dejaba un solo telefono */
+.slider__pista {
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: max(var(--gut), calc((100vw - var(--wrap)) / 2));
+}
+.slide { scroll-snap-align: start; }
+
+
+/* sin snap: el carrusel lo mueven los botones, no el navegador al cargar */
+.slider__pista { scroll-snap-type: none; }
+.slide { scroll-snap-align: none; }
+
+
+/* heredaba justify-content: center y empujaba el primer telefono al centro */
+.slider__pista { justify-content: flex-start; }
+
+
+/* la diapositiva se estiraba a todo el ancho y centraba el telefono dentro */
+.slide {
+  flex: 0 0 auto;
+  width: max-content;
+  display: block;
+}
+/* y la pista se sale del envoltorio: el estante va de borde a borde */
+.slider {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.phone { max-width: none; width: clamp(280px, 27vw, 400px); }
+
+
+/* el css anterior usa .slider__pista > .slide, que pesa mas: misma especificidad */
+.slider__pista > .slide {
+  flex: 0 0 auto;
+  width: max-content;
+  display: block;
+  scroll-snap-align: none;
+}
+.slider__pista .phone {
+  max-width: none;
+  width: clamp(280px, 27vw, 400px);
+}

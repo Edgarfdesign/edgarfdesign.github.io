@@ -3,6 +3,11 @@ const videos = [1, 2, 3]
 const pista = ref<HTMLElement | null>(null)
 const activo = ref(0)
 
+// el snap del navegador centraba la pista al cargar y dejaba un solo telefono
+onMounted(() => {
+  if (pista.value) pista.value.scrollLeft = 0
+})
+
 function ir(i: number) {
   activo.value = i
   const el = pista.value
