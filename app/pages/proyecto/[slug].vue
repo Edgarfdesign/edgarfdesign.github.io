@@ -55,7 +55,6 @@ useHead({
     </div>
 
     <div class="wrap caso__ficha">
-      <p v-if="proyecto.resumen" class="caso__resumen">{{ proyecto.resumen }}</p>
       <p v-if="proyecto.encargo" class="caso__encargo">{{ proyecto.encargo }}</p>
       <dl class="caso__datos">
         <div><dt>Año</dt><dd>{{ proyecto.year }}</dd></div>

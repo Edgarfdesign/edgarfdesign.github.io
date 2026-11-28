@@ -1773,12 +1773,6 @@ a { text-underline-offset: 3px; }
   gap: var(--s-6);
   padding-bottom: var(--s-7);
 }
-.caso__resumen {
-  font-size: clamp(1.0625rem, 1.15vw, 1.1875rem);
-  line-height: 1.6;
-  color: var(--ink);
-  max-width: 62ch;
-}
 .caso__encargo {
   font-size: var(--t-small);
   line-height: 1.7;

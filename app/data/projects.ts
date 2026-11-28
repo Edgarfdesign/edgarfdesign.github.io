@@ -1,6 +1,6 @@
 // Los doce proyectos. Anadir uno es anadir un objeto aqui.
 // Los textos de cada caso salen de las piezas del propio proyecto.
-// concepto: escrito y sin mostrar; se vuelve a poner en la pagina con una linea.
+// resumen y concepto: escritos y sin mostrar; volver a pintarlos es una linea en la plantilla.
 export interface Project {
   slug: string
   name: string
