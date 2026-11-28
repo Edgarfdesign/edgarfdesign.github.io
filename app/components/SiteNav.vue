@@ -102,8 +102,9 @@ onUnmounted(() => {
         @click="alternar"
       >
         <svg class="nav__ico" viewBox="0 0 24 24" aria-hidden="true">
-          <line class="nav__ico-a" x1="4" y1="9" x2="20" y2="9" />
-          <line class="nav__ico-b" x1="4" y1="15" x2="20" y2="15" />
+          <line class="nav__ico-a" x1="4" y1="7" x2="20" y2="7" />
+          <line class="nav__ico-b" x1="4" y1="12" x2="15" y2="12" />
+          <line class="nav__ico-c" x1="4" y1="17" x2="20" y2="17" />
         </svg>
       </button>
     </div>

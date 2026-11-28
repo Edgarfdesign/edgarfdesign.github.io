@@ -1769,3 +1769,45 @@ a { text-underline-offset: 3px; }
 
 
 
+
+
+/* ============================================================
+   Icono del menu: tres trazos, sin borde, y solo en el telefono
+   Va al final a proposito: antes habia un `display: grid` mas abajo
+   que anulaba la regla que lo escondia en escritorio.
+   ============================================================ */
+.nav__toggle {
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  transition: background-color 200ms var(--ease), color 200ms var(--ease), transform 200ms var(--ease);
+}
+.nav__toggle:hover { background: rgb(244 243 247 / .09); }
+.nav__toggle:active { transform: scale(.94); }
+.nav__toggle.is-open {
+  background: var(--accent);
+  color: var(--bg);
+}
+.nav__toggle.is-open:hover { background: var(--accent-deep); }
+
+.nav__ico { width: 24px; height: 24px; overflow: visible; }
+.nav__ico line {
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 320ms var(--ease-enter), opacity 180ms var(--ease);
+}
+.nav__ico-b { opacity: 1; }
+.nav__toggle.is-open .nav__ico-a { transform: translateY(5px) rotate(45deg); }
+.nav__toggle.is-open .nav__ico-b { transform: scaleX(0); opacity: 0; }
+.nav__toggle.is-open .nav__ico-c { transform: translateY(-5px) rotate(-45deg); }
+
+@media (min-width: 1024px) {
+  .nav__toggle { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav__ico line, .nav__toggle { transition: none; }
+}
