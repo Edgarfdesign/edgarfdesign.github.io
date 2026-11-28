@@ -2461,3 +2461,171 @@ a { text-underline-offset: 3px; }
   letter-spacing: -0.01em;
   color: rgb(255 255 255 / .88);
 }
+
+
+/* ============================================================
+   Servicios, otra planta: el listado a toda la anchura y una
+   banda oscura que lleva las herramientas y el precio
+   ============================================================ */
+.serv { padding: clamp(56px, 7vw, 112px) 0 0; }
+.serv__cabeza { display: grid; gap: var(--s-4); max-width: 30ch; }
+.serv__titulo {
+  font-size: clamp(2.25rem, 4.6vw, 4rem);
+  line-height: 0.97;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  text-wrap: balance;
+}
+.serv__lead { font-size: clamp(0.9375rem, 1.05vw, 1.0625rem); line-height: 1.65; color: var(--muted); max-width: 44ch; }
+
+/* cada servicio, una fila que ocupa el ancho entero */
+.serv__filas { margin-top: var(--s-8); display: grid; }
+.serv__filas li {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: baseline;
+  gap: var(--s-4) var(--s-5);
+  padding: var(--s-6) var(--s-4);
+  margin-inline: calc(-1 * var(--s-4));
+  border-top: 1px solid var(--line);
+  transition: background-color 220ms var(--ease);
+}
+.serv__filas li:last-child { border-bottom: 1px solid var(--line); }
+.serv__filas li:hover { background: color-mix(in oklab, var(--accent) 6%, transparent); }
+.serv__num {
+  font-size: var(--t-label);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+.serv__nombre {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  transition: color 220ms var(--ease);
+}
+.serv__filas li:hover .serv__nombre { color: var(--accent); }
+.serv__detalle {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 48ch;
+}
+.serv__nota {
+  margin-top: var(--s-6);
+  margin-bottom: var(--s-8);
+  font-size: var(--t-small);
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 68ch;
+}
+
+/* la banda: tinta oscura dentro del mundo claro, con luz */
+.serv__banda {
+  margin-top: var(--s-8);
+  background: #0e0e11;
+  color: #f4f3f7;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(40px, 5vw, 72px) 0;
+  --line: rgb(244 243 247 / .14);
+}
+.serv__banda::before {
+  content: "";
+  position: absolute;
+  inset: auto -10% -60% -10%;
+  height: 120%;
+  background: radial-gradient(52% 60% at 50% 100%, rgb(84 89 240 / .55), transparent 72%);
+  filter: blur(56px);
+  pointer-events: none;
+  z-index: -1;
+}
+.serv__banda::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(139 143 255 / .85) 50%, transparent);
+  z-index: -1;
+}
+.serv__banda-in {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--s-7) var(--s-8);
+  align-items: start;
+}
+.banda__bloque { display: grid; gap: var(--s-4); align-content: start; }
+.banda__titulo {
+  font-size: var(--t-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aeabb5;
+  margin: 0;
+}
+.banda__bloque--precio { justify-items: start; }
+
+/* herramientas: chips en fila, no tarjetas */
+.herramientas { display: flex; flex-wrap: wrap; gap: var(--s-2); margin: 0; padding: 0; list-style: none; }
+.herramientas li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid rgb(244 243 247 / .16);
+  border-radius: 999px;
+  background: rgb(244 243 247 / .04);
+  transition: border-color 180ms var(--ease), background-color 180ms var(--ease), transform 180ms var(--ease);
+}
+.herramientas li:hover {
+  border-color: rgb(139 143 255 / .7);
+  background: rgb(139 143 255 / .12);
+  transform: translateY(-2px);
+}
+.herramientas img { width: 34px; height: 34px; flex: none; }
+.herramientas span { font-size: var(--t-small); font-weight: 500; color: #f4f3f7; }
+
+.banda__enlace {
+  width: fit-content;
+  font-size: var(--t-small);
+  color: #f4f3f7;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(244 243 247 / .4);
+  padding-bottom: 2px;
+  transition: color 160ms var(--ease), border-color 160ms var(--ease);
+}
+.banda__enlace:hover { color: #8b8fff; border-color: #8b8fff; }
+
+.banda__cifra {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 0 40px rgb(84 89 240 / .45);
+}
+.banda__plazo { font-size: clamp(1rem, 1.3vw, 1.1875rem); color: #e6e3ec; }
+.banda__nota { font-size: var(--t-small); color: #aeabb5; max-width: 40ch; }
+
+@media (max-width: 1023px) {
+  .serv__filas li { grid-template-columns: 40px 1fr; gap: var(--s-2) var(--s-4); padding: var(--s-5) 0; margin-inline: 0; }
+  .serv__detalle { grid-column: 2; }
+  .serv__banda-in { grid-template-columns: 1fr; gap: var(--s-6); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .serv__filas li, .serv__nombre, .herramientas li { transition: none; }
+  .herramientas li:hover { transform: none; }
+}
+
+
+/* .section es flex en fila; aqui los bloques van uno debajo del otro */
+.serv { display: block; }
+.serv__cabeza { max-width: 22ch; }
+
+
+/* el ancho se mide sobre la letra del titular, no sobre la del contenedor */
+.serv__cabeza { max-width: min(100%, 680px); }
+.serv__titulo { max-width: 18ch; }
+.serv__lead { max-width: 48ch; }
