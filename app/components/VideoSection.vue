@@ -2,6 +2,7 @@
 const videos = [1, 2, 3]
 const pista = ref<HTMLElement | null>(null)
 const activo = ref(0)
+const reproduciendo = ref(false)
 
 function ir(i: number) {
   const el = pista.value
@@ -13,7 +14,6 @@ function ir(i: number) {
   activo.value = n
 }
 
-// el contador sigue al carrusel tambien cuando se arrastra con el dedo
 let espera: ReturnType<typeof setTimeout> | undefined
 function alDesplazar() {
   clearTimeout(espera)
@@ -30,6 +30,11 @@ function alDesplazar() {
     })
     activo.value = mejor
   }, 90)
+}
+
+function alternar(v: HTMLVideoElement) {
+  if (v.paused) { v.play(); reproduciendo.value = true }
+  else { v.pause(); reproduciendo.value = false }
 }
 
 onMounted(() => { if (pista.value) pista.value.scrollLeft = 0 })
@@ -64,21 +69,52 @@ onMounted(() => { if (pista.value) pista.value.scrollLeft = 0 })
         <div ref="pista" class="v__pista" @scroll="alDesplazar">
           <div v-for="n in videos" :key="n" class="v__slide">
             <div class="v__marco">
-              <video
-                class="v__video"
-                playsinline
-                muted
-                loop
-                preload="none"
-                :poster="'/videos/video' + n + '-poster.webp'"
-                width="1080"
-                height="1920"
-                :aria-label="'Pieza vertical número ' + n"
-                controls
-              >
-                <source :src="'/videos/video' + n + '.mp4'" type="video/mp4">
-                <source :src="'/videos/video' + n + '.webm'" type="video/webm">
-              </video>
+              <div class="v__pantalla">
+                <video
+                  class="v__video"
+                  playsinline
+                  loop
+                  muted
+                  preload="metadata"
+                  :poster="'/videos/video' + n + '-poster.webp'"
+                  width="1080"
+                  height="1920"
+                  :aria-label="'Pieza vertical número ' + n"
+                  @click="alternar($event.target as HTMLVideoElement)"
+                >
+                  <source :src="'/videos/video' + n + '.mp4'" type="video/mp4">
+                  <source :src="'/videos/video' + n + '.webm'" type="video/webm">
+                </video>
+
+                <!-- la interfaz del reel, para que se lea como una pieza publicada -->
+                <div class="v__ig" aria-hidden="true">
+                  <span class="v__isla"></span>
+                  <div class="v__estado">
+                    <span>9:41</span>
+                    <span class="v__senal"><i></i><i></i><i></i></span>
+                  </div>
+
+                  <p class="v__ig-titulo">Reels</p>
+
+                  <div class="v__ig-rail">
+                    <img src="/images/icons/ui-heart.svg" alt="" width="20" height="20">
+                    <img src="/images/icons/ui-message-circle.svg" alt="" width="20" height="20">
+                    <img src="/images/icons/ui-send.svg" alt="" width="20" height="20">
+                    <img src="/images/icons/ui-bookmark.svg" alt="" width="20" height="20">
+                    <span class="v__ig-audio"><img src="/images/icons/ui-music.svg" alt="" width="12" height="12"></span>
+                  </div>
+
+                  <div class="v__ig-pie">
+                    <span class="v__ig-usuario"><i class="v__ig-avatar"></i>edgarfdesign</span>
+                    <span class="v__ig-audio-linea">
+                      <img src="/images/icons/ui-music.svg" alt="" width="10" height="10">
+                      Audio original · edgarfdesign
+                    </span>
+                  </div>
+
+                  <span class="v__ig-barra"><i></i></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
