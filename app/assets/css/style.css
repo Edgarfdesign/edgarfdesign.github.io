@@ -1453,3 +1453,72 @@ a { text-underline-offset: 3px; }
   font-size: 0.875rem;
   text-align: right;
 }
+
+
+/* ============================================================
+   El caso como cinta: las piezas pegadas, de borde a borde
+   ============================================================ */
+.caso__cinta-envoltorio { margin-top: var(--s-2); }
+.caso__cinta {
+  display: flex;
+  gap: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg);
+  outline-offset: -4px;
+}
+.caso__cinta::-webkit-scrollbar { display: none; }
+.caso__pieza {
+  flex: none;
+  margin: 0;
+  scroll-snap-align: start;
+  height: clamp(320px, 68svh, 760px);
+}
+.caso__pieza img {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: cover;
+}
+.caso__cinta-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+  padding-top: var(--s-4);
+}
+.caso__contador {
+  font-size: var(--t-label);
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+.caso__flechas { display: flex; gap: var(--s-2); }
+.caso__flechas button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color 150ms var(--ease), border-color 150ms var(--ease);
+}
+.caso__flechas button:hover { background: var(--surface); border-color: rgba(244,243,247,.3); }
+.caso__flechas svg { width: 18px; height: 18px; }
+
+@media (max-width: 767px) {
+  .caso__pieza { height: clamp(280px, 60svh, 520px); }
+  .caso__cinta-pie { padding-top: var(--s-3); }
+}
+
+/* la portada y la pila vertical ya no se usan */
+.caso__portada, .caso__piezas { display: none; }

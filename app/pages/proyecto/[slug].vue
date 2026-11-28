@@ -12,6 +12,25 @@ if (!proyecto) {
 const siguiente = nextOf(slug)
 const indice = projects.findIndex((p) => p.slug === slug) + 1
 
+const cinta = ref<HTMLElement | null>(null)
+const actual = ref(1)
+
+function alDesplazar() {
+  const el = cinta.value
+  if (!el) return
+  const ancho = el.scrollWidth / proyecto.images.length
+  actual.value = Math.min(proyecto.images.length, Math.round(el.scrollLeft / ancho) + 1)
+}
+
+function mover(dir: number) {
+  const el = cinta.value
+  if (!el) return
+  const piezas = el.querySelectorAll('.caso__pieza')
+  const destino = Math.max(0, Math.min(piezas.length - 1, actual.value - 1 + dir))
+  const pieza = piezas[destino] as HTMLElement | undefined
+  if (pieza) el.scrollTo({ left: pieza.offsetLeft, behavior: 'smooth' })
+}
+
 useHead({
   title: () => `${proyecto.name} — identidad visual, ${proyecto.year} | Edgar Fernández`,
   meta: [
@@ -35,17 +54,36 @@ useHead({
       </div>
     </div>
 
-    <div class="caso__portada">
-      <img :src="'/' + proyecto.cover" :alt="'Identidad de ' + proyecto.name" width="2160" height="2700" loading="eager">
-    </div>
-
-    <div class="wrap">
-      <div class="caso__piezas">
+    <div class="caso__cinta-envoltorio">
+      <div
+        ref="cinta"
+        class="caso__cinta"
+        tabindex="0"
+        role="group"
+        aria-label="Piezas del proyecto, desliza o usa las flechas"
+        @scroll.passive="alDesplazar"
+        @keydown.left.prevent="mover(-1)"
+        @keydown.right.prevent="mover(1)"
+      >
         <figure v-for="(img, i) in proyecto.images" :key="img" class="caso__pieza">
           <img :src="'/' + img" :alt="proyecto.name + ', pieza ' + (i + 1)" loading="lazy" decoding="async">
         </figure>
       </div>
 
+      <div class="wrap caso__cinta-pie">
+        <p class="caso__contador" aria-live="polite">Pieza {{ actual }} de {{ proyecto.images.length }}</p>
+        <div class="caso__flechas">
+          <button type="button" aria-label="Pieza anterior" @click="mover(-1)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+          <button type="button" aria-label="Pieza siguiente" @click="mover(1)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
       <NuxtLink class="caso__siguiente" :to="'/proyecto/' + siguiente.slug">
         <span>Siguiente caso</span>
         <strong>{{ siguiente.name }} →</strong>
