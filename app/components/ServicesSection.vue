@@ -3,7 +3,7 @@
     <div class="wrap serv__grid">
       <div class="serv__text">
         <h2 id="serv-h">Qué hago, y qué no</h2>
-        <p class="head__lead">Trabajo solo. Lo que entra por la puerta lo hago yo de principio a fin, sin pasarlo a nadie.</p>
+        <p class="head__lead">Trabajo solo: lo que entra por la puerta lo hago yo, sin pasarlo a nadie. Y si tu proyecto no es para mí, te lo digo antes de empezar.</p>
 
         <ul class="rows">
           <li>

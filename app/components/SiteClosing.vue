@@ -3,7 +3,7 @@
     <div class="wrap closing__grid">
       <div class="closing__cta">
         <h2>Cuéntame qué marca quieres construir</h2>
-        <p>Escríbeme con dos líneas de qué se trata y te digo si puedo ayudarte, cuánto tarda y cuánto cuesta.</p>
+        <p>Escríbeme dos líneas con qué se trata y te digo si puedo ayudarte, cuánto tarda y cuánto cuesta.</p>
         <div class="btn-row">
           <a class="btn btn--primary" href="mailto:edgarafperez@gmail.com?subject=Proyecto%20de%20marca">Escribir un correo</a>
           <a class="btn btn--secondary" href="https://wa.me/584161317560?text=Hola%20Edgar%2C%20vi%20tu%20portafolio%20y%20quiero%20hablar%20de%20mi%20marca." target="_blank" rel="noopener noreferrer">WhatsApp</a>

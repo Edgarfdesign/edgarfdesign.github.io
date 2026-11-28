@@ -6,7 +6,7 @@ const muro = [projects[0], projects[1], projects[2], projects[3], projects[4], p
 useHead({
   title: 'Edgar Fernández — Diseño gráfico y branding | San Cristóbal',
   meta: [
-    { name: 'description', content: 'Diseñador gráfico y especialista en branding. Identidad visual, piezas para redes y video vertical para marcas de Venezuela y Chile. Doce marcas, de la primera idea a la calle.' },
+    { name: 'description', content: 'Diseñador gráfico y especialista en branding. Identidad visual, piezas para redes y video vertical para marcas de Venezuela y Chile. Doce marcas, y lo que hay detrás de cada una.' },
     { property: 'og:title', content: 'Edgar Fernández — Diseño gráfico y branding' },
     { property: 'og:description', content: 'Identidad visual, piezas para redes y video vertical para marcas de Venezuela y Chile.' },
     { property: 'og:image', content: 'https://edgarfdesign.github.io/images/share.jpg' },
@@ -44,8 +44,8 @@ useHead({
     <section id="muro" class="section" aria-labelledby="muro-h">
       <div class="wrap">
         <div class="head">
-          <h2 id="muro-h">Doce marcas, de la primera idea a la calle</h2>
-          <p class="head__lead">Identidades completas entre 2019 y 2024. Cada una tiene su caso, con las piezas y lo que hubo detrás.</p>
+          <h2 id="muro-h">Doce marcas, y lo que hay detrás de cada una</h2>
+          <p class="head__lead">Identidades completas entre 2019 y 2024. Abre la que se parezca a tu caso: están las piezas y el proceso.</p>
         </div>
         <WorkWall />
       </div>

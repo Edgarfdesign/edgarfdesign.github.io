@@ -2,8 +2,8 @@
   <section id="desarrollo" class="section" aria-labelledby="dev-h">
     <div class="wrap">
       <div class="head">
-        <h2 id="dev-h">Además, construyo sitios web</h2>
-        <p class="head__lead">Cuando el proyecto lo pide, dejo el diseño y escribo el código. Los dos bots de abajo funcionan, pero su código no es público: si quieres verlos, te los enseño en una llamada.</p>
+        <h2 id="dev-h">Cuando hace falta, lo construyo</h2>
+        <p class="head__lead">A veces la marca necesita una web o un bot que responda solo. Los dos de abajo funcionan; su código no es público, pero te los enseño en una llamada.</p>
       </div>
 
       <ul class="dev-grid">

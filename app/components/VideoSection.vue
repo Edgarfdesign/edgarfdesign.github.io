@@ -16,8 +16,8 @@ function ir(i: number) {
   <section id="video" class="section" aria-labelledby="video-h">
     <div class="wrap video__grid">
       <div class="video__text">
-        <h2 id="video-h">Piezas de video vertical</h2>
-        <p class="video__lead">Piezas de nueve por dieciséis para Reels, TikTok y Stories. Animadas en After Effects y listas para publicar.</p>
+        <h2 id="video-h">Video vertical para tus redes</h2>
+        <p class="video__lead">Piezas de nueve por dieciséis para Reels, TikTok y Stories. Animadas en After Effects y listas para subir.</p>
         <ul class="video__facts">
           <li><span>Formato</span><b>1080 × 1920</b></li>
           <li><span>Herramienta</span><b>After Effects</b></li>
