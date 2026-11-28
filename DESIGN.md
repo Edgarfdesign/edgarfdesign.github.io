@@ -175,6 +175,8 @@ No hay sombras en el sistema. La profundidad se consigue de dos maneras y solo d
 Eso obliga a que cualquier elevación nueva sea tonal. Una sombra difusa, un halo o un `drop-shadow` rompen el mundo: la página no tiene luz ambiental de la que colgar una sombra.
 
 ### Named Rules
+**La regla de la única luz.** La luz existe en un solo sitio: el cierre. Allí el fondo se ilumina con un resplandor violeta que sigue al puntero y la dirección brilla. Si aparece luz en cualquier otra sección, deja de ser un acento y se vuelve ruido.
+
 **La regla plana.** Una superficie en reposo no proyecta sombra. Si algo necesita destacar sobre el fondo, se le cambia el escalón tonal, no se le añade profundidad falsa.
 
 ## Shapes
@@ -223,7 +225,7 @@ Las placas del muro son la excepción deliberada: radio 0 y sin borde. La cuadr�
 
 ### Don't:
 - **Don't** poner leyendas fijas bajo las imágenes del muro: la etiqueta aparece al buscar, no antes.
-- **Don't** añadir sombras, halos o desenfoques decorativos: el sistema es plano y tonal.
+- **Don't** añadir sombras ni halos **salvo en el cierre**. El único lugar con luz propia es el footer: el resplandor violeta que sigue al puntero y el brillo de la dirección. En cualquier otra sección, plano.
 - **Don't** introducir una segunda familia tipográfica para «dar carácter».
 - **Don't** usar el violeta como fondo de sección ni como degradado; solo como señal de acción.
 - **Don't** cambiar el radio de las placas del muro: su esquina recta es lo que las une.

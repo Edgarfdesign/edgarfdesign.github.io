@@ -2,15 +2,46 @@
 const año = new Date().getFullYear()
 const correo = 'edgarafperez@gmail.com'
 const whatsapp = 'https://wa.me/584161317560?text=Hola%20Edgar%2C%20vi%20tu%20portafolio%20y%20quiero%20hablar%20de%20mi%20marca.'
+
+const zona = ref<HTMLElement | null>(null)
+let pendiente = false
+
+// la luz sigue al puntero: una sola lectura por frame, sin listeners sueltos
+function seguir(e: PointerEvent) {
+  if (pendiente) return
+  pendiente = true
+  const { clientX, clientY } = e
+  requestAnimationFrame(() => {
+    const el = zona.value
+    if (el) {
+      const r = el.getBoundingClientRect()
+      el.style.setProperty('--luz-x', (((clientX - r.left) / r.width) * 100).toFixed(1) + '%')
+      el.style.setProperty('--luz-y', (((clientY - r.top) / r.height) * 100).toFixed(1) + '%')
+    }
+    pendiente = false
+  })
+}
+
+function salir() {
+  zona.value?.style.setProperty('--luz-x', '50%')
+  zona.value?.style.setProperty('--luz-y', '42%')
+}
 </script>
 
 <template>
-  <footer id="contacto" class="cierre">
+  <footer id="contacto" ref="zona" class="cierre" @pointermove="seguir" @pointerleave="salir">
+    <span class="cierre__halo" aria-hidden="true"></span>
+    <span class="cierre__luz" aria-hidden="true"></span>
+    <img class="cierre__fondo" src="/images/Isotipo1.svg" alt="" width="620" height="620" aria-hidden="true">
+
     <div class="wrap cierre__grid">
-      <div class="cierre__cabecera">
-        <h2 class="cierre__titulo">Cuéntame qué marca quieres construir</h2>
-        <p class="cierre__lead">Escríbeme dos líneas con qué se trata y te digo si puedo ayudarte, cuánto tarda y cuánto cuesta. Respondo yo, no un formulario.</p>
-      </div>
+      <p class="cierre__etiqueta">
+        <span class="cierre__punto" aria-hidden="true"></span>
+        Contacto directo
+      </p>
+
+      <h2 class="cierre__titulo">Cuéntame qué marca quieres construir</h2>
+      <p class="cierre__lead">Escríbeme dos líneas con qué se trata y te digo si puedo ayudarte, cuánto tarda y cuánto cuesta. Respondo yo, no un formulario.</p>
 
       <a class="cierre__correo" :href="'mailto:' + correo + '?subject=Proyecto%20de%20marca'">
         <span class="cierre__correo-texto">{{ correo }}</span>
@@ -20,7 +51,7 @@ const whatsapp = 'https://wa.me/584161317560?text=Hola%20Edgar%2C%20vi%20tu%20po
       </a>
 
       <div class="cierre__acciones">
-<a class="btn btn--secondary" :href="whatsapp" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+        <a class="btn btn--primary" :href="whatsapp" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
         <a class="cierre__cv" href="/assets/docs/CV-Edgar-Fernandez.pdf" download>Descargar el CV (PDF)</a>
       </div>
     </div>
