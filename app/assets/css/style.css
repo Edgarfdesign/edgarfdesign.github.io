@@ -1809,12 +1809,3 @@ a { text-underline-offset: 3px; }
 }
 
 
-/* el concepto, en el mismo tono que el resumen pero con mas aire */
-.caso__concepto {
-  font-size: clamp(1.0625rem, 1.15vw, 1.1875rem);
-  line-height: 1.65;
-  color: var(--muted);
-  max-width: 62ch;
-  padding-top: var(--s-5);
-  border-top: 1px solid var(--line);
-}
