@@ -2675,3 +2675,29 @@ a { text-underline-offset: 3px; }
   .banda__cv { transition: none; }
   .banda__cv:hover { transform: none; }
 }
+
+
+/* ---------- las herramientas, como un dock: solo el icono ---------- */
+.herramientas { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.herramientas li {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgb(244 243 247 / .14);
+  border-radius: 14px;
+  background: rgb(244 243 247 / .045);
+  transition: transform 200ms var(--ease-enter), border-color 200ms var(--ease),
+              background-color 200ms var(--ease), box-shadow 240ms var(--ease);
+}
+.herramientas li:hover {
+  transform: translateY(-3px);
+  border-color: rgb(139 143 255 / .75);
+  background: rgb(139 143 255 / .12);
+  box-shadow: 0 14px 30px -16px rgb(84 89 240 / 1), 0 0 24px -8px rgb(139 143 255 / .6);
+}
+.herramientas img { width: 34px; height: 34px; display: block; }
+
+/* el boton del CV ya no lleva la etiqueta PDF */
+.banda__cv { padding: 0 20px; }
