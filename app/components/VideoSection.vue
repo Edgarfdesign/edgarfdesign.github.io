@@ -53,16 +53,6 @@ onMounted(() => { if (pista.value) pista.value.scrollLeft = 0 })
           <div><dt>Hecho en</dt><dd>After Effects</dd></div>
           <div><dt>Se entrega en</dt><dd>MP4 y WebM</dd></div>
         </dl>
-
-        <div class="v__mandos">
-          <button class="v__btn" type="button" aria-label="Pieza anterior" :disabled="activo === 0" @click="ir(activo - 1)">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
-          </button>
-          <p class="v__cuenta"><b>{{ String(activo + 1).padStart(2, '0') }}</b><span>/ {{ String(videos.length).padStart(2, '0') }}</span></p>
-          <button class="v__btn" type="button" aria-label="Pieza siguiente" :disabled="activo === videos.length - 1" @click="ir(activo + 1)">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
-          </button>
-        </div>
       </div>
 
       <div class="v__carrusel">
@@ -74,12 +64,11 @@ onMounted(() => { if (pista.value) pista.value.scrollLeft = 0 })
                   class="v__video"
                   playsinline
                   loop
-                  muted
                   preload="metadata"
                   :poster="'/videos/video' + n + '-poster.webp'"
                   width="1080"
                   height="1920"
-                  :aria-label="'Pieza vertical número ' + n"
+                  :aria-label="'Pieza vertical número ' + n + '. Toca para verla con sonido'"
                   @click="alternar($event.target as HTMLVideoElement)"
                 >
                   <source :src="'/videos/video' + n + '.mp4'" type="video/mp4">
@@ -117,6 +106,15 @@ onMounted(() => { if (pista.value) pista.value.scrollLeft = 0 })
               </div>
             </div>
           </div>
+        </div>
+        <div class="v__mandos">
+          <button class="v__btn" type="button" aria-label="Pieza anterior" :disabled="activo === 0" @click="ir(activo - 1)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+          <p class="v__cuenta"><b>{{ String(activo + 1).padStart(2, '0') }}</b><span>/ {{ String(videos.length).padStart(2, '0') }}</span></p>
+          <button class="v__btn" type="button" aria-label="Pieza siguiente" :disabled="activo === videos.length - 1" @click="ir(activo + 1)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
         </div>
       </div>
     </div>

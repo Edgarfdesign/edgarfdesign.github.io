@@ -40,12 +40,6 @@
             <li title="After Effects"><img src="/images/icons/after-effects.svg" alt="After Effects" width="34" height="34" loading="lazy"></li>
             <li title="Blender"><img src="/images/icons/logos-blender.svg" alt="Blender" width="34" height="34" loading="lazy"></li>
           </ul>
-          <a class="banda__cv" href="/assets/docs/CV-Edgar-Fernandez.pdf" download>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <span>Descargar el CV</span>
-          </a>
         </div>
 
         <div class="banda__bloque banda__bloque--precio">

@@ -3536,3 +3536,34 @@ a { text-underline-offset: 3px; }
 @media (max-width: 900px) {
   .v__marco { width: min(100%, 272px); }
 }
+
+
+/* el boton del CV, bajo el retrato */
+.portada__cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  min-height: 42px;
+  margin-top: var(--s-4);
+  padding: 0 16px;
+  border-radius: 9px;
+  border: 1px solid rgb(244 243 247 / .28);
+  background: rgb(244 243 247 / .06);
+  color: var(--ink);
+  font-size: var(--t-small);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 180ms var(--ease), border-color 180ms var(--ease), transform 180ms var(--ease);
+}
+.portada__cv svg { width: 16px; height: 16px; }
+.portada__cv:hover {
+  background: rgb(139 143 255 / .16);
+  border-color: rgb(139 143 255 / .7);
+  transform: translateY(-2px);
+}
+.portada__cv:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
+
+/* los mandos, justo bajo el telefono */
+.v__mandos { justify-content: center; margin-top: var(--s-4); }
+@media (max-width: 900px) { .v__mandos { margin-top: var(--s-3); } }

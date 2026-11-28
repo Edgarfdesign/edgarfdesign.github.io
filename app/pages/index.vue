@@ -38,6 +38,13 @@ useHead({
           <img class="portada__retrato" src="/images/retrato-720.webp" alt="Edgar Fernández, diseñador gráfico" width="64" height="64" loading="eager">
           <p class="portada__dato"><strong>Doce marcas</strong> · 2019 — 2024<br>Venezuela y Chile</p>
         </div>
+
+        <a class="portada__cv" href="/assets/docs/CV-Edgar-Fernandez.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Descargar el CV
+        </a>
       </div>
     </section>
 
