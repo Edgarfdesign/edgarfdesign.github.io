@@ -2203,7 +2203,7 @@ a { text-underline-offset: 3px; }
 /* ---------- iconos de redes en el pie ---------- */
 .dir-col a { display: inline-flex; align-items: center; gap: 9px; }
 .icono-red {
-  width: 15px;
+  width: 18px;
   height: 15px;
   flex: none;
   opacity: 0.75;
@@ -2214,4 +2214,136 @@ a { text-underline-offset: 3px; }
   filter: drop-shadow(0 0 8px rgb(139 143 255 / .8));
 }
 /* Behance trae su propio encuadre: se le da algo mas de ancho para no cortarlo */
-.dir-col a:first-of-type .icono-red { width: 17px; }
+
+
+
+/* ============================================================
+   Servicios: herramientas como fichas, precio en su banda
+   ============================================================ */
+.serv { padding: clamp(56px, 7vw, 104px) 0; }
+.serv__grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--s-6) var(--s-5); align-items: start; }
+.serv__texto { grid-column: 1 / span 6; }
+.serv__titulo {
+  font-size: clamp(1.875rem, 3.2vw, 2.875rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+  max-width: 16ch;
+  text-wrap: balance;
+}
+.serv__lead {
+  margin-top: var(--s-4);
+  font-size: var(--t-small);
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 44ch;
+}
+
+.serv__lista { margin-top: var(--s-6); display: grid; }
+.serv__lista li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: var(--s-4);
+  padding: var(--s-5) 0;
+  border-top: 1px solid var(--line);
+}
+.serv__lista li:last-child { border-bottom: 1px solid var(--line); }
+.serv__num {
+  font-size: var(--t-label);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  padding-top: 4px;
+}
+.serv__lista h3 {
+  font-size: clamp(1.0625rem, 1.4vw, 1.375rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.serv__lista p { font-size: var(--t-small); line-height: 1.65; color: var(--muted); max-width: 46ch; }
+
+/* el precio, en una banda: es un dato, no una nota al pie */
+.precio {
+  margin-top: var(--s-6);
+  padding: var(--s-5);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+.precio__etiqueta {
+  font-size: var(--t-label);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.precio__cifra {
+  margin-top: var(--s-2);
+  font-size: clamp(1.125rem, 1.7vw, 1.5rem);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  color: var(--ink);
+}
+.precio__nota { margin-top: var(--s-2); font-size: var(--t-small); line-height: 1.6; color: var(--muted); max-width: 44ch; }
+
+/* el panel: tres bloques separados por aire, no por cajas */
+.serv__panel {
+  grid-column: 8 / span 5;
+  display: grid;
+  gap: var(--s-6);
+  padding: var(--s-6);
+  background: var(--surface);
+  border-radius: var(--r-lg);
+}
+.panel__bloque { display: grid; gap: var(--s-3); }
+.panel__bloque + .panel__bloque { padding-top: var(--s-5); border-top: 1px solid var(--line); }
+.panel__titulo {
+  font-size: var(--t-label);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.panel__texto { font-size: var(--t-small); line-height: 1.65; color: var(--muted); }
+.panel__enlace {
+  width: fit-content;
+  font-size: var(--t-small);
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: color 160ms var(--ease), border-color 160ms var(--ease);
+}
+.panel__enlace:hover { color: var(--accent); border-color: var(--accent); }
+
+/* las herramientas, en fichas con su icono grande */
+.herramientas { display: grid; gap: var(--s-2); margin: 0; padding: 0; list-style: none; }
+.herramientas li {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-3);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), box-shadow 220ms var(--ease);
+}
+.herramientas li:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--accent) 45%, transparent);
+  box-shadow: 0 10px 26px -14px color-mix(in oklab, var(--accent) 60%, transparent);
+}
+.herramientas img { width: 40px; height: 40px; flex: none; }
+.herramientas span { font-size: var(--t-small); font-weight: 500; color: var(--ink); }
+
+@media (max-width: 1023px) {
+  .serv__grid { grid-template-columns: 1fr; gap: var(--s-6); }
+  .serv__texto, .serv__panel { grid-column: 1; }
+  .serv__panel { padding: var(--s-5); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .herramientas li { transition: none; }
+  .herramientas li:hover { transform: none; }
+}
