@@ -1,15 +1,16 @@
 // Los doce proyectos. Anadir uno es anadir un objeto aqui.
+// Los textos de cada caso salen de las piezas del propio proyecto.
 export interface Project {
   slug: string
-  resumen?: string
-  manual?: boolean
-  tipografia?: string
-  colores?: string
-  encargo?: string
-  concepto?: string
   name: string
   year: string
   discipline: string
+  resumen?: string
+  concepto?: string
+  tipografia?: string
+  colores?: string
+  manual?: boolean
+  encargo?: string
   cover: string
   thumb: string
   thumbMobile: string
@@ -19,13 +20,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     "slug": "tecnoventas",
-    "resumen": "Una marca de venta de tecnologia con manual de uso: simbolo, retícula, versiones y escala resueltos antes de tocar una aplicacion.",
-    "manual": true,
-    "tipografia": "Tw Cen MT Condensed",
-    "colores": "Azul y verde",
-    "concepto": "El simbolo junta el icono de encender un equipo con una herramienta de taller. Tecnoventas vive del servicio tecnico de reparacion, y la marca lo dice antes de que nadie lea el nombre.",
+    "name": "Tecnoventas",
     "year": "2020",
     "discipline": "Branding",
+    "resumen": "Una marca de venta de tecnologia con manual de uso: simbolo, reticula, versiones y escala resueltos antes de tocar una aplicacion.",
+    "concepto": "El simbolo junta el icono de encender un equipo con una herramienta de taller. Tecnoventas vive del servicio tecnico de reparacion, y la marca lo dice antes de que nadie lea el nombre.",
+    "tipografia": "Tw Cen MT Condensed",
+    "colores": "Azul y verde",
+    "manual": true,
     "cover": "images/proyectos/TV1.webp",
     "thumb": "images/proyectos/t-TV1.webp",
     "thumbMobile": "images/proyectos/m-TV1.webp",
@@ -46,6 +48,10 @@ export const projects: Project[] = [
     "name": "Culperma",
     "year": "2019",
     "discipline": "Branding",
+    "resumen": "Cuatro gotas y un aro que se cierra sobre si mismo, con la reticula, la escala y las versiones resueltas en el manual.",
+    "concepto": "El simbolo se construye con cuatro gotas encadenadas a un aro: la reticula fija su geometria y la escala lo lleva del sello al cartel sin redibujarlo.",
+    "colores": "Verde y blanco",
+    "manual": true,
     "cover": "images/proyectos/CP1.webp",
     "thumb": "images/proyectos/t-CP1.webp",
     "thumbMobile": "images/proyectos/m-CP1.webp",
@@ -65,6 +71,11 @@ export const projects: Project[] = [
     "name": "MyMy",
     "year": "2022",
     "discipline": "Branding",
+    "resumen": "Bisuteria con una serif de contraste alto y un rosa que no pide permiso.",
+    "concepto": "Una sola serif de contraste alto sostiene todo el sistema: el nombre en grande, el resto del manual en la misma voz. El rosa hace el trabajo de segundo color sin competir.",
+    "tipografia": "Storystone",
+    "colores": "Rosa y blanco",
+    "manual": true,
     "cover": "images/proyectos/MY01.webp",
     "thumb": "images/proyectos/t-MY01.webp",
     "thumbMobile": "images/proyectos/m-MY01.webp",
@@ -92,6 +103,9 @@ export const projects: Project[] = [
     "name": "Máxima Bisutería",
     "year": "2022",
     "discipline": "Branding",
+    "resumen": "Un monograma M con dos circulos y un empaque que se reconoce a la primera.",
+    "concepto": "La M se dibuja con dos circulos y un trazo que las une: el monograma aguanta igual de bien grabado en una caja que impreso en una etiqueta.",
+    "colores": "Amarillo y blanco",
     "cover": "images/proyectos/MB01.webp",
     "thumb": "images/proyectos/t-MB01.webp",
     "thumbMobile": "images/proyectos/m-MB01.webp",
@@ -109,6 +123,11 @@ export const projects: Project[] = [
     "name": "Calza Yoing",
     "year": "2021",
     "discipline": "Branding",
+    "resumen": "El manual abre con el concepto en dos letras: c + y. De ahi sale la reticula y la tipografia.",
+    "concepto": "Del manual: el simbolo es la c y la y unidas en una sola forma. La reticula de circulos y diagonales fija como se unen, para que el signo no dependa del pulso de nadie.",
+    "tipografia": "Myriad Pro",
+    "colores": "Azul marino y dorado",
+    "manual": true,
     "cover": "images/proyectos/CY01.webp",
     "thumb": "images/proyectos/t-CY01.webp",
     "thumbMobile": "images/proyectos/m-CY01.webp",
@@ -130,6 +149,10 @@ export const projects: Project[] = [
     "name": "Yannilucio",
     "year": "2024",
     "discipline": "Branding",
+    "resumen": "Un monograma construido sobre una regla: Y + 60 grados.",
+    "concepto": "Del manual: el signo parte de la Y y de un angulo de sesenta grados. Esa inclinacion ordena el monograma y despues el logotipo completo, que se apoya en la misma diagonal.",
+    "colores": "Dorado y negro",
+    "manual": true,
     "cover": "images/proyectos/Y1.webp",
     "thumb": "images/proyectos/t-Y1.webp",
     "thumbMobile": "images/proyectos/m-Y1.webp",
@@ -150,6 +173,11 @@ export const projects: Project[] = [
     "name": "Italplumbing",
     "year": "2024",
     "discipline": "Branding",
+    "resumen": "Una plomeria que se explica sola: la llave y la gota con el tubo.",
+    "concepto": "Del manual: la llave aporta control y precision, y la gota con el tubo representa la esencia de la plomeria. El simbolo es una g que tambien se lee como una tuberia.",
+    "tipografia": "Roboto, en Bold y Light",
+    "colores": "Azul marino y coral",
+    "manual": true,
     "cover": "images/proyectos/IP0.webp",
     "thumb": "images/proyectos/t-IP0.webp",
     "thumbMobile": "images/proyectos/m-IP0.webp",
@@ -178,6 +206,9 @@ export const projects: Project[] = [
     "name": "Miniabasto Liz",
     "year": "2020",
     "discipline": "Branding",
+    "resumen": "Un carrito de compra dibujado con las letras del nombre.",
+    "concepto": "El carrito no es un icono aparte: son las letras del nombre puestas en fila, con las ruedas como puntos. Un solo trazo hace las dos cosas.",
+    "colores": "Naranja y turquesa",
     "cover": "images/proyectos/MAL1.webp",
     "thumb": "images/proyectos/t-MAL1.webp",
     "thumbMobile": "images/proyectos/m-MAL1.webp",
@@ -191,6 +222,9 @@ export const projects: Project[] = [
     "name": "Asuntos Legales",
     "year": "2021",
     "discipline": "Branding",
+    "resumen": "Dos columnas y una balanza resueltas en un monograma de trazo continuo.",
+    "concepto": "El monograma se levanta sobre una reticula de circulos y diagonales: dos columnas que son a la vez una balanza. La simetria es la idea, no el adorno.",
+    "colores": "Oxido y blanco",
     "cover": "images/proyectos/AL1.webp",
     "thumb": "images/proyectos/t-AL1.webp",
     "thumbMobile": "images/proyectos/m-AL1.webp",
@@ -204,6 +238,10 @@ export const projects: Project[] = [
     "name": "E-cat Technology",
     "year": "2022",
     "discipline": "Branding",
+    "resumen": "La marca es un juego literal: e + cat.",
+    "concepto": "La e y el gato son la misma forma: el contorno del animal vive dentro del ojo de la letra. Se lee en un segundo y no se olvida.",
+    "colores": "Violeta y blanco sobre negro",
+    "manual": true,
     "cover": "images/proyectos/EC1.webp",
     "thumb": "images/proyectos/t-EC1.webp",
     "thumbMobile": "images/proyectos/m-EC1.webp",
@@ -219,6 +257,10 @@ export const projects: Project[] = [
     "name": "Albert Super Hamburguesas",
     "year": "2023",
     "discipline": "Branding",
+    "resumen": "Dos letras y una hamburguesa en el mismo trazo.",
+    "concepto": "Del manual: A + Burger. La A es el pan y su travesano son las capas; la marca dice que se vende sin escribir una palabra mas.",
+    "colores": "Vino y blanco",
+    "manual": true,
     "cover": "images/proyectos/ASH2.webp",
     "thumb": "images/proyectos/t-ASH2.webp",
     "thumbMobile": "images/proyectos/m-ASH2.webp",
@@ -234,6 +276,9 @@ export const projects: Project[] = [
     "name": "Auto Servicio Zamper",
     "year": "2022",
     "discipline": "Branding",
+    "resumen": "Un emblema circular de cuatro cuarteles que se lee como rueda y como taller.",
+    "concepto": "El emblema divide el circulo en cuarteles, como una rueda vista de frente, y lleva el nombre en una grotesca ancha: aguanta la chapa del taller y la tarjeta.",
+    "colores": "Azul y gris",
     "cover": "images/proyectos/ASZ1.webp",
     "thumb": "images/proyectos/t-ASZ1.webp",
     "thumbMobile": "images/proyectos/m-ASZ1.webp",
