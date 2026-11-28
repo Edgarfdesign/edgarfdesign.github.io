@@ -1764,3 +1764,56 @@ a { text-underline-offset: 3px; }
 
 @media (prefers-reduced-motion: reduce) {
   }
+
+
+/* ---------- La ficha del caso: dato, no adorno ---------- */
+.caso__ficha {
+  display: grid;
+  gap: var(--s-6);
+  padding-bottom: var(--s-7);
+}
+.caso__resumen {
+  font-size: clamp(1.0625rem, 1.15vw, 1.1875rem);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 62ch;
+}
+.caso__encargo {
+  font-size: var(--t-small);
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 62ch;
+  padding-left: var(--s-4);
+  border-left: 1px solid var(--line);
+}
+.caso__datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4) var(--s-8);
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--line);
+}
+.caso__datos div { display: grid; gap: 4px; }
+.caso__datos dt {
+  font-size: var(--t-label);
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.caso__datos dd {
+  margin: 0;
+  font-size: var(--t-small);
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* el concepto, en el mismo tono que el resumen pero con mas aire */
+.caso__concepto {
+  font-size: clamp(1.0625rem, 1.15vw, 1.1875rem);
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 62ch;
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--line);
+}

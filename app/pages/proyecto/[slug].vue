@@ -54,6 +54,20 @@ useHead({
       </div>
     </div>
 
+    <div class="wrap caso__ficha">
+      <p v-if="proyecto.resumen" class="caso__resumen">{{ proyecto.resumen }}</p>
+      <p v-if="proyecto.concepto" class="caso__concepto">{{ proyecto.concepto }}</p>
+      <p v-if="proyecto.encargo" class="caso__encargo">{{ proyecto.encargo }}</p>
+      <dl class="caso__datos">
+        <div><dt>Año</dt><dd>{{ proyecto.year }}</dd></div>
+        <div><dt>Disciplina</dt><dd>{{ proyecto.discipline }}</dd></div>
+        <div><dt>Piezas</dt><dd>{{ proyecto.images.length }}</dd></div>
+        <div v-if="proyecto.tipografia"><dt>Tipografía</dt><dd>{{ proyecto.tipografia }}</dd></div>
+        <div v-if="proyecto.colores"><dt>Color</dt><dd>{{ proyecto.colores }}</dd></div>
+        <div v-if="proyecto.manual"><dt>Entrega</dt><dd>Manual de marca</dd></div>
+      </dl>
+    </div>
+
     <div class="caso__cinta-envoltorio">
       <div
         ref="cinta"

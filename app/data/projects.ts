@@ -1,6 +1,12 @@
 // Los doce proyectos. Anadir uno es anadir un objeto aqui.
 export interface Project {
   slug: string
+  resumen?: string
+  manual?: boolean
+  tipografia?: string
+  colores?: string
+  encargo?: string
+  concepto?: string
   name: string
   year: string
   discipline: string
@@ -13,7 +19,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     "slug": "tecnoventas",
-    "name": "Tecnoventas",
+    "resumen": "Una marca de venta de tecnologia con manual de uso: simbolo, retícula, versiones y escala resueltos antes de tocar una aplicacion.",
+    "manual": true,
+    "tipografia": "Tw Cen MT Condensed",
+    "colores": "Azul y verde",
+    "concepto": "El simbolo junta el icono de encender un equipo con una herramienta de taller. Tecnoventas vive del servicio tecnico de reparacion, y la marca lo dice antes de que nadie lea el nombre.",
     "year": "2020",
     "discipline": "Branding",
     "cover": "images/proyectos/TV1.webp",
