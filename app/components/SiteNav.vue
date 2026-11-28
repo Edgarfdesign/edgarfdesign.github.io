@@ -29,9 +29,13 @@ function cerrar() {
   toggle.value?.focus()
 }
 
-function alternar(e: MouseEvent) {
-  if (abierto.value) cerrar()
-  else abrir(e.detail === 0) // solo el teclado lleva el foco al primer enlace
+function alternar() {
+  if (abierto.value) {
+    cerrar()
+    return
+  }
+  // :focus-visible sobre el propio boton distingue teclado de puntero
+  abrir(!!toggle.value?.matches(':focus-visible'))
 }
 
 watch(() => ruta.fullPath, () => { if (abierto.value) cerrar() })
@@ -69,12 +73,8 @@ onUnmounted(() => bloquearFondo(false))
         :aria-label="abierto ? 'Cerrar el menú' : 'Abrir el menú'"
         @click="alternar"
       >
-        <svg class="nav__burger" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-        </svg>
-        <svg class="nav__equis" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-        </svg>
+        <span class="nav__linea" aria-hidden="true"></span>
+        <span class="nav__linea" aria-hidden="true"></span>
       </button>
     </div>
 
