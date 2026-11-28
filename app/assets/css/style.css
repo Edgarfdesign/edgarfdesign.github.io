@@ -2828,3 +2828,129 @@ a { text-underline-offset: 3px; }
   border-top: 1px solid var(--line);
 }
 .dev__fila:first-of-type { border-top: 0; }
+
+
+/* ============================================================
+   Desarrollo: dos mitades enfrentadas, la portada de fondo y el
+   texto encima. Se expanden al pasar el raton.
+   ============================================================ */
+.dev__duelo {
+  display: flex;
+  margin-top: clamp(40px, 5vw, 72px);
+  min-height: clamp(420px, 54vh, 640px);
+  width: 100%;
+}
+.dev__lado {
+  position: relative;
+  isolation: isolate;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(24px, 3vw, 48px);
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+  transition: flex-grow 480ms var(--ease-enter);
+}
+.dev__lado:hover { flex-grow: 1.22; }
+.dev__lado--verde { background: #1fa855; }
+.dev__lado--violeta { background: #5459f0; }
+
+/* la portada, de fondo, muy ampliada: asi el color plano se vuelve material */
+.dev__fondo {
+  position: absolute;
+  inset: -10% -10% -10% -10%;
+  background: url('/images/ai-projects/Botwhatsapp.jpg') center / cover no-repeat;
+  z-index: -2;
+  transition: transform 700ms var(--ease-enter), opacity 400ms var(--ease);
+}
+.dev__fondo--mail { background-image: url('/images/ai-projects/Botdiscord.jpg'); }
+.dev__lado:hover .dev__fondo { transform: scale(1.04); }
+
+/* el velo: sin el, el texto no se lee sobre el verde */
+.dev__velo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / .10) 0%, rgb(0 0 0 / .30) 42%, rgb(0 0 0 / .78) 100%),
+    linear-gradient(90deg, rgb(0 0 0 / .35), transparent 55%);
+}
+
+.dev__lado-in { display: grid; gap: var(--s-3); max-width: 46ch; }
+.dev__etiqueta {
+  font-size: var(--t-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / .82);
+  margin: 0;
+}
+.dev__nombre {
+  font-size: clamp(1.5rem, 2.6vw, 2.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+  margin: 0;
+  text-wrap: balance;
+}
+.dev__desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: rgb(255 255 255 / .88);
+  max-width: 38ch;
+}
+.dev__stack { display: flex; flex-wrap: wrap; gap: 8px; margin: var(--s-2) 0 0; padding: 0; list-style: none; }
+.dev__stack li {
+  padding: 5px 12px;
+  border: 1px solid rgb(255 255 255 / .38);
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgb(0 0 0 / .18);
+}
+.dev__flecha {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-top: var(--s-2);
+  border-radius: 50%;
+  border: 1px solid rgb(255 255 255 / .45);
+  color: #ffffff;
+  transition: transform 260ms var(--ease-enter), background-color 220ms var(--ease), border-color 220ms var(--ease);
+}
+.dev__flecha svg { width: 18px; height: 18px; }
+.dev__lado:hover .dev__flecha {
+  transform: translateX(6px);
+  background: rgb(255 255 255 / .16);
+  border-color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .dev__duelo { flex-direction: column; min-height: 0; }
+  .dev__lado { flex: none; min-height: 340px; }
+  .dev__lado:hover { flex-grow: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dev__lado, .dev__fondo, .dev__flecha { transition: none; }
+  .dev__lado:hover { flex-grow: 1; }
+  .dev__lado:hover .dev__fondo { transform: none; }
+}
+
+
+/* el rotulo de la portada quedaba detras del texto: se amplia y se sube */
+.dev__fondo {
+  background-size: 148% auto;
+  background-position: 50% 16%;
+  transform: translateZ(0);
+}
+.dev__lado:hover .dev__fondo { background-size: 154% auto; transform: none; }
+.dev__velo {
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / .08) 0%, rgb(0 0 0 / .34) 38%, rgb(0 0 0 / .88) 100%),
+    linear-gradient(90deg, rgb(0 0 0 / .32), transparent 58%);
+}

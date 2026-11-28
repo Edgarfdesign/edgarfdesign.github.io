@@ -7,52 +7,42 @@
       </div>
     </div>
 
-    <article class="dev__fila">
-      <div class="dev__texto">
-        <p class="dev__etiqueta">Bots · Comercio</p>
-        <h3 class="dev__nombre">Un bot que vende por WhatsApp</h3>
-        <p class="dev__desc">Atiende el catálogo, responde precios y toma el pedido sin que nadie esté pendiente del teléfono.</p>
-        <ul class="dev__stack">
-          <li>Python</li>
-          <li>WhatsApp API</li>
-          <li>DeepSeek</li>
-        </ul>
-      </div>
-      <div class="dev__shot dev__shot--der">
-        <img
-          src="/images/ai-projects/botwhatsapp-640.jpg"
-          srcset="/images/ai-projects/botwhatsapp-640.jpg 640w, /images/ai-projects/Botwhatsapp.jpg 1080w"
-          sizes="(max-width: 767px) 100vw, 52vw"
-          alt="Conversación del bot de WhatsApp respondiendo el catálogo de una tienda de ropa"
-          loading="lazy"
-          width="1080"
-          height="900"
-        >
-      </div>
-    </article>
+    <div class="dev__duelo">
+      <a class="dev__lado dev__lado--verde" href="#contacto">
+        <span class="dev__fondo" aria-hidden="true"></span>
+        <span class="dev__velo" aria-hidden="true"></span>
+        <div class="dev__lado-in">
+          <p class="dev__etiqueta">Bots · Comercio</p>
+          <h3 class="dev__nombre">Un bot que vende por WhatsApp</h3>
+          <p class="dev__desc">Atiende el catálogo, responde precios y toma el pedido sin que nadie esté pendiente del teléfono.</p>
+          <ul class="dev__stack">
+            <li>Python</li>
+            <li>WhatsApp API</li>
+            <li>DeepSeek</li>
+          </ul>
+          <span class="dev__flecha" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </span>
+        </div>
+      </a>
 
-    <article class="dev__fila dev__fila--inversa">
-      <div class="dev__texto">
-        <p class="dev__etiqueta">Bots · Correo</p>
-        <h3 class="dev__nombre">Un bot que ordena el correo</h3>
-        <p class="dev__desc">Lee la bandeja, clasifica lo que llega y avisa en el canal correcto, sin abrir el correo.</p>
-        <ul class="dev__stack">
-          <li>Python</li>
-          <li>Discord API</li>
-          <li>IMAP</li>
-        </ul>
-      </div>
-      <div class="dev__shot dev__shot--izq">
-        <img
-          src="/images/ai-projects/botdiscord-640.jpg"
-          srcset="/images/ai-projects/botdiscord-640.jpg 640w, /images/ai-projects/Botdiscord.jpg 1080w"
-          sizes="(max-width: 767px) 100vw, 52vw"
-          alt="Canal de Discord donde el bot publica los correos ya clasificados"
-          loading="lazy"
-          width="1080"
-          height="900"
-        >
-      </div>
-    </article>
+      <a class="dev__lado dev__lado--violeta" href="#contacto">
+        <span class="dev__fondo dev__fondo--mail" aria-hidden="true"></span>
+        <span class="dev__velo" aria-hidden="true"></span>
+        <div class="dev__lado-in">
+          <p class="dev__etiqueta">Bots · Correo</p>
+          <h3 class="dev__nombre">Un bot que ordena el correo</h3>
+          <p class="dev__desc">Lee la bandeja, clasifica lo que llega y avisa en el canal correcto, sin abrir el correo.</p>
+          <ul class="dev__stack">
+            <li>Python</li>
+            <li>Discord API</li>
+            <li>IMAP</li>
+          </ul>
+          <span class="dev__flecha" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </span>
+        </div>
+      </a>
+    </div>
   </section>
 </template>
