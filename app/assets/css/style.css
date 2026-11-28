@@ -1273,6 +1273,7 @@ a { text-underline-offset: 3px; }
 }
 .caso__volver:hover { color: var(--ink); }
 .caso__titulo {
+  overflow-wrap: break-word;
   font-size: clamp(2.25rem, 5.4vw, 4.5rem);
   line-height: 0.98;
   letter-spacing: -0.05em;
