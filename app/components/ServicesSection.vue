@@ -31,7 +31,8 @@
 
         <div class="precio">
           <p class="precio__etiqueta">Precio y plazo</p>
-          <p class="precio__cifra">100&nbsp;$ a 300&nbsp;$ · de dos a cuatro semanas</p>
+          <p class="precio__cifra">100&nbsp;$ a 300&nbsp;$</p>
+          <p class="precio__plazo">De dos a cuatro semanas</p>
           <p class="precio__nota">Según lo que incluya. El precio y el plazo te los confirmo por escrito antes de empezar.</p>
         </div>
       </div>
