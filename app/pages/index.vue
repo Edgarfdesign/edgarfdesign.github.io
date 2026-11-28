@@ -25,7 +25,7 @@ useHead({
       <div class="portada__velo" aria-hidden="true"></div>
 
       <div class="portada__texto">
-        <h1 id="portada-h" class="portada__claim">Tu negocio ya es bueno. Que tu marca lo demuestre.</h1>
+        <h1 id="portada-h" class="portada__claim">Tu negocio ya es bueno.<br class="solo-escritorio"> Que tu marca lo demuestre.</h1>
         <p class="portada__lead">Diseño la identidad completa de negocios como el tuyo: logo, papelería y piezas para redes. Te digo qué necesitas, qué no y cuánto cuesta antes de empezar.</p>
         <div class="btn-row portada__acciones">
           <a class="btn btn--primary" href="#contacto">Hablemos

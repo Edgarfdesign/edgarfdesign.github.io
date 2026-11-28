@@ -3567,3 +3567,50 @@ a { text-underline-offset: 3px; }
 /* los mandos, justo bajo el telefono */
 .v__mandos { justify-content: center; margin-top: var(--s-4); }
 @media (max-width: 900px) { .v__mandos { margin-top: var(--s-3); } }
+
+
+/* ============================================================
+   Portada en escritorio: la medida se quedaba corta y el texto
+   subia en columna apretada contra el borde izquierdo
+   ============================================================ */
+@media (min-width: 1024px) {
+  .portada__texto {
+    max-width: min(1180px, 88vw);
+    padding-right: clamp(24px, 6vw, 120px);
+  }
+  .portada__claim {
+    max-width: 26ch;
+    line-height: 1.02;
+  }
+  .portada__lead {
+    max-width: 64ch;
+    margin-top: var(--s-5);
+  }
+  .portada__acciones { margin-top: var(--s-5); }
+  .portada__pie { margin-top: var(--s-6); }
+  .portada__dato { max-width: 40ch; }
+}
+
+
+/* dos lineas completas: una frase por linea, no cortada por la mitad */
+@media (min-width: 1024px) {
+  .portada__claim { max-width: 31ch; }
+}
+@media (min-width: 1600px) {
+  .portada__texto { max-width: min(1240px, 84vw); }
+  .portada__claim { font-size: clamp(3rem, 4.6vw, 4.75rem); max-width: 32ch; }
+  .portada__lead { max-width: 68ch; }
+}
+
+
+/* el corte solo existe en escritorio; en el telefono la frase corre sola */
+.solo-escritorio { display: none; }
+@media (min-width: 1024px) {
+  .solo-escritorio { display: inline; }
+  .portada__texto { min-width: min(920px, 94vw); }
+  .portada__claim {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    max-width: 30ch;
+    line-height: 1.04;
+  }
+}
