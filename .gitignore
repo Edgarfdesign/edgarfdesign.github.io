@@ -11,3 +11,6 @@ dist/
 .taste-skill/chrome-*/
 .taste-skill/consistency/
 shots/
+
+# la compila GitHub Actions en cada push; no se versiona
+docs/
