@@ -2954,3 +2954,109 @@ a { text-underline-offset: 3px; }
     linear-gradient(180deg, rgb(0 0 0 / .08) 0%, rgb(0 0 0 / .34) 38%, rgb(0 0 0 / .88) 100%),
     linear-gradient(90deg, rgb(0 0 0 / .32), transparent 58%);
 }
+
+
+/* ============================================================
+   Desarrollo: el recorrido de cada bot, con iconos de verdad
+   Entra por un sitio, sale por otro, y un punto lo recorre.
+   ============================================================ */
+.dev {
+  display: block;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(56px, 7vw, 112px) 0;
+  background: #0e0e11;
+  color: #f4f3f7;
+}
+.dev::before {
+  content: "";
+  position: absolute;
+  inset: auto -10% -55% -10%;
+  height: 110%;
+  background: radial-gradient(50% 60% at 50% 100%, rgb(84 89 240 / .42), transparent 72%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: -1;
+}
+.dev::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(139 143 255 / .7) 50%, transparent);
+  z-index: -1;
+}
+
+.dev__par {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 80px);
+  margin-top: clamp(40px, 5vw, 72px);
+}
+.dev__bot { display: grid; gap: var(--s-3); align-content: start; }
+.dev__bot + .dev__bot { padding-left: clamp(32px, 5vw, 80px); border-left: 1px solid rgb(244 243 247 / .12); }
+
+/* el recorrido: dos chapas blancas y un hilo con un punto que viaja */
+.dev__flujo { display: flex; align-items: center; gap: 0; margin-bottom: var(--s-2); }
+.chapa {
+  width: 72px;
+  height: 72px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 10px 30px -14px rgb(0 0 0 / .9), 0 0 0 1px rgb(255 255 255 / .08);
+}
+.chapa--trazo { color: #0e0e11; }
+.chapa img { display: block; }
+.dev__hilo {
+  position: relative;
+  flex: 1;
+  height: 1px;
+  margin: 0 -1px;
+  background: repeating-linear-gradient(90deg, rgb(255 255 255 / .22) 0 4px, transparent 4px 9px);
+}
+.dev__punto {
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  border-radius: 50%;
+  background: #8b8fff;
+  box-shadow: 0 0 12px 2px rgb(139 143 255 / .85);
+  animation: viaje 2.6s cubic-bezier(.5,0,.5,1) infinite;
+}
+@keyframes viaje {
+  0%   { left: 0;   opacity: 0; transform: scale(.6); }
+  12%  { opacity: 1; transform: scale(1); }
+  88%  { opacity: 1; transform: scale(1); }
+  100% { left: 100%; opacity: 0; transform: scale(.6); }
+}
+.dev__flujo-pie {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8b8fff;
+  margin: 0 0 var(--s-3);
+}
+
+.dev__etiqueta { color: #aeabb5; }
+.dev__nombre { color: #ffffff; }
+.dev__desc { color: #c9c6d0; }
+.dev__stack li {
+  border-color: rgb(244 243 247 / .2);
+  color: #e6e3ec;
+  background: rgb(244 243 247 / .05);
+}
+
+@media (max-width: 900px) {
+  .dev__par { grid-template-columns: 1fr; gap: var(--s-7); }
+  .dev__bot + .dev__bot { padding-left: 0; border-left: 0; padding-top: var(--s-6); border-top: 1px solid rgb(244 243 247 / .12); }
+  .chapa { width: 60px; height: 60px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dev__punto { animation: none; left: 50%; opacity: 1; }
+}

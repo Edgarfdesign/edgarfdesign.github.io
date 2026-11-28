@@ -24,6 +24,30 @@
     "colour": "one-colour fallback in the brand hex"
   },
   {
+    "file": "discord-icon.svg",
+    "icon": "logos:discord-icon",
+    "name": "Discord",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://discordapp.com/"
+  },
+  {
+    "file": "google-gmail.svg",
+    "icon": "logos:google-gmail",
+    "name": "Google Gmail",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://gmail.com/"
+  },
+  {
     "file": "hive.svg",
     "icon": "si:hive",
     "name": "Hive",
@@ -58,5 +82,50 @@
     "url": "https://github.com/simple-icons/simple-icons",
     "trademark": true,
     "colour": "one-colour fallback in the brand hex"
+  },
+  {
+    "file": "ui-shirt.svg",
+    "icon": "ui:shirt",
+    "name": "Shirt",
+    "kind": "line",
+    "source": "@iconify-json/lucide@1.2.100",
+    "author": "Lucide Contributors",
+    "licence": "ISC",
+    "url": "https://github.com/lucide-icons/lucide",
+    "trademark": false
+  },
+  {
+    "file": "ui-shopping-bag.svg",
+    "icon": "ui:shopping-bag",
+    "name": "Shopping Bag",
+    "kind": "line",
+    "source": "@iconify-json/lucide@1.2.100",
+    "author": "Lucide Contributors",
+    "licence": "ISC",
+    "url": "https://github.com/lucide-icons/lucide",
+    "trademark": false
+  },
+  {
+    "file": "ui-store.svg",
+    "icon": "ui:store",
+    "name": "Store",
+    "kind": "line",
+    "source": "@iconify-json/lucide@1.2.100",
+    "author": "Lucide Contributors",
+    "licence": "ISC",
+    "url": "https://github.com/lucide-icons/lucide",
+    "trademark": false
+  },
+  {
+    "file": "whatsapp-icon.svg",
+    "icon": "logos:whatsapp-icon",
+    "name": "Whatsapp",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.whatsapp.com/"
   }
 ]
