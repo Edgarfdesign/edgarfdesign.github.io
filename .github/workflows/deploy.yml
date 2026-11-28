@@ -26,7 +26,9 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-      - run: pnpm install --frozen-lockfile
+      # --no-frozen-lockfile porque el lockfile nace en Windows: en Linux faltan
+      # los binarios nativos (rollup, esbuild) y el install estricto se niega.
+      - run: pnpm install --no-frozen-lockfile
       - run: pnpm run generate
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
