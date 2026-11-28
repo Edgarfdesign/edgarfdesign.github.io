@@ -1811,3 +1811,162 @@ a { text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   .nav__ico line, .nav__toggle { transition: none; }
 }
+
+
+/* ============================================================
+   Cierre: el correo como pieza tipografica
+   ============================================================ */
+.cierre {
+  margin-top: var(--s-9);
+  padding: clamp(64px, 9vw, 128px) 0 var(--s-6);
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+}
+.cierre__grid { display: grid; gap: var(--s-7); }
+.cierre__titulo {
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  max-width: 18ch;
+  text-wrap: balance;
+}
+.cierre__lead {
+  margin-top: var(--s-5);
+  font-size: var(--t-lead);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 54ch;
+}
+
+/* la direccion, en grande: es la accion principal del cierre */
+.cierre__correo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(6px, 1.2vw, 18px);
+  width: fit-content;
+  max-width: 100%;
+  padding-bottom: 8px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: clamp(1.375rem, 4vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+  transition: color 200ms var(--ease);
+}
+.cierre__correo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: currentColor;
+  transition: height 200ms var(--ease);
+}
+.cierre__correo:hover { color: var(--accent-text); }
+.cierre__correo:hover::after { height: 2px; }
+.cierre__flecha {
+  width: 0.72em;
+  height: 0.72em;
+  flex: none;
+  transition: transform 240ms var(--ease-enter);
+}
+.cierre__correo:hover .cierre__flecha { transform: translateX(0.18em); }
+
+.cierre__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-3) var(--s-4);
+}
+.cierre__cv {
+  font-size: var(--t-small);
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: color 160ms var(--ease), border-color 160ms var(--ease);
+}
+.cierre__cv:hover { color: var(--ink); border-color: var(--ink); }
+
+/* ---------- el pie: indice, fuera y directo ---------- */
+.cierre__pie {
+  margin-top: clamp(56px, 8vw, 104px);
+  padding-top: var(--s-6);
+  border-top: 1px solid var(--line);
+}
+.cierre__dir {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-6) var(--s-5);
+}
+.dir-col { display: grid; gap: 2px; align-content: start; }
+.dir-col__title {
+  font-size: var(--t-label);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 var(--s-3);
+}
+.dir-col a {
+  width: fit-content;
+  padding: 3px 0;
+  font-size: var(--t-small);
+  text-decoration: none;
+  color: var(--ink);
+  transition: color 150ms var(--ease);
+}
+.dir-col a:hover { color: var(--accent-text); }
+.dir-col__nota {
+  margin-top: var(--s-2);
+  font-size: var(--t-small);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.cierre__legal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-3);
+  margin-top: var(--s-7);
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--line);
+  font-size: var(--t-label);
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+.cierre__isotipo { width: 30px; height: 30px; filter: brightness(0) invert(1); opacity: 0.9; margin-right: var(--s-2); }
+.cierre__legal-sep { opacity: 0.5; }
+.cierre__arriba {
+  margin-left: auto;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: color 160ms var(--ease), border-color 160ms var(--ease);
+}
+.cierre__arriba:hover { color: var(--accent-text); border-color: var(--accent-text); }
+
+@media (max-width: 767px) {
+  .cierre__dir { grid-template-columns: 1fr 1fr; }
+  .cierre__legal { gap: var(--s-2); }
+  .cierre__arriba { margin-left: 0; width: 100%; margin-top: var(--s-3); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cierre__correo, .cierre__correo::after, .cierre__flecha { transition: none; }
+}
+
+
+/* en el telefono las acciones se apilan y comparten ancho */
+@media (max-width: 767px) {
+  .cierre__acciones { flex-direction: column; align-items: stretch; gap: var(--s-3); }
+  .cierre__acciones .btn { width: 100%; height: 52px; }
+  .cierre__cv { width: fit-content; margin-top: var(--s-1); }
+}
