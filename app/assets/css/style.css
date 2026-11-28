@@ -1543,28 +1543,7 @@ a { text-underline-offset: 3px; }
 }
 .nav__toggle:hover { background: var(--surface); border-color: rgba(244, 243, 247, .3); }
 .nav__toggle:active { transform: scale(.97); }
-.nav__linea {
-  position: absolute;
-  left: 50%;
-  width: 18px;
-  height: 1.7px;
-  border-radius: 2px;
-  background: currentColor;
-  transform: translateX(-50%);
-  transition:
-    transform 260ms var(--ease-enter),
-    width 220ms var(--ease);
-}
-.nav__linea:nth-of-type(1) { top: calc(50% - 4px); }
-.nav__linea:nth-of-type(2) { top: calc(50% + 4px); }
-.nav__toggle:hover .nav__linea { width: 20px; }
-.nav__toggle.is-open .nav__linea:nth-of-type(1) {
-  transform: translateX(-50%) translateY(4px) rotate(45deg);
-}
-.nav__toggle.is-open .nav__linea:nth-of-type(2) {
-  transform: translateX(-50%) translateY(-4px) rotate(-45deg);
-}
-
+.nav__toggle:hover 
 /* ---------- La hoja: enlaces con flecha, aire justo, entrada corta ---------- */
 .nav__sheet {
   position: fixed;
@@ -1658,8 +1637,7 @@ a { text-underline-offset: 3px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .nav__linea { transition: none; }
-  .nav__sheet-links a,
+    .nav__sheet-links a,
   .nav__sheet-cta,
   .nav__sheet-pie { animation: none; }
 }
@@ -1669,3 +1647,120 @@ a { text-underline-offset: 3px; }
 @media (min-width: 1024px) {
   .nav__toggle { display: none; }
 }
+
+
+/* ============================================================
+   Header: peso, estado y un icono con otro gesto
+   ============================================================ */
+.nav {
+  transition: background-color 220ms var(--ease), border-color 220ms var(--ease), backdrop-filter 220ms var(--ease);
+}
+.nav.is-scrolled {
+  background: rgb(14 14 17 / .80);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border-bottom-color: rgb(244 243 247 / .18);
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .nav.is-scrolled { background: var(--bg); }
+}
+
+.brand__mark { width: 34px; height: 34px; transition: transform 260ms var(--ease-enter); }
+.brand:hover .brand__mark { transform: rotate(-8deg) scale(1.06); }
+.brand__name { letter-spacing: -0.02em; }
+
+/* enlaces con subrayado que se dibuja */
+.nav__links a {
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 160ms var(--ease);
+}
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 240ms var(--ease-enter);
+}
+.nav__links a:hover::after,
+.nav__links a:focus-visible::after { transform: scaleX(1); }
+
+/* la accion principal de la barra, mas firme */
+.nav__cta { height: 42px; padding: 0 var(--s-5); gap: var(--s-2); }
+.nav__cta .m-arrow { transform: translateX(0); }
+.nav__cta:hover .m-arrow { transform: translateX(3px); }
+
+/* linea de progreso pegada al borde inferior */
+.nav__progreso {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  will-change: transform;
+  pointer-events: none;
+}
+
+/* ---------- El icono: tres lineas, la del medio se cierra ---------- */
+.nav__toggle {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  transition: background-color 220ms var(--ease), border-color 220ms var(--ease), color 220ms var(--ease);
+}
+.nav__toggle:hover { border-color: rgb(244 243 247 / .38); }
+.nav__toggle.is-open {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+.nav__ico {
+  width: 22px;
+  height: 22px;
+  display: block;
+  overflow: visible;
+}
+.nav__ico line {
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 300ms var(--ease-enter), opacity 180ms var(--ease);
+}
+/* cerrado: dos trazos horizontales. abierto: bajan y suben al centro y giran. */
+.nav__toggle.is-open .nav__ico-a { transform: translateY(3px) rotate(45deg); }
+.nav__toggle.is-open .nav__ico-b { transform: translateY(-3px) rotate(-45deg); }
+
+/* ---------- La hoja: numeros de seccion ---------- */
+.nav__sheet-num {
+  font-size: var(--t-label);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  width: 28px;
+  flex: none;
+}
+.nav__sheet-texto { flex: 1; }
+.nav__sheet-links a:hover .nav__sheet-num { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  }
